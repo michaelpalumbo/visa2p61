@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISA 2P61 — Website Creation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Source+Code+Pro:wght@400;500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f4;
+      --bg-alt: #f3f0ea;
+      --fg: #1a1814;
+      --fg-muted: #6b6560;
+      --fg-faint: #a8a29e;
+      --accent: #1d5c8a;
+      --accent-hover: #174d78;
+      --border: #ddd9d2;
+      --border-light: #e8e4de;
+      --code-bg: #edeae3;
+      --sans: 'Work Sans', sans-serif;
+      --serif: 'Lora', serif;
+      --mono: 'Source Code Pro', monospace;
+      --max-width: 860px;
+      --content-padding: 2rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 80%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--content-padding);
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 0 2.5rem;
+    }
+
+    .course-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--fg-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .course-title {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .course-title span { font-style: italic; color: var(--fg-muted); }
+
+    .header-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 0.75rem 2rem;
+      font-size: 0.875rem;
+    }
+
+    .header-info-item { display: flex; flex-direction: column; gap: 0.15rem; }
+
+    .header-info-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+    }
+
+    .header-info-value { color: var(--fg); font-weight: 400; }
+    .header-info-value a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+    .header-info-value a:hover { border-color: var(--accent); }
+
+    /* NAV */
+    nav {
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(250,248,244,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+
+    nav .container { display: flex; overflow-x: auto; scrollbar-width: none; }
+    nav .container::-webkit-scrollbar { display: none; }
+
+    nav a {
+      display: block;
+      padding: 0.875rem 1.1rem;
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      color: var(--fg-muted);
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    /* MAIN */
+    main { padding-bottom: 6rem; }
+
+    section {
+      padding: 3.5rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    section:last-child { border-bottom: none; }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      font-family: var(--sans);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--fg-muted);
+      margin: 2rem 0 0.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+    }
+
+    h3:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+
+    p { margin-bottom: 1rem; max-width: 66ch; font-size: 0.9375rem; }
+    p:last-child { margin-bottom: 0; }
+
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+    a:hover { border-color: var(--accent); }
+
+    code {
+      font-family: var(--mono);
+      font-size: 0.82em;
+      background: var(--code-bg);
+      padding: 0.1em 0.35em;
+      border-radius: 2px;
+      color: var(--fg);
+    }
+
+    /* SCHEDULE TABLE */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+
+    .schedule-table th {
+      text-align: left;
+      padding: 0.5rem 0.875rem;
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+      border-bottom: 1px solid var(--border);
+      font-weight: 400;
+    }
+
+    .schedule-table td {
+      padding: 0.7rem 0.875rem;
+      border-bottom: 1px solid var(--border-light);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    .schedule-table tr:last-child td { border-bottom: none; }
+    .schedule-table tr:hover td { background: var(--bg-alt); }
+    .col-num { color: var(--fg-faint); font-family: var(--mono); font-size: 0.78rem; }
+    .col-deadline { color: var(--accent); font-size: 0.8rem; font-weight: 500; }
+
+    /* SESSION BLOCKS */
+    .session-block { margin-bottom: 2.5rem; }
+    .session-block:last-child { margin-bottom: 0; }
+
+    .session-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 0.875rem;
+    }
+
+    .session-date {
+      font-family: var(--sans);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--fg);
+    }
+
+    .tag {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+    }
+
+    .tag-seminar { background: #deeaf5; color: #1d5c8a; }
+    .tag-due { background: #fdefd8; color: #92400e; }
+
+    .topic-list { list-style: none; }
+
+    .topic-list li {
+      font-size: 0.875rem;
+      padding: 0.35rem 0 0.35rem 1.25rem;
+      position: relative;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+
+    .topic-list li:last-child { border-bottom: none; }
+
+    .topic-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--fg-faint);
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      top: 0.45rem;
+    }
+
+    /* DETAILS/SUMMARY */
+    details {
+      margin-top: 1rem;
+      border: 1px solid var(--border);
+    }
+
+    details[open] { background: var(--bg-alt); }
+
+    summary {
+      padding: 0.8rem 1.25rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--fg-muted);
+      transition: color 0.15s;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: '▶'; font-size: 0.58rem; transition: transform 0.2s; color: var(--fg-faint); }
+    details[open] summary::before { transform: rotate(90deg); }
+    summary:hover { color: var(--accent); }
+
+    .walkthrough-content {
+      padding: 1.5rem 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .step {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .step:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+
+    .step-number {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+      margin-bottom: 0.3rem;
+    }
+
+    .step-title {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--fg);
+    }
+
+    .step p { font-size: 0.875rem; }
+
+    .step ul { list-style: none; margin: 0.5rem 0 0.75rem; }
+
+    .step ul li {
+      font-size: 0.875rem;
+      padding: 0.25rem 0 0.25rem 1.1rem;
+      position: relative;
+      line-height: 1.55;
+    }
+
+    .step ul li::before { content: '·'; position: absolute; left: 0.25rem; color: var(--fg-faint); }
+
+    .break-marker {
+      text-align: center;
+      padding: 1.25rem 0;
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+      border-top: 1px dashed var(--border);
+      border-bottom: 1px dashed var(--border);
+      margin: 1.5rem 0;
+    }
+
+    /* CODE BLOCKS */
+    .code-block {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      margin: 0.875rem 0;
+    }
+
+    .code-block-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.4rem 0.875rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .code-block-label {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+    }
+
+    .copy-btn {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--fg-muted);
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .copy-btn:hover, .copy-btn.copied { border-color: var(--accent); color: var(--accent); }
+
+    pre {
+      padding: 0.875rem;
+      overflow-x: auto;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      line-height: 1.7;
+      color: var(--fg);
+    }
+
+    /* ASSIGNMENT CARDS */
+    .assignment-card {
+      border: 1px solid var(--border);
+      padding: 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .assignment-card:last-child { margin-bottom: 0; }
+
+    .assignment-eyebrow {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+      margin-bottom: 0.35rem;
+    }
+
+    .assignment-title {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+    }
+
+    .assignment-meta {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--fg-muted);
+      margin-bottom: 0;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .assignment-meta strong { color: var(--accent); font-weight: 500; }
+
+    .req-list { list-style: none; margin: 0.5rem 0 0.75rem; }
+
+    .req-list li {
+      font-size: 0.875rem;
+      padding: 0.4rem 0 0.4rem 1.5rem;
+      position: relative;
+      border-bottom: 1px solid var(--border-light);
+      line-height: 1.55;
+    }
+
+    .req-list li:last-child { border-bottom: none; }
+
+    .req-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--fg-faint);
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      top: 0.5rem;
+    }
+
+    .prompt-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 0.5rem 0 0.75rem;
+    }
+
+    .prompt-item { background: var(--bg); padding: 1.25rem; }
+
+    .prompt-letter {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--fg-faint);
+      margin-bottom: 0.4rem;
+    }
+
+    .prompt-text { font-size: 0.875rem; line-height: 1.6; }
+
+    /* TOOLS GRID */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: 0.75rem;
+    }
+
+    .tool-item { background: var(--bg); padding: 1.25rem; }
+    .tool-name { font-size: 0.9rem; font-weight: 500; margin-bottom: 0.3rem; }
+    .tool-desc { font-size: 0.8rem; color: var(--fg-muted); line-height: 1.55; }
+
+    /* NOTICE */
+    .notice {
+      background: var(--bg-alt);
+      border-left: 3px solid var(--accent);
+      padding: 0.875rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.875rem;
+    }
+
+    .notice p { margin-bottom: 0; max-width: none; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--border); padding: 2rem 0; }
+
+    footer .container {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--fg-faint);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      :root { --content-padding: 1.25rem; }
+      .container { width: 100%; }
+      .header-info { grid-template-columns: 1fr 1fr; }
+      .prompt-grid, .tools-grid { grid-template-columns: 1fr; }
+      nav a { padding: 0.75rem 0.875rem; font-size: 0.75rem; }
+    }
+
+    @media (max-width: 480px) {
+      .header-info { grid-template-columns: 1fr; }
+      .session-header { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+      .assignment-card { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="course-eyebrow">Brock University · Department of Visual Arts · Summer 2025</div>
+      <h1 class="course-title">VISA 2P61 · <span>Website Creation</span></h1>
+      <div class="header-info">
+        <div class="header-info-item">
+          <span class="header-info-label">Instructor</span>
+          <span class="header-info-value">Michael Palumbo</span>
+        </div>
+        <div class="header-info-item">
+          <span class="header-info-label">Contact</span>
+          <span class="header-info-value"><a href="mailto:your@email.com">your@email.com</a></span>
+        </div>
+        <div class="header-info-item">
+          <span class="header-info-label">Office Hours</span>
+          <span class="header-info-value"><a href="#">Wednesdays 10am–12pm · Zoom</a></span>
+        </div>
+        <div class="header-info-item">
+          <span class="header-info-label">Format</span>
+          <span class="header-info-value">In-person · Tue & Thu · 3hr</span>
+        </div>
+        <div class="header-info-item">
+          <span class="header-info-label">Dates</span>
+          <span class="header-info-value">May 5 – June 4, 2025</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#before-class">Before Class 1</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#week1">Week 1</a>
+      <a href="#assignments">Assignments</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">About the Course</div>
+        <p>This course is structured around studio-based projects that approach the browser as an artistic medium. Students develop HTML, CSS, JavaScript, and p5.js skills within a professional development environment: writing code in VS Code, managing projects with git, and publishing through GitHub Pages.</p>
+        <p>Version control is treated as both a practical workflow and a conceptual framework for iterative, non-linear creative practice. Weekly studio work, lectures, and seminar discussion draw on the history of net.art and software art to situate student work within broader traditions of browser-based artistic practice. No prior coding experience is required.</p>
+        <p style="margin-top:1.25rem;"><a href="2p61-syllabus.pdf">↓ Download course syllabus (PDF)</a></p>
+      </div>
+    </section>
+
+    <!-- BEFORE CLASS 1 -->
+    <section id="before-class">
+      <div class="container">
+        <div class="section-label">Setup</div>
+        <h2>Before Class 1 — do these before May 5</h2>
+        <p>Please have the following ready before the first session. Git installation, configuration, and SSH key setup will be done together in class.</p>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-name"><a href="https://code.visualstudio.com" target="_blank">VS Code ↗</a></div>
+            <div class="tool-desc">Code editor. Free. Mac, Windows, Linux.</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-name"><a href="https://github.com" target="_blank">GitHub Account ↗</a></div>
+            <div class="tool-desc">Create a free account. Your username becomes part of your public site URL — choose carefully.</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-name">Chrome or Firefox</div>
+            <div class="tool-desc">Either works. You'll use browser developer tools regularly throughout the course.</div>
+          </div>
+        </div>
+        <div class="notice">
+          <p><strong>Git</strong> will be installed together in class on May 5. The setup differs between Mac and Windows and is easier to work through as a group.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule">
+      <div class="container">
+        <div class="section-label">Schedule</div>
+        <h2>Course Overview</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Wk</th>
+              <th>#</th>
+              <th>Date</th>
+              <th>Topic</th>
+              <th>Deadline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-num">01</td><td class="col-num">1</td>
+              <td>Tue May 5</td>
+              <td>HTML, git, GitHub, GitHub Pages — A1 introduced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-num">01</td><td class="col-num">2</td>
+              <td>Thu May 7</td>
+              <td>Seminar: Borges — branching, merging, conflict resolution</td>
+              <td class="col-deadline">Reading post + A1 · Sat May 10</td>
+            </tr>
+            <tr>
+              <td class="col-num">02</td><td class="col-num">3</td>
+              <td>Tue May 12</td>
+              <td>CSS fundamentals, file structure, image integration — A2 introduced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-num">02</td><td class="col-num">4</td>
+              <td>Thu May 14</td>
+              <td>Seminar: TBD — Flexbox and Grid</td>
+              <td class="col-deadline">Reading post + A2 · Sat May 17</td>
+            </tr>
+            <tr>
+              <td class="col-num">03</td><td class="col-num">5</td>
+              <td>Tue May 19</td>
+              <td>JavaScript fundamentals, DOM manipulation, events — A3 introduced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-num">03</td><td class="col-num">6</td>
+              <td>Thu May 21</td>
+              <td>Seminar: TBD — buttons, inputs, creative JS</td>
+              <td class="col-deadline">Reading post + A3 · Sat May 24</td>
+            </tr>
+            <tr>
+              <td class="col-num">04</td><td class="col-num">7</td>
+              <td>Tue May 26</td>
+              <td>p5.js: static and generative systems — A4 introduced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-num">04</td><td class="col-num">8</td>
+              <td>Thu May 28</td>
+              <td>Seminar: TBD — p5.js animated generative systems</td>
+              <td class="col-deadline">Reading post · Sat May 30 &nbsp;·&nbsp; A4 · Sat May 31</td>
+            </tr>
+            <tr>
+              <td class="col-num">05</td><td class="col-num">9</td>
+              <td>Tue Jun 2</td>
+              <td>p5.js interactivity, mouse, key, webcam — A5 introduced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="col-num">05</td><td class="col-num">10</td>
+              <td>Thu Jun 4</td>
+              <td>Seminar: TBD — studio time, critique</td>
+              <td class="col-deadline">Reading post · Sat Jun 6 &nbsp;·&nbsp; A5 · Thu Jun 12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- WEEK 1 -->
+    <section id="week1">
+      <div class="container">
+        <div class="section-label">Week 1</div>
+        <h2>HTML & Version Control</h2>
+
+        <!-- Tuesday May 5 -->
+        <div class="session-block">
+          <div class="session-header">
+            <span class="session-date">Tuesday May 5</span>
+          </div>
+          <ul class="topic-list">
+            <li>Install git, configure global settings, set up SSH key for GitHub</li>
+            <li>Create <code>username.github.io</code> repo, enable GitHub Pages</li>
+            <li>Clone repo in VS Code, open terminal</li>
+            <li>Install Better Comments extension</li>
+            <li>Code comments — writing and viewing <code>index.html</code> in browser (<code>open .</code>)</li>
+            <li>Plain text and basic HTML tags — viewing changes, making commits</li>
+            <li>Push to GitHub — local vs. cloud contexts, GitHub Pages delay</li>
+            <li>Branching: <code>git checkout -b</code>, pushing branches with <code>git push -u origin branchname</code></li>
+            <li>A1 introduced — reading assignments explained</li>
+          </ul>
+
+          <details>
+            <summary>Detailed walkthrough — Tuesday May 5</summary>
+            <div class="walkthrough-content">
+
+              <div class="step">
+                <div class="step-number">Step 1</div>
+                <div class="step-title">Install git and configure it</div>
+                <p>Download and install git from <a href="https://git-scm.com/install" target="_blank">git-scm.com/install</a>. Once installed, open the terminal in VS Code (View → Terminal or <code>Ctrl+`</code>) and configure your identity:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git config --global user.name "Your Name"
+git config --global user.email "you@email.com"</pre>
+                </div>
+                <p>Use the same email address as your GitHub account.</p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 2</div>
+                <div class="step-title">Set up an SSH key for GitHub</div>
+                <p>An SSH key lets you push to GitHub without entering your password every time. Follow the instructions here: <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh" target="_blank">docs.github.com → Connecting to GitHub with SSH</a></p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 3</div>
+                <div class="step-title">Create your repo and enable GitHub Pages</div>
+                <ul>
+                  <li>Go to github.com and create a new <strong>public</strong> repo named exactly <code>username.github.io</code> (use your actual GitHub username)</li>
+                  <li>Check "Add a README file"</li>
+                  <li>Go to Settings → Pages → under Branch, select <code>main</code> → Save</li>
+                  <li>Your page is now live at <code>username.github.io</code> — takes 1–2 minutes to appear</li>
+                </ul>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 4</div>
+                <div class="step-title">Clone the repo in VS Code</div>
+                <p>In the VS Code terminal, navigate to where you want your work, then clone:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>cd Documents
+git clone git@github.com:username/username.github.io.git
+cd username.github.io</pre>
+                </div>
+                <p>Then: File → Open Folder to open it in VS Code.</p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 5</div>
+                <div class="step-title">Install Better Comments extension</div>
+                <ul>
+                  <li>Extensions panel (Ctrl+Shift+X) → search "Better Comments" → Install</li>
+                  <li>This extension colour-codes comments. Use <code>&lt;!-- * </code> for section headings in commented-out code</li>
+                </ul>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 6</div>
+                <div class="step-title">Create index.html and start with comments</div>
+                <p>Create a new file: <code>index.html</code>. Start with just a comment:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">index.html</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>&lt;!-- * this is my first webpage --&gt;</pre>
+                </div>
+                <p>Open in your browser: in the terminal type <code>open .</code> to open the folder, then drag <code>index.html</code> into the browser. The comment is invisible — comments are for you, not the visitor.</p>
+                <p>Make your first commit:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git add .
+git commit -m "first file, comment only"</pre>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 7</div>
+                <div class="step-title">Add plain text, then HTML structure</div>
+                <p>Below your comment, type your name as plain text. Save and reload — it shows up without any tags. Commit this.</p>
+                <p>Now add proper HTML structure:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">index.html — boilerplate</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Title Here&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;!-- your content goes here --&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                </div>
+                <p>Add a heading, a paragraph, an image. Save, reload, and commit after each meaningful change.</p>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 8</div>
+                <div class="step-title">Push to GitHub — local vs. cloud</div>
+                <p>Your changes only exist on your machine so far. Two contexts exist:</p>
+                <ul>
+                  <li><strong>Local:</strong> files on your computer, openable as a file in your browser — only you can see them</li>
+                  <li><strong>Cloud:</strong> your repo on GitHub, published via GitHub Pages — anyone can visit <code>username.github.io</code></li>
+                </ul>
+                <p>Push your commits:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git push origin main</pre>
+                </div>
+                <p>Visit <code>username.github.io</code> — GitHub Pages takes 1–2 minutes to update after a push.</p>
+              </div>
+
+              <div class="break-marker">— Break —</div>
+
+              <div class="step">
+                <div class="step-number">Step 9</div>
+                <div class="step-title">Branching</div>
+                <p>First, create a <code>develop</code> branch — your primary working branch from here on. Never commit directly to <code>main</code>.</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git checkout -b develop</pre>
+                </div>
+                <p>Now create a feature branch off <code>develop</code>:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git checkout -b your-branch-name</pre>
+                </div>
+                <p>Make changes and commits, then push the branch to GitHub:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git push -u origin your-branch-name</pre>
+                </div>
+                <p>To navigate your history: <code>git log</code> shows commit hashes. To branch from an earlier state:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git checkout -b new-branch-name abc1234</pre>
+                </div>
+                <p><strong>In-class exercise:</strong> create at least 2 feature branches, make meaningful changes on each, use <code>git log</code> and <code>git checkout</code> to navigate between them. Push all branches to GitHub.</p>
+              </div>
+
+              <div class="break-marker">— Break —</div>
+
+              <div class="step">
+                <div class="step-number">Step 10</div>
+                <div class="step-title">Reading assignments</div>
+                <p>Each week a reading is posted here and on Brightspace. Before Thursday class, write a response and push it to your <code>username.github.io</code> index page.</p>
+                <p>Accepted formats: paragraph (~200 words), point form, sketches or photos, annotated screenshots, a short piece of code, or a hyperlinked response. Anything that shows genuine engagement with the text.</p>
+                <p>Thursday seminars begin with these responses — your notes are the conversation.</p>
+              </div>
+
+            </div>
+          </details>
+        </div>
+
+        <!-- Thursday May 7 -->
+        <div class="session-block">
+          <div class="session-header">
+            <span class="session-date">Thursday May 7</span>
+            <span class="tag tag-seminar">Seminar</span>
+            <span class="tag tag-due">Reading post due before class</span>
+          </div>
+          <ul class="topic-list">
+            <li>Seminar: Borges, "The Garden of Forking Paths" — reading post due before class on your index page</li>
+            <li>Install VS Code Live Server extension — auto-reloads on save</li>
+            <li>More HTML experiments</li>
+            <li>Git: merging branches, conflict resolution</li>
+          </ul>
+
+          <details>
+            <summary>Detailed walkthrough — Thursday May 7</summary>
+            <div class="walkthrough-content">
+
+              <div class="step">
+                <div class="step-number">Step 1</div>
+                <div class="step-title">Install Live Server extension</div>
+                <ul>
+                  <li>Extensions panel → search "Live Server" → Install</li>
+                  <li>Right-click <code>index.html</code> → Open with Live Server</li>
+                  <li>Your page now auto-reloads every time you save — no more manual refreshing</li>
+                </ul>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 2</div>
+                <div class="step-title">Merging branches</div>
+                <p>Switch to <code>develop</code> and merge a feature branch into it:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git checkout develop
+git merge your-branch-name</pre>
+                </div>
+              </div>
+
+              <div class="step">
+                <div class="step-number">Step 3</div>
+                <div class="step-title">Conflict resolution</div>
+                <p>A merge conflict happens when two branches change the same line. VS Code shows conflicts inline — you choose which version to keep, or combine them. Once resolved:</p>
+                <div class="code-block">
+                  <div class="code-block-header"><span class="code-block-label">terminal</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+                  <pre>git add .
+git commit -m "resolved merge conflict"</pre>
+                </div>
+              </div>
+
+            </div>
+          </details>
+        </div>
+
+        <!-- Saturday -->
+        <div class="session-block">
+          <div class="session-header">
+            <span class="session-date">Saturday May 10</span>
+            <span class="tag tag-due">Assignment 1 due 11:59pm</span>
+          </div>
+          <p style="font-size:0.875rem; color:var(--fg-muted);">Submit your repo URL to Brightspace. See the full brief below.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ASSIGNMENTS -->
+    <section id="assignments">
+      <div class="container">
+        <div class="section-label">Assignments</div>
+
+        <!-- A1 -->
+        <div class="assignment-card">
+          <div class="assignment-eyebrow">Assignment 01</div>
+          <div class="assignment-title">Git Labyrinth</div>
+          <div class="assignment-meta">Due <strong>Saturday May 10, 11:59pm</strong> &nbsp;·&nbsp; Weight <strong>15%</strong></div>
+
+          <h3>Overview</h3>
+          <p>Build a single HTML page through a process of branching, merging, and versioning using git. The page exists as five distinct versions — five parallel or sequential states that together constitute the work. The git history of your repository is part of the assignment.</p>
+
+          <h3>Branching Strategy</h3>
+          <p>Never commit directly to <code>main</code>. Work on a <code>develop</code> branch and create feature branches for each version. Merge feature branches into <code>develop</code> when ready. Merge <code>develop</code> into <code>main</code> only when you have a stable, presentable state.</p>
+
+          <h3>Code Comments</h3>
+          <p>Include commented-out code in each version. These are the ideas you tried, the things that didn't work, the directions you considered and set aside. Don't delete them — comment them out and leave them visible. The traces of your process are part of the work. Use <code>&lt;!-- * </code> notation (Better Comments) to provide headings for each commented-out section.</p>
+
+          <h3>Conceptual — choose one</h3>
+          <div class="prompt-grid">
+            <div class="prompt-item">
+              <div class="prompt-letter">A</div>
+              <div class="prompt-text">A page about your childhood bedroom that gets progressively stranger or more distorted across versions.</div>
+            </div>
+            <div class="prompt-item">
+              <div class="prompt-letter">B</div>
+              <div class="prompt-text">A page about a person you know where each version reveals something different about them.</div>
+            </div>
+            <div class="prompt-item">
+              <div class="prompt-letter">C</div>
+              <div class="prompt-text">A page about a place where each version is a different emotional register — nostalgic, clinical, hostile, dreamlike.</div>
+            </div>
+          </div>
+
+          <h3>Technical Requirements</h3>
+          <ul class="req-list">
+            <li>Minimum 15 HTML elements — see <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 Schools HTML Reference</a></li>
+            <li>At least one image, hosted in the repo or linked from an external source</li>
+          </ul>
+
+          <h3>HTML Boilerplate</h3>
+          <div class="code-block">
+            <div class="code-block-header"><span class="code-block-label">index.html</span><button class="copy-btn" onclick="copyCode(this)">Copy</button></div>
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Title Here&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;!-- your content goes here --&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+          </div>
+
+          <h3>Deliverables</h3>
+          <ul class="req-list">
+            <li>Repo named <code>a1-git-labyrinth</code>, linked from your <code>username.github.io</code> index page</li>
+            <li>A <code>main</code> branch and a <code>develop</code> branch</li>
+            <li>Minimum 20 commits with meaningful commit messages</li>
+            <li>At least 3 merge commits</li>
+            <li>5 commits identified as significant versions, each on its own branch with a semantic name (e.g. <code>glitchy-flower</code>, <code>early-attempt</code>)</li>
+            <li>All branches pushed to GitHub</li>
+            <li>Each of the 5 commit URLs linked on your index page with a 1–2 sentence annotation describing what changed and why</li>
+          </ul>
+
+          <h3>On Tools and Problem-Solving</h3>
+          <p>AI code-generation tools — ChatGPT, GitHub Copilot, Claude, and others — are one tool among many in this course. Others include browser developer tools, MDN Web Docs, Stack Overflow, the p5.js reference, your classmates, and your own experimentation. None of these is cheating. All of them are how developers actually work.</p>
+          <ul class="req-list">
+            <li>Use AI for specific problems, not entire pages</li>
+            <li>Paste the exact prompt you used as a comment directly above any AI-generated code</li>
+            <li>Your commit history is your accountability — frequent meaningful commits show genuine engagement over time</li>
+            <li>When stuck, try other routes: search <code>[problem] site:stackoverflow.com</code>, read MDN docs, open devtools and inspect something that already works, ask a classmate</li>
+          </ul>
+          <p>Full comprehension of every line is not expected in a five-week course. What is expected is genuine engagement — tinkering, curiosity, and a willingness to sit with something until it does something interesting.</p>
+
+          <h3>The Experienced Coder's Mindset</h3>
+          <p>Every coder — including ones who have been doing this for fifteen years — regularly hits moments of "I can't do this," "I'm bad at this," "this will never work." This is not a sign that you're doing it wrong. It's a sign that you're doing it. The difference between an experienced coder and a beginner is not intelligence or ability — it's the quiet confidence that regardless of how many attempts it takes, a solution exists and you will eventually find it.</p>
+          <p>When you're stuck: take a break. Read Stack Overflow threads. Work on a different part of the page. Explain out loud to a friend — or to no one — what you're trying to do and what isn't working. And sometimes the seventh approach that isn't working the way you intended turns out to be more interesting than what you originally planned. Follow that.</p>
+        </div>
+
+        <!-- A2–A5 placeholders -->
+        <div class="assignment-card" style="opacity:0.4;">
+          <div class="assignment-eyebrow">Assignment 02</div>
+          <div class="assignment-title">One Image ×5</div>
+          <div class="assignment-meta">Due <strong>Saturday May 17</strong> &nbsp;·&nbsp; Weight <strong>15%</strong></div>
+          <p>Brief posted after Week 1.</p>
+        </div>
+
+        <div class="assignment-card" style="opacity:0.4;">
+          <div class="assignment-eyebrow">Assignment 03</div>
+          <div class="assignment-title">Misbehaving Interface</div>
+          <div class="assignment-meta">Due <strong>Saturday May 24</strong> &nbsp;·&nbsp; Weight <strong>15%</strong></div>
+          <p>Brief posted after Week 2.</p>
+        </div>
+
+        <div class="assignment-card" style="opacity:0.4;">
+          <div class="assignment-eyebrow">Assignment 04</div>
+          <div class="assignment-title">Generative p5.js Artwork</div>
+          <div class="assignment-meta">Due <strong>Saturday May 31</strong> &nbsp;·&nbsp; Weight <strong>15%</strong></div>
+          <p>Brief posted after Week 3.</p>
+        </div>
+
+        <div class="assignment-card" style="opacity:0.4;">
+          <div class="assignment-eyebrow">Assignment 05</div>
+          <div class="assignment-title">Fork &amp; Hack</div>
+          <div class="assignment-meta">Due <strong>Thursday June 12</strong> &nbsp;·&nbsp; Weight <strong>15%</strong></div>
+          <p>Brief posted after Week 4.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>VISA 2P61 · Website Creation · Brock University · Summer 2025</span>
+      <span>Michael Palumbo</span>
+    </div>
+  </footer>
+
+  <script>
+    function copyCode(btn) {
+      const pre = btn.closest('.code-block').querySelector('pre');
+      navigator.clipboard.writeText(pre.textContent).then(() => {
+        btn.textContent = 'Copied';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>

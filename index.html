@@ -1,1 +1,300 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISA 2P61 Class Website</title>
+    <style>
+      :root { --bg: #f4f4f9; --text: #333; --accent: #4a90e2; --code-bg: #272822; --code-text: #f8f8f2; }
+      body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 20px; background: var(--bg); color: var(--text); }
+      
+      /* Table of Contents Styling */
+      nav { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 40px; }
+      details { margin: 10px 0; cursor: pointer; }
+      summary { font-weight: bold; font-size: 1.1rem; color: var(--accent); }
+      .toc-list { list-style: none; padding-left: 20px; margin-top: 10px; }
+      .toc-list li { margin: 5px 0; }
+      a { text-decoration: none; color: #555; }
+      a:hover { color: var(--accent); text-decoration: underline; }
+
+      /* Content Sections */
+      section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+      h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+      
+      /* Command Formatting */
+      code { background: var(--code-bg); color: var(--code-text); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+      pre { background: var(--code-bg); color: var(--code-text); padding: 15px; border-radius: 8px; overflow-x: auto; }
+      .note { font-style: italic; color: #666; font-size: 0.9em; }
+
+      .url-box { 
+        background: #f9f9f9; 
+        border-left: 4px solid var(--accent); 
+        padding: 10px 20px; 
+        margin: 20px 0; 
+      }
+      .url-box h3 { margin-top: 0; color: #444; }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Course Resources</h1>
+      <h2>How Tos, Processes, Cheat Sheets, etc</h2>
+      <nav>
+        <details open>
+          <summary>Table of Contents</summary>
+          <ul class="toc-list">
+            <li><a href="#terminal">1. Terminal Navigation</a></li>
+            <li>
+                <details open>
+                    <summary>2. Git & Your Workflow</summary>
+                    <ul class="toc-list">
+                        <li><a href="#git-basics">Git Basics: Commands</a></li>
+                        <li><a href="#workflow">The Daily Loop (Save/Commit/Push)</a></li>
+                        <li><a href="#adding-content">How to Post Reading Responses</a></li>
+                        <li><a href="#boilerplate">HTML Boilerplate (Starter Code)</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>3. Advanced Git & Assignment 1</summary>
+                    <ul class="toc-list">
+                        <li><a href="#git-advanced">Branching & Merging</a></li>
+                        <li><a href="#git-time-travel">Time Travel (Past Versions)</a></li>
+                        <li><a href="#labyrinth-tips">Assignment 1: Labyrinth Techniques & Linking</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li><a href="#deployment">4. View Your Site Live (URLs)</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <main>
+      <section id="terminal">
+          <h2>Terminal Commands</h2>
+          <p>How to navigate and do things in the Terminal<br><i>Type these commands and hit "Enter"</i></p>
+          <pre>
+            pwd                 # Print Working Directory: "Where am I right now?"
+            ls                  # List: "What files and folders are in here?"
+            cd foldername       # Go down into a specific folder (child folder). Often follows 'ls'
+            cd ..               # Change Directory: Go up one level (parent folder)
+            </pre>
+      </section>
+
+      <section id="git-basics">
+          <h2>Git Commands & Why</h2>
+          <p>Git is your Version Control system. It tracks the history of your creativity & allows you to update your webpages online.
+          <br><i>Type these commands and hit "Enter"</i>
+          <p class="note" style="color: #d9534f; font-weight: bold;">
+            Note: The <code>#</code> indicates a comment (an explanation). Do NOT type the <code>#</code> or any text after it into the terminal!
+          </p>
+          <pre>
+            git clone             # Download a project from GitHub
+            git log               # View history (Enter = scroll through more items, 'q' = exit)
+            git status            # See what has changed since the last save
+            git add .             # Stage all changes to be saved
+            git commit -m 'msg'   # Save the changes with a label
+            git push              # Upload your saves to GitHub</pre>
+      </section>
+
+      <section id="workflow">
+        <h2>The Basic Development Loop</h2>
+        <p>This is the cycle you will repeat every time you work. Think of it as: <strong>Create/Modify → Save → Record (commit) → Upload (push).</strong></p>
+        
+        <ol>
+          <li><strong>Modify:</strong> Make changes to your <code>index.html</code> (add text, new elements, images, etc.).</li>
+          <li><strong>Save:</strong> Press <code>Cmd + S</code> (Mac) or <code>Ctrl + S</code> (Windows) in your code editor.</li>
+          <li><strong>Record & Upload:</strong> Run these commands in your terminal:</li>
+        </ol>
+
+        <pre>
+          git add .                  # Tell git to pay attention to your new changes
+          git commit -m 'message'    # Store your changes locally with a descriptive label (replace 'message' with your own)
+          git push                   # Upload your changes to GitHub
+        </pre>
+
+        <ol start="4">
+          <li><strong>Verify:</strong> Go to your browser and refresh your <code>.github.io</code> page.</li>
+        </ol>
+        
+        <p class="note" style="border: 1px solid #4a90e2; padding: 10px; background: #ebf3fc;">
+          <strong>Pro-Tip:</strong> It can take 30–60 seconds for GitHub to process your "push." If you don't see your changes immediately, wait a minute and refresh again!
+        </p>
+      </section>
+
+      <section id="adding-content">
+        <h2>How to Add Your Reading Responses</h2>
+        <p>Every week, you'll need to add a new section to the <code>index.html</code> <strong>inside of your username.github.io repo</strong> for your reading notes. Here is the technical process:</p>
+        <p class="note" style="border: 2px solid var(--accent); padding: 15px; background: #fff;">
+          <strong>IMPORTANT FOR WEEK 1:</strong> Before starting Step 2, you must set up your file structure. Follow the instructions in the <strong><a href="#boilerplate">HTML Boilerplate</a></strong> section below first, then return here to complete your response.
+        </p>
+        <ol>
+          <li><strong>Open your project</strong> in VS Code.</li>
+          <li><strong>Locate the <code>&lt;main&gt;</code> or <code>&lt;body&gt;</code></strong> of your <code>index.html</code>.</li>
+          <li><strong>Copy and Paste</strong> this code snippet within the  &lt;body&gt; tags in your index.html:</li>
+        </ol>
+
+        <pre>
+          &lt;section&gt;
+            &lt;h2&gt;Reading Response: Garden of Forking Paths&lt;/h2&gt;
+            &lt;p&gt;Date: May 7&lt;/p&gt;
+            &lt;p&gt;Your thoughts go here...&lt;/p&gt;
+          &lt;/section&gt;</pre>
+
+        <ol start="4">
+          <li><strong>Save the file</strong> (<code>Cmd + S</code> / <code>Ctrl + S</code>).</li>
+          <li><strong>Follow the <a href="#workflow">Development Loop</a></strong> (Add, Commit, Push) to make it live.</li>
+        </ol>
+
+        <p class="note" style="background: #fff; border: 1px dashed #aaa; padding: 10px;">
+          <strong>Deadline Reminder:</strong> Always <code>git push</code> your notes before <strong>Thursday at 12:00 PM</strong> so they are ready for our seminar discussion.
+        </p>
+      </section>
+
+      <section id="boilerplate">
+        <h2>HTML Boilerplate</h2>
+        <p>Use this code whenever you start a brand new webpage or assignment. It contains the essential tags every browser needs to read your code correctly.</p>
+        
+        <pre>
+          &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+              &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                  &lt;title&gt;Page Title Goes Here&lt;/title&gt;
+              &lt;/head&gt;
+            &lt;body&gt;
+
+              &lt;!-- All your visible content (h1, p, img, etc.) goes here --&gt;
+              &lt;!-- ...notice how the text inside of these arrows dont show up in your webpage online? These are code comments! --&gt;
+
+            &lt;/body&gt;
+          &lt;/html&gt;</pre>
+
+        <p class="note"><strong>How to use:</strong> Copy and paste this entire block, as is, into an empty <code>index.html</code> file. Then Add your text and other html elements between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags</p>
+      </section>
+
+      <section id="git-advanced">
+        <h2>Class 2: Branches, Merging</h2>
+        <p>Working on "branches" lets you experiment without breaking the main site.</p>
+        <p class="note" style="border: 1px solid #ffcc00; padding: 10px; background: #fffdf0;">
+          <strong>Important Note on your Webpage:</strong> GitHub Pages is set to show your <code>main</code> branch (some older repos might call this <code>master</code>). 
+          Think of this as your <b>Live Stage</b>. Other branches are your <b>Behind-the-Scenes or Rehearsal Spaces</b> and their code will never be displayed on the actual website!
+        </p>
+        <ul>
+          <pre>
+          git checkout -b name      # Create a new branch & jump into it</span>
+          git push -u origin name   # Tell GitHub this new branch exists</span>
+          git branch                # List all branches (* = where you are)</span>
+          git checkout main         # Switch back to the LIVE webpage version</span>
+          git merge source          # Bring changes from a branch into your current branch (blends them)</span></pre>
+        </ul>
+      </section>
+
+      <section id="git-time-travel">
+        <h2>Time Travel (Viewing AND Playing with Earlier Versions)</h2>
+        <p>Did you break something and want to go back? Or do you just miss an old design? Here is how you travel back in time and start over from there.</p>
+        
+        <ol>
+          <li>
+            <strong>Find your destination:</strong>
+            <p>Type <code>git log --oneline</code> to see your save history. Copy the 7-character code (the "hash") next to the version you want.</p>
+          </li>
+          <li>
+            <strong>Peeking vs. Staying:</strong>
+            <p>To just <i>peek</i> at the past: <code>git checkout &lt;hash&gt;</code></p>
+            <p>To <i>stay</i> and start a new experiment from that spot: <code>git checkout -b &lt;new-branch-name&gt; &lt;hash&gt;</code></p>
+            <li>
+            <strong>Share your experiment:</strong>
+            <p>After making this branch, push it to GitHub so that Michael (your instructor) can see it when grading:</p>
+            <code>git push -u origin &lt;new-branch-name&gt;</code>
+          </li>
+          <li>
+            <strong>Build the Future:</strong>
+            <p>In this new branch, you can experiment with new ideas <strong>BUILDING</strong> on top of your earlier idea. Go ahead and get creative! Just remember to: <br><code>git add .</code> <br><code>git commit -m '...'</code><br><code>git push</code><br>...frequently to save your progress!</p>
+          </li>
+          </li>
+          <li>
+            <strong>Switching back to your latest work:</strong>
+            <p>If you want to leave the past and go back to your most recent work on a specific branch:</p>
+            <pre>
+              git branch            # List all your available "timelines" (branches)
+              git checkout main     # Go back to your primary live site
+              git checkout name     # Jump to any other specific experiment branch</pre>
+          </li>
+        </ol>
+      </section>
+          
+      
+
+    <section id="labyrinth-tips">
+      <h2>Assignment 1: Labyrinth Techniques</h2>
+      <p>To build a labyrinth, you need to branch from places other than <code>main</code> or <code>develop</code>.</p>
+      
+      <p class="note" style="border-left: 4px solid #ffcc00; padding-left: 15px;">
+        <strong>Strategy:</strong> Always check <code>git branch</code> before you start a new one to see "where you are standing."
+      </p>
+
+      <pre>
+      git checkout feature-a     # Jump onto an existing experiment
+      git checkout -b feature-b  # Create a NEW branch STARTING from feature-a
+      git merge feature-c        # Blend feature-c into your current branch</pre>
+
+      <h3>Linking your Versions</h3>
+      <p>You need to link to 5 specific "significant versions" on your homepage. Here is how you find those URLs on GitHub:</p>
+      <ul>
+        <li>Go to your a1-git-labyrinth repo on GitHub.com.</li>
+        <li>Click on <strong>"Commits"</strong>.</li>
+        <li>Click the <strong>&lt;&gt;</strong> icon (Browse Files) next to a specific commit.</li>
+        <li>Copy that URL from your browser address bar.</li>
+        <li>In your <strong>username.github.io</strong> index.html, use this code:</li>
+      </ol>
+
+      <pre>
+    &lt;a href="PASTE_URL_HERE"&gt;Version 1: "the name of your version"&lt;/a&gt;
+    &lt;p&gt;Annotation: In this version, I experimented with...&lt;/p&gt;</pre>
+
+      <p class="note" style="border-left: 4px solid var(--accent); padding-left: 15px;">
+        <strong>Michael's Tip:</strong> Make sure the URL goes inside the double quotes <code>""</code>. The text between the <code>&gt;</code> and <code>&lt;/a&gt;</code> is what becomes the clickable blue link text in the web page itself!
+      </p>
+    </section>
+
+    <section id="deployment">
+        <h2>View Your Webpages Live</h2>
+        <p>GitHub Pages hosts your work at different URLs depending on the repository name:</p>
+        
+        <div class="url-box">
+            <h3>1. Your Main Homepage</h3>
+            <p class="note">Repo name must be: <code>yourUsername.github.io</code></p>
+            <pre>https://yourUsername.github.io</pre>
+        </div>
+
+        <div class="url-box">
+            <h3>2. Assignment Repos (a1-a5)</h3>
+            <p class="note">URL format: <code>homepage-url/repo-name/</code></p>
+            <ul>
+                <li><strong>Assignment 1:</strong> <code>https://yourUsername.github.io/a1-git-labyrinth/</code></li>
+                <li><strong>Assignment 2:</strong> <code>https://yourUsername.github.io/a2-one-image-x5/</code></li>
+                <li><strong>Assignment 3:</strong> <code>https://yourUsername.github.io/a3-misbehaving-interface/</code></li>
+            </ul>
+        </div>
+
+        <p class="note"><strong>Crucial:</strong> Ensure "GitHub Pages" is enabled in the <b>Settings > Pages</b> tab of each new repository!</p>
+    </section>
+
+    <style>
+
+    </style>
+
+
+
+      
+
+
+    </main>
+
+  </body>
+</html>
