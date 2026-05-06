@@ -55,6 +55,9 @@
         margin: 20px 0; 
       }
       .url-box h3 { margin-top: 0; color: #444; }
+
+      .bad-code { color: #ff6b6b; }
+      .good-code { color: #51cf66; }
     </style>
   </head>
   <body>
@@ -104,7 +107,7 @@
               </details>
             </li>
                 <details open>
-                    <summary>3. Advanced Git (Required for Assignment 1)</summary>
+                    <summary>5. Advanced Git (Required for Assignment 1)</summary>
                     <ul class="toc-list">
                         <li><a href="#git-advanced">Branching & Merges</a></li>
                         <li><a href="#git-time-travel">Time Travel (Past Versions)</a></li>
@@ -112,9 +115,15 @@
                     </ul>
                 </details>
             </li>
-            
             <details open>
-                    <summary>5. Troubleshooting & Common Errors</summary>
+              <summary>6. Coding Best Practices</summary>
+              <ul class="toc-list">
+                <li><a href="#comments">Documentation: Writing for your "Future Self"</a></li>
+                <li><a href="#indentation">Code Organization & Readability</a></li>
+              </ul>
+            </details>
+            <details open>
+                    <summary>7. Troubleshooting & Common Errors</summary>
             <li><a href="#git-errors" style="color: #d9534f;">Resolving Common Git Errors (Dont't Panic!)</a></li>
           </ul>
         </details>
@@ -457,7 +466,65 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
       </p>
     </section>
 
-    
+    <section id="comments">
+      <h2>Code Comments!</h2>
+      <p>Writing code isn't just about talking to a computer; it's about talking to <strong>other humans</strong> (and your future self!).</p>
+
+      <div class="url-box">
+        <h3>1. HTML Comments: The "Post-it Note"</h3>
+        <p>Use comments to label parts of your website. They are completely invisible to the person viewing your site online.</p>
+        <pre>
+    &lt;!-- This is a comment. The browser ignores this! --&gt;
+    &lt;!-- Start of the Labyrinth Section --&gt;
+    &lt;section&gt;
+      &lt;h1&gt;The Entrance&lt;/h1&gt;
+    &lt;/section&gt;
+    &lt;!-- End of the Labyrinth Section --&gt;</pre>
+        <p class="note"><strong>Keyboard Shortcut:</strong> Highlight any text and press <code>Cmd + /</code> (Mac) or <code>Ctrl + /</code> (Windows) to turn it into a comment instantly!</p>
+      </div>
+
+      <div class="url-box" style="border-left-color: #28a745;">
+        <h3>2. Documentation (Why we do it)</h3>
+        <ul>
+          <li><strong>Labeling:</strong> "This is where my navigation menu ends."</li>
+          <li><strong>Notes for Michael:</strong> "I tried to make this red but it didn't work, so I left it blue for now."</li>
+          <li><strong>To-Do Lists:</strong> "TODO: Add an image here next week."</li>
+        </ul>
+        <p class="note"><strong>Pro-Tip:</strong> Since we installed the <strong>Better Comments</strong> extension, try starting a comment with <code>!</code> or <code>?</code> to make it change colors!</p>
+      </div>
+
+    </section>
+
+    <section id="indentation">
+    <h2>Clean Indentation & Hierarchy</h2>
+    <p>Think of HTML like a set of nesting dolls. If a tag is inside another tag, it should be <strong>indented</strong> to the right using the <code>Tab</code> key. This doesn't change how the website looks to others, but it makes the code much easier for you to read!</p>
+
+    <div class="url-box" style="border-left-color: #d9534f; background: #fff5f5;">
+        <h3 class="bad-code">❌ Messy (Hard to read)</h3>
+        <p class="note">Everything is flush to the left. It's hard to tell where the "body" ends and the "main" begins.</p>
+<pre class="bad-code">
+&lt;body&gt;
+&lt;main&gt;
+&lt;h1&gt;Where does this end?&lt;/h1&gt;
+&lt;/main&gt;
+&lt;/body&gt;</pre>
+    </div>
+
+    <div class="url-box" style="border-left-color: #28a745; background: #f4fff4;">
+        <h3 class="good-code">✅ Clean (Professional)</h3>
+        <p class="note">Each "child" is tucked inside its "parent." Now we can see the structure clearly.</p>
+<pre class="good-code">
+&lt;body&gt;
+    &lt;main&gt;
+        &lt;h1&gt;This is easy to read!&lt;/h1&gt;
+    &lt;/main&gt;
+&lt;/body&gt;</pre>
+    </div>
+
+    <p class="note" style="border: 1px solid var(--accent); padding: 10px; background: #ebf3fc;">
+        <strong>Michael's Trick:</strong> If your code gets messy, you can usually fix the indentation automatically! In VS Code, right-click anywhere in your code and select <strong>"Format Document."</strong>
+    </p>
+</section>
 
     <section id="git-errors">
       <h2 style="color: #d9534f;">Resolving Common Git Errors (Dont't Panic!)</h2>
