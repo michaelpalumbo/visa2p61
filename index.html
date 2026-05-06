@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISA 2P61 Class Website</title>
     <style>
-      :root { --bg: #f4f4f9; --text: #333; --accent: #4a90e2; --code-bg: #272822; --code-text: #f8f8f2; }
-      body { font-family: 'Courier New', Courier, monospace; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 20px; background: var(--bg); color: var(--text); }
-      
+      :root { 
+        --bg: #f4f4f9; 
+        --text: #333; 
+        --accent: #4a90e2; 
+        --code-bg: #272822; 
+        --code-text: #f8f8f2; 
+      }
+
+      body { 
+        /* This changes the body text to a clean, readable font */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+        line-height: 1.6; 
+        max-width: 900px; 
+        margin: 40px auto; 
+        padding: 20px; 
+        background: var(--bg); 
+        color: var(--text); 
+      }
+
       /* Table of Contents Styling */
       nav { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 40px; }
       details { margin: 10px 0; cursor: pointer; }
@@ -20,10 +36,16 @@
       /* Content Sections */
       section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 20px; }
       h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
-      
+
       /* Command Formatting */
+      /* These stay in monospace so they look like code! */
+      code, pre { 
+        font-family: 'Courier New', Courier, monospace; 
+      }
+
       code { background: var(--code-bg); color: var(--code-text); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-      pre { background: var(--code-bg); color: var(--code-text); padding: 15px; border-radius: 8px; overflow-x: auto; }
+      pre { background: var(--code-bg); color: var(--code-text); padding: 15px; border-radius: 8px; overflow-x: auto; line-height: 1.4; }
+
       .note { font-style: italic; color: #666; font-size: 0.9em; }
 
       .url-box { 
@@ -90,12 +112,13 @@
       <section id="terminal">
           <h2>Terminal Commands</h2>
           <p>How to navigate and do things in the Terminal<br><i>Type these commands and hit "Enter"</i></p>
+          <!-- Note to self: the contents of <pre> needs to be to the left of editor or else the text is heavily indented...  -->
           <pre>
-            pwd                 # Print Working Directory: "Where am I right now?"
-            ls                  # List: "What files and folders are in here?"
-            cd foldername       # Go down into a specific folder (child folder). Often follows 'ls'
-            cd ..               # Change Directory: Go up one level (parent folder)
-            open .              # Open your current Working Directory in your Finder (OSX)/Explorer Window!
+pwd                 # Print Working Directory: "Where am I right now?"
+ls                  # List: "What files and folders are in here?"
+cd foldername       # Go down into a specific folder (child folder). Often follows 'ls'
+cd ..               # Change Directory: Go up one level (parent folder)
+open .              # Open your current Working Directory in your Finder (OSX)/Explorer Window!
             </pre>
       </section>
 
@@ -107,12 +130,13 @@
             Note: The <code>#</code> indicates a comment (an explanation). Do NOT type the <code>#</code> or any text after it into the terminal!
           </p>
           <pre>
-            git clone             # Download a project from GitHub
-            git log               # View history (Enter = scroll through more items, 'q' = exit)
-            git status            # See what has changed since the last save
-            git add .             # Stage all changes to be saved
-            git commit -m 'msg'   # Save the changes with a label
-            git push              # Upload your saves to GitHub</pre>
+git clone             # Download a project from GitHub
+git log               # View history (Enter = scroll through more items, 'q' = exit)
+git status            # See what has changed since the last save
+git add .             # Stage all changes to be saved
+git commit -m 'msg'   # Save the changes with a label
+git push              # Upload your saves to GitHub
+        </pre>
       </section>
 
       <section id="workflow">
@@ -126,9 +150,9 @@
         </ol>
 
         <pre>
-          git add .                  # Tell git to pay attention to your new changes
-          git commit -m 'message'    # Store your changes locally with a descriptive label (replace 'message' with your own)
-          git push                   # Upload your changes to GitHub
+git add .                  # Tell git to pay attention to your new changes
+git commit -m 'message'    # Store your changes locally with a descriptive label (replace 'message' with your own)
+git push                   # Upload your changes to GitHub
         </pre>
 
         <ol start="4">
@@ -206,11 +230,11 @@
         </ol>
 
         <pre>
-          &lt;section&gt;
-            &lt;h2&gt;Reading Response: Garden of Forking Paths&lt;/h2&gt;
-            &lt;p&gt;Date: May 7&lt;/p&gt;
-            &lt;p&gt;Your thoughts go here...&lt;/p&gt;
-          &lt;/section&gt;</pre>
+&lt;section&gt;
+  &lt;h2&gt;Reading Response: Garden of Forking Paths&lt;/h2&gt;
+  &lt;p&gt;Date: May 7&lt;/p&gt;
+  &lt;p&gt;Your thoughts go here...&lt;/p&gt;
+&lt;/section&gt;</pre>
 
         <ol start="4">
           <li><strong>Save the file</strong> (<code>Cmd + S</code> / <code>Ctrl + S</code>).</li>
@@ -275,20 +299,20 @@
         <p>Use this code whenever you start a brand new webpage or assignment. It contains the essential tags every browser needs to read your code correctly.</p>
         
         <pre>
-          &lt;!DOCTYPE html&gt;
-            &lt;html lang="en"&gt;
-              &lt;head&gt;
-                  &lt;meta charset="UTF-8"&gt;
-                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                  &lt;title&gt;Page Title Goes Here&lt;/title&gt;
-              &lt;/head&gt;
-            &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title Goes Here&lt;/title&gt;
+    &lt;/head&gt;
+  &lt;body&gt;
 
-              &lt;!-- All your visible content (h1, p, img, etc.) goes here --&gt;
-              &lt;!-- ...notice how the text inside of these arrows dont show up in your webpage online? These are code comments! --&gt;
+    &lt;!-- All your visible content (h1, p, img, etc.) goes here --&gt;
+    &lt;!-- ...notice how the text inside of these arrows dont show up in your webpage online? These are code comments! --&gt;
 
-            &lt;/body&gt;
-          &lt;/html&gt;</pre>
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
 
         <p class="note"><strong>How to use:</strong> Copy and paste this entire block, as is, into an empty <code>index.html</code> file. Then Add your text and other html elements between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags</p>
       </section>
@@ -302,11 +326,11 @@
         </p>
         <ul>
           <pre>
-          git checkout -b name      # Create a new branch & jump into it</span>
-          git push -u origin name   # Tell GitHub this new branch exists</span>
-          git branch                # List all branches (* = where you are)</span>
-          git checkout main         # Switch back to the LIVE webpage version</span>
-          git merge source          # Bring changes from a branch into your current branch (blends them)</span></pre>
+git checkout -b name      # Create a new branch & jump into it</span>
+git push -u origin name   # Tell GitHub this new branch exists</span>
+git branch                # List all branches (* = where you are)</span>
+git checkout main         # Switch back to the LIVE webpage version</span>
+git merge source          # Bring changes from a branch into your current branch (blends them)</span></pre>
         </ul>
       </section>
 
@@ -337,9 +361,9 @@
             <strong>Switching back to your latest work:</strong>
             <p>If you want to leave the past and go back to your most recent work on a specific branch:</p>
             <pre>
-              git branch            # List all your available "timelines" (branches)
-              git checkout main     # Go back to your primary live site
-              git checkout name     # Jump to any other specific experiment branch</pre>
+git branch            # List all your available "timelines" (branches)
+git checkout main     # Go back to your primary live site
+git checkout name     # Jump to any other specific experiment branch</pre>
           </li>
         </ol>
       </section>
@@ -355,9 +379,9 @@
       </p>
 
       <pre>
-      git checkout feature-a     # Jump onto an existing experiment
-      git checkout -b feature-b  # Create a NEW branch STARTING from feature-a
-      git merge feature-c        # Blend feature-c into your current branch</pre>
+git checkout feature-a     # Jump onto an existing experiment
+git checkout -b feature-b  # Create a NEW branch STARTING from feature-a
+git merge feature-c        # Blend feature-c into your current branch</pre>
 
       <h3>Linking your Versions</h3>
       <p>You need to link to 5 specific "significant versions" on your homepage. Here is how you find those URLs on GitHub:</p>
@@ -370,8 +394,8 @@
       </ul>
 
       <pre>
-    &lt;a href="PASTE_URL_HERE"&gt;Version 1: "the name of your version"&lt;/a&gt;
-    &lt;p&gt;Annotation: In this version, I experimented with...&lt;/p&gt;</pre>
+&lt;a href="PASTE_URL_HERE"&gt;Version 1: "the name of your version"&lt;/a&gt;
+&lt;p&gt;Annotation: In this version, I experimented with...&lt;/p&gt;</pre>
 
       <p class="note" style="border-left: 4px solid var(--accent); padding-left: 15px;">
         <strong>Michael's Tip:</strong> Make sure the URL goes inside the double quotes <code>""</code>. The text between the <code>&gt;</code> and <code>&lt;/a&gt;</code> is what becomes the clickable blue link text in the web page itself!
