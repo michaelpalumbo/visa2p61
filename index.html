@@ -127,12 +127,14 @@
           <p>How to navigate and do things in the Terminal<br><i>Type these commands and hit "Enter"</i></p>
           <!-- Note to self: the contents of <pre> needs to be to the left of editor or else the text is heavily indented...  -->
           <pre>
-pwd                 # Print Working Directory: "Where am I right now?"
-ls                  # List: "What files and folders are in here?"
-cd foldername       # Go down into a specific folder (child folder). Often follows 'ls'
-cd ..               # Change Directory: Go up one level (parent folder)
-open .              # Open your current Working Directory in your Finder (OSX)/Explorer Window!
-            </pre>
+pwd             # Print Working Directory: "Where am I right now?"
+ls              # List: "What files and folders are in here?"
+cd foldername   # Go down into a specific folder (child folder). Often follows 'ls'
+cd ..           # Change Directory: Go up one level (parent folder)
+open .          # Mac ONLY: Open your current Working Directory in Finder
+start .         # Windows ONLY: Open your current Working Directory in Explorer
+ctrl + c        # Cancel/Quit: Stop a running process (Same on Mac/Windows/Linux)
+clear           # Clean: Clear the terminal screen so you have a blank slate</pre>
       </section>
 
       <section id="git-basics">
@@ -149,6 +151,7 @@ git status            # See what has changed since the last save
 git add .             # Stage all changes to be saved
 git commit -m 'msg'   # Save the changes with a label
 git push              # Upload your saves to GitHub
+q                     # Quit: Use this to get out of 'git log' or stuck screens
         </pre>
       </section>
 
@@ -201,6 +204,43 @@ git push                   # Upload your changes to GitHub
     </section>
 
     <section id="testing">
+  <h2>View Your Sites Locally (Testing Before Pushing)</h2>
+  <p>You don't have to <code>git push</code> just to see if your code is working. We use a local server to preview changes <strong>after you save your files.</strong></p>
+  
+  <div class="url-box">
+    <h3>The "Live Server" Extension (Recommended)</h3>
+    <h4>Installing</h4>
+    <ol><li>In VS Code, click the <strong>Extensions icon</strong> (the 4 squares on the left sidebar).</li>
+      <li>Search for <strong>"Live Server"</strong> (the one by Ritwick Dey) and click <strong>Install</strong>.</li>
+    </ol>
+    <h4>Use:</h4>
+    <ol>
+      <li>Open your <code>index.html</code> file so you can see your code.</li>
+      <li>Look at the very bottom-right of your VS Code window and click the <strong>"Go Live"</strong> button. 
+          <br><span class="note">(If you don't see it, right-click your <code>index.html</code> and select "Open with Live Server").</span>
+      </li>
+      <li>Your page will open automatically in your web browser. <strong>Keep this tab open</strong> while you work!</li>
+      <li><strong>The Test:</strong> Make a small change to your code and <strong>Save (Cmd/Ctrl + S)</strong>. Watch your browser—it should refresh with your change instantly.</li>
+    </ol>
+    <p class="note" style="color: #d9534f; font-weight: bold;">
+      IMPORTANT: Your browser will only update AFTER you press Cmd+S / Ctrl+S to save your work!
+    </p>
+  </div>
+
+  <div class="url-box" style="background: #fffdf0; border-left-color: #ffcc00;">
+    <h3>Which URL am I looking at?</h3>
+    <ul>
+      <li><strong>Local (Starts with 127.0.0.1):</strong> This is your private workspace. Changes show up here after you <strong>Save</strong>.</li>
+      <li><strong>Global (Starts with github.io):</strong> This is your public site. Changes show up here only after you <strong>Push</strong>.</li>
+    </ul>
+  </div>
+
+  <p class="note" style="border: 1px solid #4a90e2; padding: 10px; background: #ebf3fc;">
+    <strong>Pro-Tip:</strong> If you see a <strong>white dot</strong> on your file tab in VS Code, it means you haven't saved. Save the file, and your Live Server browser tab will refresh automatically!
+  </p>
+</section>
+
+    <!-- <section id="testing">
       <h2>View Your Sites Locally (Testing Before Pushing)</h2>
       <p>You don't have to <code>git push</code> just to see if your code is working. You can preview your changes instantly inside of VS Code.</p>
       
@@ -229,7 +269,8 @@ git push                   # Upload your changes to GitHub
       <p class="note" style="border: 1px solid #4a90e2; padding: 10px; background: #ebf3fc;">
         <strong>Pro-Tip:</strong> Always do a final check of your site locally before you commit. If it looks broken on your computer, it will definitely look broken on the internet!
       </p>
-    </section>
+    </section> -->
+
       <section id="adding-content">
         <h2>How to Post Reading Responses (Due Thursdays at 12pm)</h2>
         <p>Every week, you'll need to add a new section to the <code>index.html</code> <strong>inside of your username.github.io repo</strong> for your reading notes. Here is the technical process:</p>
@@ -343,7 +384,8 @@ git checkout -b name      # Create a new branch & jump into it</span>
 git push -u origin name   # Tell GitHub this new branch exists</span>
 git branch                # List all branches (* = where you are)</span>
 git checkout main         # Switch back to the LIVE webpage version</span>
-git merge source          # Bring changes from a branch into your current branch (blends them)</span></pre>
+git merge source          # Bring changes from a branch into your current branch (blends them)</span>
+git log --all --decorate --oneline --graph –pretty    # Visualize your branches</span></pre>
         </ul>
       </section>
 
