@@ -67,6 +67,9 @@
                 </details>
             </li>
             <li><a href="#deployment">4. View Your Site Live (URLs)</a></li>
+            <details open>
+                    <summary>5. Troubleshooting & Common Errors</summary>
+            <li><a href="#git-errors" style="color: #d9534f;">Resolving Common Git Errors (Dont't Panic!)</a></li>
           </ul>
         </details>
       </nav>
@@ -285,9 +288,37 @@
         <p class="note"><strong>Crucial:</strong> Ensure "GitHub Pages" is enabled in the <b>Settings > Pages</b> tab of each new repository!</p>
     </section>
 
-    <style>
+    <section id="git-errors">
+      <h2>Git Troubleshooting (Don't Panic)</h2>
+      <p>If the terminal gives you a scary error message, look here first.</p>
 
-    </style>
+      <div class="url-box">
+        <h3>1. "Everything is gone!" (Detached Head)</h3>
+        <p>If you checked out a commit hash and your new work isn't showing up, you are likely in "Detached HEAD" state. It just means you aren't standing on a branch.</p>
+        <pre>git checkout main    # Jump back to safety</pre>
+      </div>
+
+      <div class="url-box">
+          <h3>2. "Everything is red!" (Merge Conflicts)</h3>
+          <p>Git found two different versions of the same line and needs you to pick a winner. In VS Code, look for these buttons above the red text:</p>
+          <ul>
+            <li><strong>Accept Current Change:</strong> Keeps the work on your computer (the version you were just typing).</li>
+            <li><strong>Accept Incoming Change:</strong> Keeps the work coming from elsewhere (GitHub or the other branch).</li>
+            <li><strong>Accept Both Changes:</strong> Keeps both so you can combine them manually.</li>
+          </ul>
+          <p class="note"><strong>Which one?</strong> If you want your new work to stay, pick <strong>Current</strong>. If you like the other version better, pick <strong>Incoming</strong>. If you pick the wrong one, press <code>Cmd/Ctrl + Z</code> immediately!</p>
+        </div>
+
+      <div class="url-box">
+        <h3>3. "Rejected / Non-fast-forward"</h3>
+        <p>This usually happens when GitHub has work that your computer doesn't have yet (like if you edited a file directly on Github.com/your-repo).</p>
+        <pre>git pull origin main   # Pull the cloud changes down to your computer</pre>
+      </div>
+
+      <p class="note"><strong>Michael's Rule:</strong> If you're stuck for more than 15 minutes, stop and ask a classmate or post a screenshot to Brightspace. Don't delete your folder and start over!</p>
+    </section>
+
+   
 
 
 
@@ -296,5 +327,11 @@
 
     </main>
 
+    <footer>
+      <div class="container">
+        <span>VISA 2P61 · Website Creation · Brock University · Spring 2025</span>
+        <span>Michael Palumbo</span>
+      </div>
+    </footer>
   </body>
 </html>
