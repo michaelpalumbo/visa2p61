@@ -44,29 +44,40 @@
         <details open>
           <summary>Table of Contents</summary>
           <ul class="toc-list">
-            <li><a href="#terminal">1. Terminal Navigation</a></li>
+            <li><a href="#terminal">1. Terminal Commands</a></li>
             <li>
                 <details open>
-                    <summary>2. Git & Your Workflow</summary>
+                    <summary>2. Basic Git & Your Workflow</summary>
                     <ul class="toc-list">
-                        <li><a href="#git-basics">Git Basics: Commands</a></li>
-                        <li><a href="#workflow">The Daily Loop (Save/Commit/Push)</a></li>
-                        <li><a href="#adding-content">How to Post Reading Responses</a></li>
-                        <li><a href="#boilerplate">HTML Boilerplate (Starter Code)</a></li>
+                      <li><a href="#git-basics">Basic Git Commands</a></li>
+                      <li><a href="#workflow">The Development Loop (Save/Commit/Push)</a></li>
+                      <li><a href="#deployment">View Your Sites Live On The Web (URLs)</a></li>
+                      <li><a href="#testing">View Your Sites Locally on Your Computer (Testing <i>Before Pushing</i>)</a></li>
+                
                     </ul>
                 </details>
             </li>
+            <li><a href="#adding-content">3. How to Post <strong>Reading Responses</strong></a></li>
             <li>
-                <details>
-                    <summary>3. Advanced Git & Assignment 1</summary>
+              <details open>
+                <summary>4. Starting a New Assignment</summary>
+                <ul class="toc-list">
+                  <li><a href="#starting-assignments">Creating a Repo, Cloning, First Commit, Making A Github Page</a></li>
+                  <li><a href="#boilerplate">HTML Boilerplate (Starter Code)</a></li>
+                
+                </ul>
+              </details>
+            </li>
+                <details open>
+                    <summary>3. Advanced Git (Required for Assignment 1)</summary>
                     <ul class="toc-list">
-                        <li><a href="#git-advanced">Branching & Merging</a></li>
+                        <li><a href="#git-advanced">Branching & Merges</a></li>
                         <li><a href="#git-time-travel">Time Travel (Past Versions)</a></li>
                         <li><a href="#labyrinth-tips">Assignment 1: Labyrinth Techniques & Linking</a></li>
                     </ul>
                 </details>
             </li>
-            <li><a href="#deployment">4. View Your Site Live (URLs)</a></li>
+            
             <details open>
                     <summary>5. Troubleshooting & Common Errors</summary>
             <li><a href="#git-errors" style="color: #d9534f;">Resolving Common Git Errors (Dont't Panic!)</a></li>
@@ -84,11 +95,12 @@
             ls                  # List: "What files and folders are in here?"
             cd foldername       # Go down into a specific folder (child folder). Often follows 'ls'
             cd ..               # Change Directory: Go up one level (parent folder)
+            open .              # Open your current Working Directory in your Finder (OSX)/Explorer Window!
             </pre>
       </section>
 
       <section id="git-basics">
-          <h2>Basic Git Commands</h2>
+          <h2>Basic Git Commands (That you will use again and again!)</h2>
           <p>Git is your Version Control system. It tracks the history of your creativity & allows you to update your webpages online.
           <br><i>Type these commands and hit "Enter"</i>
           <p class="note" style="color: #d9534f; font-weight: bold;">
@@ -104,7 +116,7 @@
       </section>
 
       <section id="workflow">
-        <h2>The Basic Development Loop</h2>
+        <h2>The Development Loop (Save/Commit/Push)</h2>
         <p>This is the cycle you will repeat every time you work. Think of it as: <strong>Create/Modify → Save → Record (commit) → Upload (push).</strong></p>
         
         <ol>
@@ -128,8 +140,61 @@
         </p>
       </section>
 
+      <section id="deployment">
+        <h2>View Your Webpages Live on the Internet</h2>
+        <p>GitHub Pages hosts your work at different URLs depending on the repository name:</p>
+        
+        <div class="url-box">
+            <h3>1. Your Main Homepage</h3>
+            <p class="note">Repo name must be: <code>yourUsername.github.io</code></p>
+            <pre>https://yourUsername.github.io</pre>
+        </div>
+
+        <div class="url-box">
+            <h3>2. Assignment Repos (a1-a5)</h3>
+            <p class="note">URL format: <code>homepage-url/repo-name/</code></p>
+            <ul>
+                <li><strong>Assignment 1:</strong> <code>https://yourUsername.github.io/a1-git-labyrinth/</code></li>
+                <li><strong>Assignment 2:</strong> <code>https://yourUsername.github.io/a2-one-image-x5/</code></li>
+                <li><strong>Assignment 3:</strong> <code>https://yourUsername.github.io/a3-misbehaving-interface/</code></li>
+            </ul>
+        </div>
+
+        <p class="note"><strong>Crucial:</strong> Ensure "GitHub Pages" is enabled in the <b>Settings > Pages</b> tab of each new repository!</p>
+    </section>
+
+    <section id="testing">
+      <h2>View Your Sites Locally (Testing Before Pushing)</h2>
+      <p>You don't have to <code>git push</code> just to see if your code is working. You can preview your changes instantly inside of VS Code.</p>
+      
+      <div class="url-box">
+        <h3>The "Live Preview" Extension (Recommended)</h3>
+        <ol>
+          <li>In VS Code, click the <strong>Extensions icon</strong> on the far left sidebar (it looks like 4 squares).</li>
+          <li>Search for <strong>"Live Preview"</strong> (the one made by Microsoft) and click <strong>Install</strong>.</li>
+          <li>Go back to your <code>index.html</code>.</li>
+          <li>Right-click anywhere in your code and select <strong>"Show Preview"</strong>.</li>
+        </ol>
+        <p class="note">A window will open on the right side of your code. Every time you type or save, the preview will update automatically!</p>
+      </div>
+
+      <div class="url-box">
+        <h3>The "Open in Browser" Method</h3>
+        <p>If you prefer to see your site in a full browser tab (Chrome/Firefox) without installing extensions:</p>
+        <ol>
+          <li>Find your project folder on your computer's filesystem (shortcut: see "open Finder or Explorer in the Terminal" above)</li>
+          <li>Right-click your <code>index.html</code> file.</li>
+          <li>Select <strong>Open With...</strong> and choose your preferred Web Browser.</li>
+        </ol>
+        <p class="note"><strong>Warning:</strong> With this method, you must <strong>Save</strong> your code AND <strong>Refresh</strong> the browser tab to see your latest changes.</p>
+      </div>
+
+      <p class="note" style="border: 1px solid #4a90e2; padding: 10px; background: #ebf3fc;">
+        <strong>Pro-Tip:</strong> Always do a final check of your site locally before you commit. If it looks broken on your computer, it will definitely look broken on the internet!
+      </p>
+    </section>
       <section id="adding-content">
-        <h2>How to Add Your Reading Responses</h2>
+        <h2>How to Post Reading Responses (Due Thursdays at 12pm)</h2>
         <p>Every week, you'll need to add a new section to the <code>index.html</code> <strong>inside of your username.github.io repo</strong> for your reading notes. Here is the technical process:</p>
         <p class="note" style="border: 2px solid var(--accent); padding: 15px; background: #fff;">
           <strong>IMPORTANT FOR WEEK 1:</strong> Before starting Step 2, you must set up your file structure. Follow the instructions in the <strong><a href="#boilerplate">HTML Boilerplate</a></strong> section below first, then return here to complete your response.
@@ -157,6 +222,54 @@
         </p>
       </section>
 
+      <section id="starting-assignments">
+        <h2>Creating a Repo, Cloning, First Commit, Making A Github Page</h2>
+        <p>Follow these steps whenever you begin a new assignment (A1–A5) to ensure your repository is set up correctly.</p>
+        
+        <div class="url-box">
+          <h3>Phase 1: Create the Repo on GitHub</h3>
+          <ul>
+            <li><strong>Create a new repo:</strong> If Assignment 1, name it <code>a1-git-labyrinth</code>. (For future assignments, follow the same pattern: <code>a2-name</code>, <code>a3-name</code>, etc.).</li>
+            <li><strong>Settings:</strong> Ensure it is <strong>Public</strong> and check the box to add a <strong>README</strong>. Click "Create repository."</li>
+            <li><strong>Get the Link:</strong> On the repo's main page, click the green <strong>"&lt;&gt; Code"</strong> button and copy the URL.</li>
+          </ul>
+        </div>
+
+        <div class="url-box">
+          <h3>Phase 2: Bring it to your Computer</h3>
+          <ol>
+            <li>Open VS Code and go to <strong>File &gt; New Window</strong>.</li>
+            <li>Click <strong>"Clone Git Repository..."</strong> on the start screen (or in the Source Control tab).</li>
+            <li>Paste the URL at the top and hit <strong>Enter</strong>. Pick a folder on your computer to save it in.</li>
+            <li>Click <strong>"Open"</strong> when the notification pops up.</li>
+          </ol>
+        </div>
+
+        <div class="url-box">
+          <h3>Phase 3: The First Commit</h3>
+          <ol>
+            <li>Make a new <code>index.html</code> file in your new project folder.</li>
+            <li>Go to the <strong><a href="#boilerplate">HTML Boilerplate</a></strong> section of this page and copy the code.</li>
+            <li>Paste that code into your <code>index.html</code> and save.</li>
+            <li>Run through the <strong><a href="#workflow">Basic Development Loop</a></strong> (Add, Commit, Push) to make sure your connection is working.</li>
+          </ol>
+        </div>
+
+        <div class="url-box" style="border-left-color: #28a745;">
+          <h3>Phase 4: Making it Live (GitHub Pages)</h3>
+          <p>Your assignment won't have a URL until you turn this on for <strong>each new repo</strong>:</p>
+          <ol>
+            <li>On GitHub.com, go to the <strong>Settings</strong> tab of your repository.</li>
+            <li>On the left sidebar, click <strong>Pages</strong>.</li>
+            <li>Under <strong>Build and deployment > Branch</strong>, change "None" to <strong>main</strong>.</li>
+            <li>Click <strong>Save</strong>.</li>
+          </ol>
+          <p class="note" style="color: #d9534f;"><strong>*Note:</strong> Ensure you are in the Settings for your <strong>repository</strong> (top of the page), not your personal GitHub profile settings!</p>
+        </div>
+
+        <p class="note"><strong>Success!</strong> You are now ready to start working on the creative requirements listed in the syllabus.</p>
+      </section>
+
       <section id="boilerplate">
         <h2>HTML Boilerplate</h2>
         <p>Use this code whenever you start a brand new webpage or assignment. It contains the essential tags every browser needs to read your code correctly.</p>
@@ -181,7 +294,7 @@
       </section>
 
       <section id="git-advanced">
-        <h2>Class 2: Branches, Merging</h2>
+        <h2>Branches & Merges</h2>
         <p>Working on "branches" lets you experiment without breaking the main site.</p>
         <p class="note" style="border: 1px solid #ffcc00; padding: 10px; background: #fffdf0;">
           <strong>Important Note on your Webpage:</strong> GitHub Pages is set to show your <code>main</code> branch (some older repos might call this <code>master</code>). 
@@ -265,31 +378,10 @@
       </p>
     </section>
 
-    <section id="deployment">
-        <h2>View Your Webpages Live</h2>
-        <p>GitHub Pages hosts your work at different URLs depending on the repository name:</p>
-        
-        <div class="url-box">
-            <h3>1. Your Main Homepage</h3>
-            <p class="note">Repo name must be: <code>yourUsername.github.io</code></p>
-            <pre>https://yourUsername.github.io</pre>
-        </div>
-
-        <div class="url-box">
-            <h3>2. Assignment Repos (a1-a5)</h3>
-            <p class="note">URL format: <code>homepage-url/repo-name/</code></p>
-            <ul>
-                <li><strong>Assignment 1:</strong> <code>https://yourUsername.github.io/a1-git-labyrinth/</code></li>
-                <li><strong>Assignment 2:</strong> <code>https://yourUsername.github.io/a2-one-image-x5/</code></li>
-                <li><strong>Assignment 3:</strong> <code>https://yourUsername.github.io/a3-misbehaving-interface/</code></li>
-            </ul>
-        </div>
-
-        <p class="note"><strong>Crucial:</strong> Ensure "GitHub Pages" is enabled in the <b>Settings > Pages</b> tab of each new repository!</p>
-    </section>
+    
 
     <section id="git-errors">
-      <h2>Git Troubleshooting (Don't Panic)</h2>
+      <h2 style="color: #d9534f;">Resolving Common Git Errors (Dont't Panic!)</h2>
       <p>If the terminal gives you a scary error message, look here first.</p>
 
       <div class="url-box">
