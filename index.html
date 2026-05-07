@@ -58,10 +58,138 @@
 
       .bad-code { color: #ff6b6b; }
       .good-code { color: #51cf66; }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+
+  .navbar {
+    display: flex;
+    gap: 4px;
+    padding: 10px 16px 0;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    background: var(--color-background-primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    border-radius: 0;
+  }
+  .nav-btn:hover { color: var(--color-text-primary); }
+  .nav-btn.active {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-text-primary);
+  }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .placeholder {
+    padding: 60px 24px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+  }
+  .placeholder h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+  }
+  .placeholder p { font-size: 14px; line-height: 1.6; }
+  .placeholder code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background: var(--color-background-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .course-site {
+    padding: 0;
+  }
+  .course-site iframe {
+    width: 100%;
+    border: none;
+    min-height: 600px;
+  }
+
+  /* Inline render of course site content */
+  .inner-site {
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .inner-site h1 { font-size: 22px; font-weight: 500; margin: 16px 0 6px; }
+  .inner-site h2 { font-size: 18px; font-weight: 500; border-bottom: 1.5px solid #4a90e2; padding-bottom: 8px; margin: 20px 0 10px; }
+  .inner-site h3 { font-size: 16px; font-weight: 500; margin: 14px 0 6px; }
+  .inner-site p { margin: 8px 0; font-size: 15px; }
+  .inner-site pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+  }
+  .inner-site code {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+  }
+  .inner-site section {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .inner-site .url-box {
+    background: var(--color-background-secondary);
+    border-left: 4px solid #4a90e2;
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .inner-site a { color: #4a90e2; text-decoration: none; }
+  .inner-site a:hover { text-decoration: underline; }
+  .inner-site ol, .inner-site ul { padding-left: 20px; margin: 8px 0; }
+  .inner-site li { margin: 4px 0; font-size: 15px; }
+  .inner-site .note { font-style: italic; color: var(--color-text-secondary); font-size: 13px; }
     </style>
   </head>
   <body>
 
+    <nav class="navbar">
+  <button class="nav-btn active" onclick="switchTab('course-site', this)">Course Resources</button>
+  <button class="nav-btn" onclick="switchTab('assignments', this)">Assignments</button>
+  <button class="nav-btn" onclick="switchTab('schedule', this)">Schedule</button>
+  <button class="nav-btn" onclick="switchTab('readings', this)">Readings</button>
+</nav>
+
+<div id="course-site" class="tab-content active">
+  <div class="inner-site">
     <header>
       <h1>VISA 2P61 - Website Creation</h1>
       <h3>Spring 2026 · Department of Visual Arts, Brock University</h3>
@@ -120,6 +248,7 @@
               <ul class="toc-list">
                 <li><a href="#comments">Documentation: Writing for your "Future Self"</a></li>
                 <li><a href="#indentation">Code Organization & Readability</a></li>
+                <li><a href="#commit-messages">Commit Messages as Narrative</a></li>
               </ul>
             </details>
             <details open>
@@ -211,6 +340,67 @@ git push                   # Upload your changes to GitHub
 
         <p class="note"><strong>Crucial:</strong> Ensure "GitHub Pages" is enabled in the <b>Settings > Pages</b> tab of each new repository!</p>
     </section>
+
+    <section id="a1-preview">
+
+
+  <h2>How to add your a1-git-labyrinth links to your username.github.io page</h2>
+
+  
+  
+<pre>
+&lt;!-- Main Assignment Links --&gt;
+&lt;p&gt;
+  &lt;a href="https://yourusername.github.io/a1-git-labyrinth/"&gt;Live Website&lt;/a&gt; | 
+  &lt;a href="https://github.com/yourusername/a1-git-labyrinth"&gt;GitHub Repo&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;!-- Favorite Versions List --&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href="INSERT_COMMIT_URL_HERE"&gt;Favorite #1: The Echo Chamber&lt;/a&gt;
+    &lt;p&gt;Annotation: 1-2 sentences describing what changed and why.&lt;/p&gt;
+  &lt;/li&gt;
+  etc...
+&lt;/ul&gt;
+
+</pre>
+<p>
+  <h3>How it should look</h3>
+  <strong>Live Website:</strong> 
+  <a href="https://yourusername.github.io/a1-git-labyrinth/">
+    https://yourusername.github.io/a1-git-labyrinth/
+  </a>
+  <br>
+  <strong>GitHub Repository:</strong> 
+  <a href="https://github.com/yourusername/a1-git-labyrinth">
+    https://github.com/yourusername/a1-git-labyrinth
+  </a>
+</p>
+
+<h3>My Favorite Versions</h3>
+
+<ul>
+  <li>
+    <a href="INSERT_COMMIT_URL_HERE">Favorite #1: The Echo Chamber</a>
+    <p>In this version, I experimented with nesting several paragraphs inside each other to see how the browser would handle the overlapping text. I love the messy visual result.</p>
+  </li>
+  
+  <li>
+    <a href="INSERT_COMMIT_URL_HERE">Favorite #2: Ghostly Indentation</a>
+    <p>Here I used the pre tag to create a physical shape out of the words, but then commented out half of them so they only exist in the code.</p>
+  </li>
+
+  <li>
+    <a href="INSERT_COMMIT_URL_HERE">Favorite #3: The Infinite Scroll</a>
+    <p>I added 20 line breaks between every word to force the user to hunt for the meaning of the sentence. It feels like a physical obstacle.</p>
+  </li>
+  
+  </ul>
+
+
+</section>
+
 
     <section id="testing">
   <h2>View Your Sites Locally (Testing Before Pushing)</h2>
@@ -434,8 +624,8 @@ git checkout name     # Jump to any other specific experiment branch</pre>
           
       
 
-    <section id="labyrinth-tips">
-      <h2>Assignment 1: Labyrinth Techniques</h2>
+    <section id="adding-assignment-to-github.io">
+      <h2>Adding your Assignment Links to username.github.io</h2>
       <p>To build a labyrinth, you need to branch from places other than <code>main</code> or <code>develop</code>.</p>
       
       <p class="note" style="border-left: 4px solid #ffcc00; padding-left: 15px;">
@@ -526,8 +716,53 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
     </p>
 </section>
 
+<section id="commit-messages">
+        <h2>Writing Great Commit Messages</h2>
+        <p>In the <strong>Labyrinth</strong>, your commit messages are the breadcrumbs that help you (and Michael) navigate your history. A good message explains <strong>what</strong> changed and <strong>why</strong>.</p>
+        
+        <div class="url-box">
+          <h3>1. Structural Changes (The Blueprint)</h3>
+          <p>Use these when you add new elements or reorganize the page layout.</p>
+          <pre>
+git commit -m "Add unordered list for childhood bedroom inventory"
+git commit -m "Wrap emotional register text in a blockquote for styling"
+git commit -m "Add navigation links to travel between labyrinth sections"</pre>
+        </div>
+
+        <div class="url-box">
+          <h3>2. Experimental Changes (The Multiverse)</h3>
+          <p>Describe the "vibe" or the goal of a specific experiment or fork.</p>
+          <pre>
+git commit -m "Experiment: nesting 10 levels of div tags to create a tunnel"
+git commit -m "Distort bedroom description with intentional typos and spaces"
+git commit -m "Branching off nostalgia to try a more hostile tone"</pre>
+        </div>
+
+        <div class="url-box">
+          <h3>3. Traces & Comments (The Process)</h3>
+          <p>Highlight where you’ve left notes or "ghost" versions of your code.</p>
+          <pre>
+git commit -m "Comment out old header; keeping it as a ghost version"
+git commit -m "Add Better Comments headings (!) to mark glitchy sections"
+git commit -m "Annotate the bedroom list with personal memories in comments"</pre>
+        </div>
+
+        <div class="url-box">
+          <h3>4. Merges & Resolutions (The Convergence)</h3>
+          <p>When you bring two paths together, explain what survived the merge.</p>
+          <pre>
+git commit -m "Merge glitchy-text into nostalgia branch"
+git commit -m "Resolve conflict in floorplan; kept the distorted version"
+git commit -m "Merge feature-hover-effect into main for final version"</pre>
+        </div>
+
+        <p class="note" style="border: 1px solid var(--accent); padding: 10px; background: #ebf3fc;">
+          <strong>Michael's Rule:</strong> Avoid messages like "update" or "fixed." If you look at this in three days, will you know which version of the labyrinth you are stepping into?
+        </p>
+      </section>
+
     <section id="git-errors">
-      <h2 style="color: #d9534f;">Resolving Common Git Errors (Dont't Panic!)</h2>
+      <h2 style="color: #d9534f;">Resolving Common Git Errors (Don't Panic!)</h2>
       <p>If the terminal gives you a scary error message, look here first.</p>
 
       <div class="url-box">
@@ -556,9 +791,29 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
       <p class="note"><strong>Michael's Rule:</strong> If you're stuck for more than 15 minutes, stop and ask a classmate or post a screenshot to Brightspace. Don't delete your folder and start over!</p>
     </section>
 
-   
+</div>
+</div>   
 
+<div id="assignments" class="tab-content">
+  <div class="placeholder">
+    <h2>Assignments</h2>
+    <p>Paste your assignments content here.<br>Replace this <code>&lt;div&gt;</code> with whatever HTML you want to show in this tab.</p>
+  </div>
+</div>
 
+<div id="schedule" class="tab-content">
+  <div class="placeholder">
+    <h2>Schedule</h2>
+    <p>Paste your schedule content here.<br>Replace this <code>&lt;div&gt;</code> with whatever HTML you want to show in this tab.</p>
+  </div>
+</div>
+
+<div id="readings" class="tab-content">
+  <div class="placeholder">
+    <h2>Readings</h2>
+    <p>Paste your readings content here.<br>Replace this <code>&lt;div&gt;</code> with whatever HTML you want to show in this tab.</p>
+  </div>
+</div>
 
       
 
@@ -572,4 +827,15 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
       </div>
     </footer>
   </body>
+
+
+  <script>
+    function switchTab(id, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+
 </html>

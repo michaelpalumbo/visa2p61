@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git DAG Visualizer</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f9; }
+        .controls { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+        input { padding: 8px; border: 1px solid #ccc; border-radius: 4px; flex: 1; min-width: 150px; }
+        button { padding: 8px 16px; cursor: pointer; border: none; border-radius: 4px; background: #2ecc71; color: white; font-weight: bold; }
+        button:disabled { background: #95a5a6; }
+        #download-btn { background: #3498db; display: none; }
+        #graph-container { background: white; border-radius: 8px; padding: 20px; min-height: 400px; overflow: auto; }
+        .status { margin-top: 10px; font-size: 0.9em; color: #666; }
+    </style>
+</head>
+<body>
+
+    <h2>Git DAG Visualizer</h2>
+    
+    <div class="controls">
+        <input type="text" id="username" placeholder="Username (e.g., michaelpalumbo)">
+        <input type="text" id="repo" placeholder="Repo Name (e.g., visa2p61)">
+        <button id="visualize-btn">Generate Graph</button>
+        <button id="download-btn">Export PNG</button>
+    </div>
+    
+    <div id="status" class="status">Ready.</div>
+    <div id="graph-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/buffer@6.0.3/index.umd.min.js"></script>
+    
+    <script src="https://unpkg.com/@isomorphic-git/lightning-fs"></script>
+    <script src="https://unpkg.com/isomorphic-git"></script>
+    <script src="https://unpkg.com/isomorphic-git/http/web/index.umd.js"></script>
+    <script src="https://bundle.run/@gitgraph/js@1.7.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script>
+        // Ensure Buffer is assigned immediately
+        window.Buffer = window.buffer.Buffer;
+
+        const { git, GitgraphJS, LightningFS } = window;
+        const http = window.GitHttp;
+        const fs = new LightningFS('gitvisualizer', { wipe: true }); // Wipe every time the page loads
+        const dir = '/repo';
+
+        const btn = document.getElementById('visualize-btn');
+        const dlBtn = document.getElementById('download-btn');
+        const status = document.getElementById('status');
+
+        btn.addEventListener('click', async () => {
+            const user = document.getElementById('username').value.trim();
+            const repo = document.getElementById('repo').value.trim();
+            
+            if (!user || !repo) return alert("Please fill in both fields.");
+
+            btn.disabled = true;
+            status.innerText = "Cloning and building graph...";
+            document.getElementById('graph-container').innerHTML = '';
+
+            try {
+                // Properly clear the directory before cloning
+                try {
+                    await fs.promises.rmdir(dir, { recursive: true });
+                } catch (e) { /* ignore if dir doesn't exist */ }
+                await fs.promises.mkdir(dir);
+
+                // 1. Clone (Shallow)
+                await git.clone({
+                    fs, 
+                    http, 
+                    dir,
+                    url: `https://github.com/${user}/${repo}`,
+                    corsProxy: 'https://cors.isomorphic-git.org',
+                    singleBranch: false,
+                    depth: 50
+                });
+
+                // 2. Log
+                const commits = await git.log({ fs, dir });
+                
+                // 3. Render
+                const container = document.getElementById('graph-container');
+                const gitgraph = GitgraphJS.createGitgraph(container, {
+                    template: "metro",
+                    orientation: "vertical-reverse"
+                });
+
+                const main = gitgraph.branch("main");
+
+                // Reverse the commits so they appear in chronological order (oldest first)
+                commits.reverse().forEach(c => {
+                    main.commit({
+                        subject: c.commit.message,
+                        author: c.commit.author.name,
+                        hash: c.oid.substring(0, 7)
+                    });
+                });
+
+                status.innerText = "Graph generated!";
+                dlBtn.style.display = 'inline-block';
+
+            } catch (err) {
+                console.error(err);
+                status.innerText = "Error: " + err.message;
+            } finally {
+                btn.disabled = false;
+            }
+        });
+
+        dlBtn.addEventListener('click', () => {
+            html2canvas(document.querySelector("#graph-container")).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'git-dag.png';
+                link.href = canvas.toDataURL();
+                link.click();
+            });
+        });
+    </script>
+</body>
+</html>
