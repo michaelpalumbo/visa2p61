@@ -1,0 +1,266 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+
+  .navbar {
+    display: flex;
+    gap: 4px;
+    padding: 10px 16px 0;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    background: var(--color-background-primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    border-radius: 0;
+  }
+  .nav-btn:hover { color: var(--color-text-primary); }
+  .nav-btn.active {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-text-primary);
+  }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .placeholder {
+    padding: 60px 24px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 15px;
+  }
+  .placeholder h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+  }
+  .placeholder p { font-size: 14px; line-height: 1.6; }
+  .placeholder code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background: var(--color-background-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .course-site {
+    padding: 0;
+  }
+  .course-site iframe {
+    width: 100%;
+    border: none;
+    min-height: 600px;
+  }
+
+  /* Inline render of course site content */
+  .inner-site {
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .inner-site h1 { font-size: 22px; font-weight: 500; margin: 16px 0 6px; }
+  .inner-site h2 { font-size: 18px; font-weight: 500; border-bottom: 1.5px solid #4a90e2; padding-bottom: 8px; margin: 20px 0 10px; }
+  .inner-site h3 { font-size: 16px; font-weight: 500; margin: 14px 0 6px; }
+  .inner-site p { margin: 8px 0; font-size: 15px; }
+  .inner-site pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+  }
+  .inner-site code {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+  }
+  .inner-site section {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .inner-site .url-box {
+    background: var(--color-background-secondary);
+    border-left: 4px solid #4a90e2;
+    padding: 12px 16px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .inner-site a { color: #4a90e2; text-decoration: none; }
+  .inner-site a:hover { text-decoration: underline; }
+  .inner-site ol, .inner-site ul { padding-left: 20px; margin: 8px 0; }
+  .inner-site li { margin: 4px 0; font-size: 15px; }
+  .inner-site .note { font-style: italic; color: var(--color-text-secondary); font-size: 13px; }
+</style>
+
+
+<div id="course-site" class="tab-content active">
+  <div class="inner-site">
+    <header>
+      <h1>VISA 2P61 — Website Creation</h1>
+      <h3 style="font-weight:400; color: var(--color-text-secondary);">Spring 2026 · Department of Visual Arts, Brock University</h3>
+      <h3 style="font-weight:400; color: var(--color-text-secondary);">Instructor: Dr. Michael Palumbo</h3>
+      <p style="margin:10px 0;"><strong>Reminder:</strong> Office hours Wednesday mornings, 10am–12pm at the Zoom link posted in the course syllabus.</p>
+      <section style="background:#ebf3fc; border:1px solid #4a90e2;">
+        <p><strong>How to use this site:</strong> This is your technical survival guide for VISA 2P61. Keep this page open while you work. When you need to perform a task, find the section in the Table of Contents and follow the step-by-step instructions.</p>
+        <p class="note" style="margin-top:8px;">Think of this as a "cheat sheet" that we will build upon together throughout the term.</p>
+      </section>
+    </header>
+
+    <section id="terminal">
+      <h2>Terminal Commands</h2>
+      <p>How to navigate in the Terminal. <em>Type these commands and hit "Enter"</em></p>
+      <pre>pwd             # Print Working Directory: "Where am I right now?"
+ls              # List: "What files and folders are in here?"
+cd foldername   # Go down into a specific folder
+cd ..           # Go up one level (parent folder)
+open .          # Mac ONLY: Open current folder in Finder
+start .         # Windows ONLY: Open current folder in Explorer
+ctrl + c        # Cancel/Quit: Stop a running process
+clear           # Clear the terminal screen</pre>
+    </section>
+
+    <section id="git-basics">
+      <h2>Basic Git Commands</h2>
+      <p>Git is your version control system. <em>Type these commands and hit "Enter"</em></p>
+      <p class="note" style="color:#d9534f; font-weight:bold;">Note: The <code>#</code> is a comment. Do NOT type it into the terminal!</p>
+      <pre>git clone             # Download a project from GitHub
+git log               # View history ('q' = exit)
+git status            # See what has changed since the last save
+git add .             # Stage all changes to be saved
+git commit -m 'msg'   # Save the changes with a label
+git push              # Upload your saves to GitHub</pre>
+    </section>
+
+    <section id="workflow">
+      <h2>The Development Loop (Save / Commit / Push)</h2>
+      <ol>
+        <li><strong>Modify:</strong> Make changes to your <code>index.html</code>.</li>
+        <li><strong>Save:</strong> Press <code>Cmd+S</code> (Mac) or <code>Ctrl+S</code> (Windows).</li>
+        <li><strong>Record & Upload:</strong></li>
+      </ol>
+      <pre>git add .
+git commit -m 'describe what you changed'
+git push</pre>
+      <ol start="4"><li><strong>Verify:</strong> Refresh your <code>.github.io</code> page in the browser.</li></ol>
+      <p class="note" style="border:1px solid #4a90e2; padding:10px; background:#ebf3fc;"><strong>Pro-Tip:</strong> It can take 30–60 seconds for GitHub to process your push. If you don't see changes, wait a minute and refresh.</p>
+    </section>
+
+    <section id="git-advanced">
+      <h2>Branches & Merges</h2>
+      <p>Working on branches lets you experiment without breaking the main site.</p>
+      <p class="note" style="border:1px solid #ffcc00; padding:10px; background:#fffdf0;"><strong>Important:</strong> GitHub Pages shows your <code>main</code> branch — the Live Stage. Other branches are your rehearsal spaces and won't appear on the public site.</p>
+      <pre>git checkout -b name      # Create a new branch & jump into it
+git push -u origin name   # Tell GitHub this branch exists
+git branch                # List all branches (* = where you are)
+git checkout main         # Switch back to the live branch
+git merge source          # Bring changes from another branch in</pre>
+    </section>
+
+    <section id="boilerplate">
+      <h2>HTML Boilerplate</h2>
+      <p>Use this whenever you start a new page. Paste it into an empty <code>index.html</code>.</p>
+      <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title Goes Here&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;!-- Your visible content goes here --&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+    </section>
+
+    <section id="commit-messages">
+      <h2>Writing Great Commit Messages</h2>
+      <div class="url-box">
+        <h3>Structural changes</h3>
+        <pre>git commit -m "Add unordered list for childhood bedroom inventory"
+git commit -m "Wrap emotional register text in a blockquote"</pre>
+      </div>
+      <div class="url-box">
+        <h3>Experimental changes</h3>
+        <pre>git commit -m "Experiment: nesting 10 levels of div to create a tunnel"
+git commit -m "Branching off nostalgia to try a more hostile tone"</pre>
+      </div>
+      <div class="url-box">
+        <h3>Merges</h3>
+        <pre>git commit -m "Merge glitchy-text into nostalgia branch"
+git commit -m "Resolve conflict in floorplan; kept the distorted version"</pre>
+      </div>
+      <p class="note" style="border:1px solid #4a90e2; padding:10px; background:#ebf3fc;"><strong>Michael's Rule:</strong> Avoid messages like "update" or "fixed." Will you know which version of the labyrinth you're stepping into in three days?</p>
+    </section>
+
+    <section id="git-errors">
+      <h2 style="color:#d9534f;">Resolving Common Git Errors</h2>
+      <div class="url-box">
+        <h3>1. Detached HEAD</h3>
+        <p>You checked out a commit hash and are no longer on a branch.</p>
+        <pre>git checkout main    # Jump back to safety</pre>
+      </div>
+      <div class="url-box">
+        <h3>2. Merge Conflicts (everything is red)</h3>
+        <p>Git found two different versions of the same line. In VS Code, use the buttons above the red text: <strong>Accept Current</strong>, <strong>Accept Incoming</strong>, or <strong>Accept Both</strong>.</p>
+      </div>
+      <div class="url-box">
+        <h3>3. Rejected / Non-fast-forward</h3>
+        <p>GitHub has changes your computer doesn't have yet.</p>
+        <pre>git pull origin main   # Pull cloud changes down first</pre>
+      </div>
+      <p class="note"><strong>Michael's Rule:</strong> If you're stuck for more than 15 minutes, ask a classmate or post a screenshot to Brightspace. Don't delete your folder and start over!</p>
+    </section>
+  </div>
+</div>
+
+<div id="assignments" class="tab-content">
+  <div class="placeholder">
+    <h2>Assignments</h2>
+    <p>Paste your assignments content here.<br>Replace this <code>&lt;div&gt;</code> with whatever HTML you want to show in this tab.</p>
+  </div>
+</div>
+
+<div id="schedule" class="tab-content">
+  <div class="placeholder">
+    <h2>Schedule</h2>
+    <p>Paste your schedule content here.<br>Replace this <code>&lt;div&gt;</code> with whatever HTML you want to show in this tab.</p>
+  </div>
+</div>
+
+<div id="readings" class="tab-content">
+  <div class="placeholder">
+    <h2>Readings</h2>
+    <p>Paste your readings content here.<br>Replace this <code>&lt;div&gt;</code> with whatever HTML you want to show in this tab.</p>
+  </div>
+</div>
+
