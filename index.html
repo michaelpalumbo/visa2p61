@@ -139,6 +139,44 @@
     .placeholder p { font-size: 0.95rem; }
     .placeholder code { background: var(--code-bg); color: var(--code-text); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
 
+
+    /* Checklist Styling */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.checklist li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s;
+}
+
+.checklist li:hover {
+  border-color: var(--accent);
+  transform: translateX(5px);
+}
+
+.checklist input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.checklist label {
+  cursor: pointer;
+  font-weight: 500;
+  color: #444;
+}
+
     </style>
   </head>
   <body>
@@ -151,8 +189,8 @@
 
         <button class="active" onclick="switchTab('how-to-guides', this)">How-To Guides</button>
         <button onclick="switchTab('assignments', this)">Assignment Guides</button>
-        <button onclick="switchTab('shortcuts', this)">Shortcuts</button>
-        <button onclick="switchTab('readings', this)">Readings</button>
+        <!-- <button onclick="switchTab('shortcuts', this)">Shortcuts</button> -->
+        <!-- <button onclick="switchTab('readings', this)">Readings</button> -->
       </nav>
 
   <div id="how-to-guides" class="tab-panel active">
@@ -723,7 +761,7 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
             <li><a href="#general">General (Applied to all Assignments)</a></li>
             <li><a href="#a1-overview">Assignment 1 Guide</a></li>
           </ul>
-        </details>
+       
 
         <section id="a1-overview">
           <h2>Assignment 1: Git Labyrinth — Step-by-Step</h2>
@@ -733,6 +771,9 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
             <ol>
               <li>Create a new GitHub repo named exactly <code>a1-git-labyrinth</code></li>
               <li>Follow the remainder of the steps <a href="https://michaelpalumbo.github.io/index.html#starting-assignments">here</a></li>
+              <li>
+                Next You will flip back and forth between steps in "Build Your Page" & "Make The Git Labyrinth" below (aka making changes and committing them; making new experiments on new branches, etc)
+              </li>
             </ol>
           </div>
 
@@ -741,30 +782,214 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
             <ol>
               <li>Pick a concept: childhood bedroom, a person you know, a place with emotional registers, or your own idea (keep it simple)</li>
               <li>Create a single <code>index.html</code></li>
-              <li>Add at least 15 different kinds of HTML elements inside of the BODY tags</li>
+              <!-- <li>Add at least 15 different kinds of HTML elements inside of the BODY tags.<li> -->
+                Add at least 15 <strong>unique types</strong> of HTML elements inside your <code>&lt;body&gt;</code>.
+                <p>To get full marks, you need 15 different elements from the HTML language. For example:</p>
+                <ul>
+                  <li><code>&lt;h1&gt;</code> (Heading)</li>
+                  <li><code>&lt;p&gt;</code> (Paragraph)</li>
+                  <li><code>&lt;img&gt;</code> (Image)</li>
+                </ul>
+                <p>
+                  The list above counts as <strong>3</strong> unique elements out of the required 15. 
+                  If you use 10 different <code>&lt;p&gt;</code> tags, that still only counts as <strong>1</strong> unique element toward your total of 15.
+                </p>
+              </li>
               <li>Add comments to every block of code explaining what it does (<code>&lt;!-- like this --&gt;</code>)</li>
               <li>Optionally leave commented-out sections of code that you're no longer using. See "Better Comments" Extension for examples</li>
             </ol>
           </div>
 
           <div class="url-box">
-            <h3>Do the Git Labyrinth (the main work)</h3>
+            <h3>Make the Git Labyrinth</h3>
             <ol>
-              <li>Make at least <strong>50 commits</strong> with descriptive messages (such as "added distorted text to mirror section", not "update")</li>
-              <li>Create at least <strong>10 branches</strong> branching off other feature branches</li>
-              <li>Make at least <strong>3 merge commits</strong> between branches</li>
-              <li>Push <strong>all branches</strong> to GitHub</li>
+              <li>Make at least <strong>50 commits</strong> with descriptive messages (such as "added distorted text to mirror section", not "update")<br> <a href="https://michaelpalumbo.github.io/visa2p61/#workflow">See this</a> if you want a reminder on making commits.</li>
+              <li>Create at least <strong>10 branches</strong> branching off other feature branches. Reminder on <a href="https://michaelpalumbo.github.io/visa2p61/#git-advanced">how to create a branch</a></li>
+              <li>Make at least <strong>3 merge commits</strong> between branches. Reminder on <a href="https://michaelpalumbo.github.io/visa2p61/#git-advanced">how to merge 2 branches</a></li>
+              <li>Push <strong>all branches</strong> to GitHub. Shortcut to push them all at once!: <code>git push --all</code></li>
             </ol>
           </div>
 
-          <div class="url-box">
+          <!-- <div class="url-box">
             <h3>Tag Your 5 Favorite Versions</h3>
             <ol>
               <li>Identify 5 commits you like best — put each on its own branch with a meaningful name (e.g. <code>glitchy-mirror</code>, <code>dreamlike-v2</code>)</li>
             </ol>
-          </div>
+          </div> -->
+          <div class="url-box" id="add-links">
+  <h3>Add Links To Your Portfolio Site</h3>
+  <p>I Recommend waiting until you are finished coding your website. This section is about making a short documentation about your process.</p>
+  <p>You are now going to report your work by adding links to your <code>username.github.io</code> site. You will need <strong>two VS Code windows</strong> open to do this efficiently.</p>
+  
+  <ol>
+    <li>
+      <strong>Window 1 (The Destination):</strong> Open your <code>username.github.io</code> project.
+      <ul>
+        <li>Ensure you are on <code>main</code>: <code>git checkout main</code></li>
+        <li>Open <code>index.html</code>. This is where you will <strong>paste</strong> the links.</li>
+      </ul>
+    </li>
 
-          <div class="url-box">
+    <li>
+      <strong>Window 2 (The Source):</strong> Keep your <code>a1-git-labyrinth</code> project open.
+      <p class="note" style="color: #d9534f; font-weight: bold;">IMPORTANT: You must run the next step (step 3) in the terminal of your A1 project, NOT your portfolio project!</p>
+    </li>
+
+    <!-- <div class="url-box" id="add-links">
+  <h3>Add Links To Your Portfolio Site</h3>
+  <p>You are now going to "report" your work by adding links to your <code>username.github.io</code> site. You will need <strong>two VS Code windows</strong> open to do this efficiently.</p>
+  
+  <ol>
+    <li>
+      <strong>Window 1 (The Destination):</strong> Open your <code>username.github.io</code> project.
+      <ul>
+        <li>Make sure that you're on the main branch first. Run: <code>git branch</code><br>If not, then run: <code>git checkout main</code></li>
+        <li>Open the <code>index.html</code> file. This is where you will <strong>paste</strong> your links.</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Window 2 (The Source):</strong> Keep your <code>a1-git-labyrinth</code> project open.
+      <p class="note" style="color: #d9534f; font-weight: bold;">CONTEXT ALERT: You must run the next steps in the terminal of your A1 project, NOT your portfolio project!</p> -->
+      <li>
+      <strong>Find your Commit IDs:</strong>
+      <ol type="a">
+        <li>In the <code>a1-git-labyrinth</code> terminal, run: <pre>git log --oneline --all</pre>
+          <p class="note"><strong>Pro-Tip:</strong> Adding <code>--all</code> allows you to see the history of <strong>every branch</strong> at once, so you don't have to switch branches to find your favorites!</p>
+        </li>
+        <li>Scroll through and find 5 commits that represent significant changes in your labyrinth.</li>
+        <li><strong>Create a "Scratch Pad":</strong> Open a new, empty tab in VS Code (<code>Cmd + N</code> or <code>Ctrl + N</code>).</li>
+        <li>
+          <strong>Copy the full line:</strong> Highlight the 7-character ID <em>and</em> the message, then paste them into your Scratch Pad. 
+          <p class="note">Your Scratch Pad should now look like this:</p>
+          <pre><code>abc1234  Add distorted mirror effect to bedroom
+def5678  Merge branch 'secret-closet' into main
+ghi9012  Experiment with red flashing text
+jkl3456  Change background to grainy texture
+mno7890  First attempt at the endless hallway</code></pre>
+        </li>
+        <li>(Type <code>q</code> to exit the log when finished). Once you have all 5 IDs saved, you can close the A1 terminal. You have everything you need!</li>
+      </ol>
+    </li>
+
+    <li>
+      <strong>Create the Links (In Window 1):</strong>
+
+      
+      <div style="background: #fff; padding: 15px; border: 1px solid #ddd; margin: 10px 0;">
+        <strong>1. Link to Live Site:</strong><br>
+        <code>https://yourUsername.github.io/a1-git-labyrinth</code><br><br>
+        
+        <strong>2. Link to Repo:</strong><br>
+        <code>https://github.com/yourUsername/a1-git-labyrinth</code><br><br>
+        
+        <strong>3. Links to 5 Favourite Commits:</strong><br>
+        <p>Go back to your portfolio's <code>scratch pad</code>. Take the IDs from each commit and replace the "PASTE_ID_HERE" with that ID:</p>
+        <code>https://github.com/yourUsername/a1-git-labyrinth/commit/<strong>PASTE_ID_HERE</strong></code>
+        <strong><br><br>3.a. Repeat Step 3 until you have all 5 versions in their own url element</strong><br>
+      </div>
+
+      <p>By the time you are done, your code in Window 1 should look like this:</p>
+      <pre><code>&lt;!-- My 5 Significant Versions --&gt;
+&lt;a href="https://github.com/yourUsername/a1-git-labyrinth/commit/abc1234"&gt;Version 1: The Glitch&lt;/a&gt;
+&lt;a href="https://github.com/yourUsername/a1-git-labyrinth/commit/def5678"&gt;Version 2: Emotional Shift&lt;/a&gt;
+&lt;a href="https://github.com/yourUsername/a1-git-labyrinth/commit/ghi9012"&gt;Version 3: The Void&lt;/a&gt;
+&lt;!-- ...and so on for all five --&gt;</code></pre>
+    </li>
+
+    
+
+    <li>
+      <strong>Add Annotations:</strong>
+      <p>Add a brief <code>&lt;p&gt;</code> below each favorite version link explaining why it’s significant. You can use your commit messages from your Scratch Pad to help write these!</p>
+      <pre><code>&lt;a href="https://github.com/yourUsername/a1-git-labyrinth/commit/abc1234"&gt;Favourite Version #1: The Glitch&lt;/a&gt;
+&lt;p&gt;In this version, I added a distorted mirror effect to the bedroom section using CSS filters.&lt;/p&gt;</code></pre>
+    </li>
+    <li>
+              Your new Assignment 1 links section on your username.github.io index.html should look something like this now:
+              <br>
+              <br>
+              <h3>Assignment 1 Links</h3>
+              <a href="https://yourUsername.github.io/a1-git-labyrinth">Link to my assignment 1 page</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth.git">Link to my assignment 1 repo</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #1</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #2</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #3</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #4</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #5</a><br>
+              
+            </li>
+            <li>
+              <strong>Test</strong>
+              Check your site locally with <strong>Live Server</strong>. Click every link. If they lead to "404 Not Found" pages, double-check your username and commit IDs!</p> 
+            </li> 
+
+      <li>
+      <strong>Push:</strong>
+      Upload your new username.github.io version.
+      <p>
+      <pre>git add .
+git commit -m 'added a1 links and annotations'
+git push</pre>
+    </li>
+    <li>
+      <strong>
+        Lastly: Submit your username.github.io link to the Assignment 1 submission page on Brightspace (before midnight on Saturday)
+      </strong>
+    </li>
+  </ol>
+
+
+</div>
+      <!-- <strong>Create the Links (In Window 1):</strong>
+      <p>Now, build your links in your portfolio's <code>index.html</code>:</p>
+      
+      <div style="background: #fff; padding: 15px; border: 1px solid #ddd; margin: 10px 0;">
+        <p><strong>General Project Links (Do these once):</strong></p>
+        <ul>
+          <li><strong>Live Site:</strong> <code>https://yourUsername.github.io/a1-git-labyrinth</code></li>
+          <li><strong>GitHub Repo:</strong> <code>https://github.com/yourUsername/a1-git-labyrinth</code></li>
+        </ul>
+
+        <p><strong>Your 5 Favourite Versions:</strong></p>
+        <p class="note">Repeat these steps for each of your 5 chosen versions:</p>
+        <ol>
+          <li>Go to <strong>Window 2</strong> (A1 Project). Find an ID in <code>git log</code> and Copy it.</li>
+          <li>Go to <strong>Window 1</strong> (Portfolio). Paste that ID at the very end of this URL:</li>
+          <code>https://github.com/yourUsername/a1-git-labyrinth/commit/<strong>[PASTE_ID_HERE]</strong></code>
+        </ol>
+      </div> -->
+
+      
+    </li>
+    <!-- <li>
+      <strong>Create the Links (In Window 1):</strong>
+      <p>Go back to your portfolio's <code>index.html</code> and add your <code>&lt;a&gt;</code> tags using this format:</p>
+      
+      <div style="background: #fff; padding: 10px; border: 1px solid #ddd; margin: 10px 0;">
+        <strong>1. Link to Live Site:</strong><br>
+        <code>https://yourUsername.github.io/a1-git-labyrinth</code><br><br>
+        
+        <strong>2. Link to Repo:</strong><br>
+        <code>https://github.com/yourUsername/a1-git-labyrinth</code><br><br>
+        
+        <strong>3. Links to 5 Fav Commits:</strong><br>
+        <code>https://github.com/yourUsername/a1-git-labyrinth/commit/<strong>COMMIT_ID_HERE</strong></code>
+      </div>
+    </li> -->
+
+    <!-- <li>
+      <strong>Annotate:</strong>
+      <p>Add a brief <code>&lt;p&gt;</code> below each favorite version link explaining why it’s significant.</p>
+      <pre><code>&lt;a href="https://github.com/yourUsername/a1-git-labyrinth/commit/abc1234"&gt;Favourite Version #1: The Glitch Effect&lt;/a&gt;
+&lt;p&gt;In this version, I used CSS filters to make the text look like a broken CRT monitor.&lt;/p&gt;</code></pre>
+    </li> -->
+
+
+  </ol>
+</div>
+
+          <!-- <div class="url-box" id="add-links">
             <h3>Add Links To Your Portfolio Site</h3>
             Each week you will be adding links to your projects to your username.github.io site. To do that for Assignment 1:
             <ol>
@@ -801,7 +1026,7 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
                     Copy the ID of the commit change that you want to include as a favourite
                   </li>
                   <li>
-                    Replace your username in this link AND replace your commit ID where it says "commit_ID"<p><code>https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID</code></p>
+                    Replace your username in this link AND replace your commit ID where it says "commit_ID"<p><code>https://github.com/yourUsername/a1-git-labyrinth/commit/commit_ID</code></p>
                     
 
                   </li>
@@ -833,15 +1058,7 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
             </li>
             <li>
               You should check that this is all working as you intend by loading this index.html in the local Live Server. Try clicking on links to ensure they load correctly and fix as needed. 
-            </li>
-            <li>
-              Make your final commit and push these changes to your username.github.io repository
-            </li>
-          </ol>
-        
-           
-              
-          </div>
+           -->
 
           <!-- <li>Decide if you want to publish a different version to your GitHub Page</li> -->
 
@@ -854,26 +1071,26 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
   <!-- ══════════════════════════════════════════
        TAB 3: Schedule
   ══════════════════════════════════════════ -->
-  <div id="schedule" class="tab-panel">
+  <!-- <div id="schedule" class="tab-panel">
     <div class="page-wrap">
       <div class="placeholder">
         <h2>Schedule</h2>
         <p>Paste your schedule HTML here.<br>Replace this <code>&lt;div class="placeholder"&gt;</code> with your content.</p>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- ══════════════════════════════════════════
        TAB 4: Readings
   ══════════════════════════════════════════ -->
-  <div id="readings" class="tab-panel">
+  <!-- <div id="readings" class="tab-panel">
     <div class="page-wrap">
       <div class="placeholder">
         <h2>Readings</h2>
-        <p>Paste your readings HTML here.<br>Replace this <code>&lt;div class="placeholder"&gt;</code> with your content.</p>
+        Coming Soon
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -908,6 +1125,45 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
       document.getElementById(id).classList.add('active');
       btn.classList.add('active');
     }
-  </script>
+  
+  function handleDeepLink() {
+    // 1. Get the hash from the URL (e.g., "#git-basics")
+    const hash = window.location.hash;
+    
+    if (hash) {
+      // 2. Find the element that has this ID
+      const targetElement = document.querySelector(hash);
+      
+      if (targetElement) {
+        // 3. Find which tab-panel contains this element
+        const parentTab = targetElement.closest('.tab-panel');
+        
+        if (parentTab) {
+          const tabId = parentTab.id;
+          // 4. Find the button in your top-nav that controls this tab
+          // This assumes your buttons have the switchTab function attached
+          const tabButton = document.querySelector(`.top-nav button[onclick*="'${tabId}'"]`);
+          
+          if (tabButton) {
+            // 5. Trigger the switch
+            switchTab(tabId, tabButton);
+            
+            // 6. Scroll to the specific section after a tiny delay 
+            // (to allow the tab to render first)
+            setTimeout(() => {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+          }
+        }
+      }
+    }
+  }
+
+  // Run this when the page finishes loading
+  window.addEventListener('DOMContentLoaded', handleDeepLink);
+  
+  // Also run it if the hash changes while the page is already open
+  window.addEventListener('hashchange', handleDeepLink);
+</script>
 
 </html>
