@@ -177,6 +177,80 @@
   color: #444;
 }
 
+.code-comparison {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .wrap { white-space: pre-wrap; }
+    .no-wrap { white-space: pre; }
+
+    #VS-Code-Tips {
+        font-family: -apple-system, sans-serif;
+        max-width: 800px;
+        line-height: 1.5;
+        color: #333;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        text-align: left; /* Left-justified */
+    }
+    th {
+        border-bottom: 2px solid #007acc;
+        padding: 12px 8px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #555;
+    }
+    td {
+        padding: 12px 8px;
+        border-bottom: 1px solid #eee;
+        vertical-align: top;
+    }
+    code {
+        background: #000000;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-weight: bold;
+    }
+    .instruction-note {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 4px;
+        display: block;
+    }
+/* Equal Width Comparison Boxes */
+    .wrap-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Forces exactly 50/50 split */
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .box {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background: #fafafa;
+        font-size: 0.85rem;
+        min-width: 0; /* Critical for grid items to allow internal scrolling */
+    }
+    .scroll-x {
+        overflow-x: auto; /* Brings the scrollbar back */
+        white-space: nowrap;
+        padding-bottom: 10px; /* Space for the scrollbar so it doesn't cover text */
+        color: #666;
+    }
+    .wrapped {
+        white-space: pre-wrap;
+        word-break: break-all;
+        color: #007acc;
+        font-weight: bold;
+    }
+
     </style>
   </head>
   <body>
@@ -189,8 +263,8 @@
 
         <button class="active" onclick="switchTab('how-to-guides', this)">How-To Guides</button>
         <button onclick="switchTab('assignments', this)">Assignment Guides</button>
-        <!-- <button onclick="switchTab('shortcuts', this)">Shortcuts</button> -->
-        <!-- <button onclick="switchTab('readings', this)">Readings</button> -->
+        <button onclick="switchTab('shortcuts', this)">Shortcuts</button>
+        <button onclick="switchTab('VS-Code-Tips', this)">VS Code Tips</button>
       </nav>
 
   <div id="how-to-guides" class="tab-panel active">
@@ -1077,28 +1151,118 @@ git push</pre>
   </div>
 
   <!-- ══════════════════════════════════════════
-       TAB 3: Schedule
+       TAB 3: Shortcuts
   ══════════════════════════════════════════ -->
-  <!-- <div id="schedule" class="tab-panel">
+  <div id="shortcuts" class="tab-panel">
     <div class="page-wrap">
-      <div class="placeholder">
-        <h2>Schedule</h2>
-        <p>Paste your schedule HTML here.<br>Replace this <code>&lt;div class="placeholder"&gt;</code> with your content.</p>
+      <!-- <div class="placeholder"> -->
+          <h2>Essential VS Code Shortcuts</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Action</th>
+                      <th>Windows / Linux</th>
+                      <th>macOS</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td><strong>Save File</strong></td>
+                      <td><code>Ctrl + S</code></td>
+                      <td><code>Cmd + S</code></td>
+                  </tr>
+                  <tr>
+                      <td><strong>New File</strong></td>
+                      <td><code>Ctrl + N</code></td>
+                      <td><code>Cmd + N</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Toggle Terminal</strong></td>
+                      <td><code>Ctrl + `</code> <span class="instruction-note">("Backtick" is located above the Tab key)</span></td>
+                      <td><code>Ctrl + `</code> <span class="instruction-note">("Backtick" is located above the Tab key)</span></td>
+                  </tr>
+              </tbody>
+          </table>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <!-- ══════════════════════════════════════════
        TAB 4: Readings
   ══════════════════════════════════════════ -->
-  <!-- <div id="readings" class="tab-panel">
+  <div id="VS-Code-Tips" class="tab-panel">
     <div class="page-wrap">
-      <div class="placeholder">
-        <h2>Readings</h2>
-        Coming Soon
-      </div>
+      <!-- <div class="placeholder"> -->
+        <h2>VS Code Tips</h2>
+          
+      
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technique</th>
+                        <th>How to do it</th>
+                        <th>Why use this?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Split Editor</strong></td>
+                        <td>Right-click a file's tab &gt; <strong>Split Right</strong></td>
+                        <td>To edit/view 2 or more files side-by-side.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Move Terminal</strong></td>
+                        <td>Right-click terminal header &gt; <strong>Panel Position</strong></td>
+                        <td>Moving it to the <strong>Right</strong> is great for wide monitors or if you expect a long response from a terminal command.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Split Terminal</strong></td>
+                        <td>Click the <strong>Split Pane icon</strong> (looks like two boxes)</td>
+                        <td>For example: try running <code>git log --oneline</code> in one terminal, and then using the other one to checkout different commits!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kill Terminal</strong></td>
+                        <td>Click the <strong>Trash Can icon</strong></td>
+                        <td>To close a terminal session, especially if a command gets stuck or buggy.</td>
+                    </tr>
+                    <tr>
+                <td><strong>Find Text</strong></td>
+                <td><code>Ctrl/Cmd + F</code></td>
+                <td>
+                    A search box appears at the top right. 
+                    <span class="instruction-note">Use the <strong>Up/Down arrows</strong> in the bar to jump through every time that word appears in your code.</span>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Find & Replace</strong></td>
+                <td><code>Ctrl/Cmd + F</code> + <strong>Arrow</strong></td>
+                <td>
+                    Click the <strong>small arrow <code>></code></strong> to the left of the search box to open Replace mode.
+                    <span class="instruction-note">• Type your new text in the second box.</span>
+                    <span class="instruction-note">• Click the <strong>c</strong> icon to replace just one instance.</span>
+                    <span class="instruction-note">• Click the <strong>ac</strong> icon (overlapping boxes) to replace <strong>ALL</strong> instances at once.</span>
+                </td>
+            </tr>
+                </tbody>
+            </table>
+
+            <h3>The Power of Word Wrap</h3>
+            <p>By default, long lines of code go off the screen. <strong>Word Wrap</strong> keeps everything visible without horizontal scrolling.</p>
+            <p><em>Fix: Gear Icon &gt; Settings &gt; Search "wrap" &gt; Turn "Editor: Word Wrap" to <strong>on</strong>.</em></p>
+
+            <div class="code-comparison">
+                <div class="box no-wrap">
+                    <strong>Without Word Wrap (Annoying):</strong><br>
+                    &lt;p&gt;This is a very long line of HTML that requires you to scroll forever to the right to see the end of the sentence...
+                </div>
+                <div class="box wrap">
+                    <strong>With Word Wrap (Better):</strong><br>
+                    &lt;p&gt;This is a very long line of HTML that wraps around so you can see everything at once.
+                </div>
+            </div>
+      <!-- </div> -->
     </div>
-  </div> -->
+  </div>
 
 
 
