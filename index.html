@@ -27,10 +27,10 @@
       /* Table of Contents Styling */
       nav { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 40px; }
       details { margin: 10px 0; cursor: pointer; }
-      summary { font-weight: bold; font-size: 1.1rem; color: var(--accent); }
+      summary { font-weight: bold; font-size: 1.1rem;  }
       .toc-list { list-style: none; padding-left: 20px; margin-top: 10px; }
       .toc-list li { margin: 5px 0; }
-      a { text-decoration: none; color: #555; }
+      a { text-decoration: underline; color: var(--accent); }
       a:hover { color: var(--accent); text-decoration: underline; }
 
       /* Content Sections */
@@ -82,30 +82,85 @@
         transform: scale(1.1);
       }
 
+
+    /* ── Top Navbar ── */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      gap: 0;
+      padding: 0 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .top-nav button {
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: #888;
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+      white-space: nowrap;
+    }
+
+    .top-nav button:hover { color: var(--accent); }
+
+    .top-nav button.active {
+      color: var(--accent);
+      border-bottom: 3px solid var(--accent);
+    }
+
+    /* ── Tab panels ── */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── Page wrapper ── */
+    .page-wrap {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* ── Placeholder tabs ── */
+    .placeholder {
+      text-align: center;
+      padding: 80px 20px;
+      color: #888;
+    }
+    .placeholder h2 { font-size: 1.4rem; margin-bottom: 10px; color: var(--text); }
+    .placeholder p { font-size: 0.95rem; }
+    .placeholder code { background: var(--code-bg); color: var(--code-text); padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; }
+
     </style>
   </head>
   <body>
     <!-- only show this when scrolling -->
     <button id="backToTop" title="Go to top">↑</button>
 
+      <!-- ── Top Navbar ── -->
+      <nav class="top-nav">
+        <button onclick="switchTab('about', this)">About</button>
 
+        <button class="active" onclick="switchTab('how-to-guides', this)">How-To Guides</button>
+        <button onclick="switchTab('assignments', this)">Assignment Guides</button>
+        <button onclick="switchTab('shortcuts', this)">Shortcuts</button>
+        <button onclick="switchTab('readings', this)">Readings</button>
+      </nav>
+
+  <div id="how-to-guides" class="tab-panel active">
+    <div class="page-wrap">
     <header>
-      <h1>VISA 2P61 - Website Creation</h1>
-      <h3>Spring 2026 · Department of Visual Arts, Brock University</h3>
-      <h3>Instructor: Dr. Michael Palumbo</h3>
-      <p><Strong>Reminder:</Strong> My office hours are Wednesday mornings, 10am-12pm at the Zoom Link posted in the course syllabus</p>
-
-      <section id="intro" style="background: #ebf3fc; border: 1px solid var(--accent); margin-bottom: 30px;">
-        <p><strong>How to use this site:</strong> This is your technical survival guide for VISA 2P61. 
-        Keep this page open in a browser tab while you work. 
-        When you need to perform a task, like saving your work or starting a new assignment, find the section in the <strong>Table of Contents</strong> and follow the step-by-step instructions.</p>
-        <p class="note" style="margin-top: 10px;"><em>Think of this as a "cheat sheet" that we will build upon together throughout the term.</em></p>
-      </section>
-      <h1>Course Resources</h1>
-      <h2>How-Tos, Workflows, Cheat Sheets, etc</h2>
-      <nav>
-        <H4>Click any section title below to jump directly to those instructions on this page.
-</H4>
+          <h2>How-Tos, Workflows, Cheat Sheets, etc</h2>
+          <nav>
+            <H4>Click any section title below to jump directly to those instructions on this page.
         <details open>
           <summary>Table of Contents</summary>
           <ul class="toc-list">
@@ -138,7 +193,8 @@
                     <ul class="toc-list">
                         <li><a href="#git-advanced">Branching & Merges</a></li>
                         <li><a href="#git-time-travel">Time Travel (Past Versions)</a></li>
-                        <li><a href="#labyrinth-tips">Assignment 1: Labyrinth Techniques & Linking</a></li>
+                        <li><a href="#setting-live-version">Publishing Your #1 Favourite Version to the Internet</a></li>
+                        <!-- <li><a href="#labyrinth-tips">Assignment 1: Labyrinth Techniques & Linking</a></li> -->
                     </ul>
                 </details>
             </li>
@@ -458,12 +514,50 @@ git checkout name     # Jump to any other specific experiment branch</pre>
           </li>
         </ol>
       </section>
+
+      <section id="setting-live-version">
+            <h2>Publishing Your #1 Favourite Version</h2>
+            <p>GitHub Pages always shows whatever is at the <strong>latest tip of your <code>main</code> branch</strong>. So if your favourite version is an older commit, your live website won't be showing it (it's showing the newest commit on main instead.)</p>
+
+            <p>To make your favourite version the one that appears live on the web, you need to make it the latest point on <code>main</code> and push it. Here's how:</p>
+
+            <ol>
+              <li>
+                <strong>Find the commit hash of your favourite version:</strong>
+                <pre>git log --oneline</pre>
+              </li>
+              <li>
+                <strong>Create a new branch from that commit:</strong>
+                <pre>git checkout -b my-favourite-version abc1234</pre>
+                <p class="note">Replace <code>abc1234</code> with the actual hash from your log.</p>
+              </li>
+              <li>
+                <strong>Merge that branch into main:</strong>
+                <pre>
+          git checkout main
+          git merge my-favourite-version</pre>
+              </li>
+              <li>
+                <strong>Push main to GitHub:</strong>
+                <pre>git push</pre>
+              </li>
+            </ol>
+
+            <div class="url-box" style="border-left-color: #ffcc00; background: #fffdf0;">
+              <h3>⚠️ Watch out for merge conflicts</h3>
+              <p>If <code>main</code> has newer commits after your favourite, git may flag a conflict. When that happens, <strong>accept the incoming changes</strong> (your favourite version) — you're telling git "I want this older version to be the one people see."</p>
+            </div>
+
+            <p class="note" style="border: 1px solid #4a90e2; padding: 10px; background: #ebf3fc;">
+              <strong>Remember:</strong> your live website at <code>username.github.io/a1-git-labyrinth</code> only ever reflects the latest commit on <code>main</code>. Nothing on any other branch will ever show up there.
+            </p>
+
+          </section>
           
       
 
-    <section id="labyrinth-tips">
+    <!-- <section id="labyrinth-tips">
       <h2>Assignment 1: Labyrinth Techniques</h2>
-      <p>To build a labyrinth, you need to branch from places other than <code>main</code> or <code>develop</code>.</p>
       
       <p class="note" style="border-left: 4px solid #ffcc00; padding-left: 15px;">
         <strong>Strategy:</strong> Always check <code>git branch</code> before you start a new one to see "where you are standing."
@@ -491,7 +585,7 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
       <p class="note" style="border-left: 4px solid var(--accent); padding-left: 15px;">
         <strong>Michael's Tip:</strong> Make sure the URL goes inside the double quotes <code>""</code>. The text between the <code>&gt;</code> and <code>&lt;/a&gt;</code> is what becomes the clickable blue link text in the web page itself!
       </p>
-    </section>
+    </section> -->
 
     <section id="comments">
       <h2>Code Comments!</h2>
@@ -587,10 +681,201 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
 
 
 
-      
+  </div>
+  </div>  
 
 
     </main>
+
+        <!-- ══════════════════════════════════════════
+       TAB 1: About
+  ══════════════════════════════════════════ -->
+  <div id="about" class="tab-panel">
+    <div class="page-wrap">
+      <div class="placeholder">
+        <header>
+          <h1>VISA 2P61 - Website Creation</h1>
+          <h3>Spring 2026 · Department of Visual Arts, Brock University</h3>
+          <h3>Instructor: Dr. Michael Palumbo</h3>
+          <p><Strong>Reminder:</Strong> My office hours are Wednesday mornings, 10am-12pm at the Zoom Link posted in the course syllabus</p>
+
+          <section id="intro" style="background: #ebf3fc; border: 1px solid var(--accent); margin-bottom: 30px;">
+            <p><strong>How to use this site:</strong> This is your technical survival guide for VISA 2P61. 
+            Keep this page open in a browser tab while you work. 
+            When you need to perform a task, like saving your work or starting a new assignment, find the section in the <strong>Table of Contents</strong> and follow the step-by-step instructions.</p>
+            <p class="note" style="margin-top: 10px;"><em>Think of this as a "cheat sheet" that we will build upon together throughout the term.</em></p>
+          </section>
+
+    </H4>
+      </div>
+    </div>
+  </div>
+
+    <!-- ══════════════════════════════════════════
+       TAB 3: Assignments
+  ══════════════════════════════════════════ -->
+  <div id="assignments" class="tab-panel">
+    <div class="page-wrap">
+      <!-- <div class="placeholder"> -->
+        <h2>Assignment Guides</h2>
+
+          <ul class="toc-list">
+            <li><a href="#general">General (Applied to all Assignments)</a></li>
+            <li><a href="#a1-overview">Assignment 1 Guide</a></li>
+          </ul>
+        </details>
+
+        <section id="a1-overview">
+          <h2>Assignment 1: Git Labyrinth — Step-by-Step</h2>
+
+          <div class="url-box">
+            <h3>Setup</h3>
+            <ol>
+              <li>Create a new GitHub repo named exactly <code>a1-git-labyrinth</code></li>
+              <li>Follow the remainder of the steps <a href="https://michaelpalumbo.github.io/index.html#starting-assignments">here</a></li>
+            </ol>
+          </div>
+
+          <div class="url-box">
+            <h3>Build Your Page (the content)</h3>
+            <ol>
+              <li>Pick a concept: childhood bedroom, a person you know, a place with emotional registers, or your own idea (keep it simple)</li>
+              <li>Create a single <code>index.html</code></li>
+              <li>Add at least 15 different kinds of HTML elements inside of the BODY tags</li>
+              <li>Add comments to every block of code explaining what it does (<code>&lt;!-- like this --&gt;</code>)</li>
+              <li>Optionally leave commented-out sections of code that you're no longer using. See "Better Comments" Extension for examples</li>
+            </ol>
+          </div>
+
+          <div class="url-box">
+            <h3>Do the Git Labyrinth (the main work)</h3>
+            <ol>
+              <li>Make at least <strong>50 commits</strong> with descriptive messages (such as "added distorted text to mirror section", not "update")</li>
+              <li>Create at least <strong>10 branches</strong> branching off other feature branches</li>
+              <li>Make at least <strong>3 merge commits</strong> between branches</li>
+              <li>Push <strong>all branches</strong> to GitHub</li>
+            </ol>
+          </div>
+
+          <div class="url-box">
+            <h3>Tag Your 5 Favorite Versions</h3>
+            <ol>
+              <li>Identify 5 commits you like best — put each on its own branch with a meaningful name (e.g. <code>glitchy-mirror</code>, <code>dreamlike-v2</code>)</li>
+            </ol>
+          </div>
+
+          <div class="url-box">
+            <h3>Add Links To Your Portfolio Site</h3>
+            Each week you will be adding links to your projects to your username.github.io site. To do that for Assignment 1:
+            <ol>
+              <li>
+                Open a New Window in VS Code: <i>File > New Window</i>
+              </li>
+              <li>
+                Open your <code>username.github.io</code> project
+              </li>
+              <li>
+                Make sure that you're on the main branch first. Run: <code>git branch</code><br>If not, then run: <code>git checkout main</code>
+              </li>
+              <li>
+                Open the <code>index.html</code> file</li>
+                
+                <li>
+                  You will need to understand how to use the <code>&lt;a&gt;</code> tag in HTML for these next steps. If you don't know/remember, see <a href="https://www.w3schools.com/html/html_links.asp">this tiny guide on adding links.</a>
+                </li>
+                <li>
+                  Next, add the following URLs as HTML <code>&lt;a&gt;</code> tags into your index.html:
+                </li>
+                <ul>
+                  <li>A link to the <code>a1-git-labyrinth</code> website: <p>Replace your username in this link: <br><code>https://yourUsername.github.io/a1-git-labyrinth</code></p></li>
+                <li>A link to the <code>a1-git-labyrinth</code> repo:<p>Replace your username in this link: <br><code>https://github.com/yourUsername/a1-git-labyrinth.git</code></p></li>
+                <li>Links to 5 of your favorite commits. To get the url for a given commit, follow this procedure</li>
+                <ol>
+                  <li>
+                    In terminal, run <pre>git log --oneline</pre>
+                  </li>
+                  <li>
+                    You may need to type the letter 'q' to escape the screen
+                  </li>
+                  <li>
+                    Copy the ID of the commit change that you want to include as a favourite
+                  </li>
+                  <li>
+                    Replace your username in this link AND replace your commit ID where it says "commit_ID"<p><code>https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID</code></p>
+                    
+
+                  </li>
+                </ol>
+                <li>
+                  Add brief annotations below each of your Favourite Version links:
+                  <pre><code>&lt;a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID"&gt;Favourite Version #3&lt;/a&gt;
+ &lt;p&gt;In this version, I added a picture of a cute baby goat.&lt;/p&gt;
+                  </code></pre>
+
+                </li>
+              </ul>
+                
+            
+            </li>
+            <li>
+              Your new links section should look something like this now:
+              <br>
+              <br>
+              <h3>Assignment 1 Links</h3>
+              <a href="https://yourUsername.github.io/a1-git-labyrinth">Link to my assignment 1 page</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth.git">Link to my assignment 1 repo</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #1</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #2</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #3</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #4</a><br>
+              <a href="https://github.com/yourUsername/a1-git-labyrinth/tree/commit_ID">Favourite Version #5</a><br>
+              
+            </li>
+            <li>
+              You should check that this is all working as you intend by loading this index.html in the local Live Server. Try clicking on links to ensure they load correctly and fix as needed. 
+            </li>
+            <li>
+              Make your final commit and push these changes to your username.github.io repository
+            </li>
+          </ol>
+        
+           
+              
+          </div>
+
+          <!-- <li>Decide if you want to publish a different version to your GitHub Page</li> -->
+
+
+        </section>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       TAB 3: Schedule
+  ══════════════════════════════════════════ -->
+  <div id="schedule" class="tab-panel">
+    <div class="page-wrap">
+      <div class="placeholder">
+        <h2>Schedule</h2>
+        <p>Paste your schedule HTML here.<br>Replace this <code>&lt;div class="placeholder"&gt;</code> with your content.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       TAB 4: Readings
+  ══════════════════════════════════════════ -->
+  <div id="readings" class="tab-panel">
+    <div class="page-wrap">
+      <div class="placeholder">
+        <h2>Readings</h2>
+        <p>Paste your readings HTML here.<br>Replace this <code>&lt;div class="placeholder"&gt;</code> with your content.</p>
+      </div>
+    </div>
+  </div>
+
+
 
     <footer>
       <div class="container">
@@ -616,6 +901,13 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
     topBtn.onclick = function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+
+     function switchTab(id, btn) {
+      document.querySelectorAll('.tab-panel').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.top-nav button').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      btn.classList.add('active');
+    }
   </script>
 
 </html>
