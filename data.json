@@ -1,0 +1,5748 @@
+[
+  {
+    "repo": "1mchughhal",
+    "author": "1mchughhal",
+    "remoteUrl": "https://github.com/1mchughhal/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "638d9dcc9c65b93f571ceab37fe920388032fe2f",
+        "hashShort": "638d9dc",
+        "parents": [
+          "6b49e8db3120eeb87d2056ba18708456023ee3f5"
+        ],
+        "subject": "removing merge conflict markers",
+        "date": "2026-05-09 12:51",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "6b49e8db3120eeb87d2056ba18708456023ee3f5",
+        "hashShort": "6b49e8d",
+        "parents": [
+          "38f1e50a5bc6e066c46c12f7f7afda1c243234d6"
+        ],
+        "subject": "fixing formatting",
+        "date": "2026-05-09 12:47",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "38f1e50a5bc6e066c46c12f7f7afda1c243234d6",
+        "hashShort": "38f1e50",
+        "parents": [
+          "5473bf0901e79404f6ba99e083c3b4263c492b1e",
+          "437225515ad4228506374cf3fe5fc0cf38956e7e"
+        ],
+        "subject": "merged",
+        "date": "2026-05-09 12:01",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "437225515ad4228506374cf3fe5fc0cf38956e7e",
+        "hashShort": "4372255",
+        "parents": [
+          "5b71c2756d6c54f7a4bb5664ef0fe2e61bb2a8aa"
+        ],
+        "subject": "adding button to p4",
+        "date": "2026-05-09 11:59",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "5b71c2756d6c54f7a4bb5664ef0fe2e61bb2a8aa",
+        "hashShort": "5b71c27",
+        "parents": [
+          "707cf8404f380197aaf46025d0092d246c577385"
+        ],
+        "subject": "fixing alignment",
+        "date": "2026-05-09 11:57",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "707cf8404f380197aaf46025d0092d246c577385",
+        "hashShort": "707cf84",
+        "parents": [
+          "a4cbf9085107453c9b29f16fa5cf87675789c469"
+        ],
+        "subject": "making options distinct with buttons",
+        "date": "2026-05-09 11:37",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "a4cbf9085107453c9b29f16fa5cf87675789c469",
+        "hashShort": "a4cbf90",
+        "parents": [
+          "1d2bdc1d2e15087b39cc25f09095017c4ff00b9e"
+        ],
+        "subject": "centering elements",
+        "date": "2026-05-09 11:33",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "1d2bdc1d2e15087b39cc25f09095017c4ff00b9e",
+        "hashShort": "1d2bdc1",
+        "parents": [
+          "67e4bd3faf411f30ba47750579f6cf736b6a20cd"
+        ],
+        "subject": "changed text",
+        "date": "2026-05-09 11:31",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "67e4bd3faf411f30ba47750579f6cf736b6a20cd",
+        "hashShort": "67e4bd3",
+        "parents": [
+          "b1c640d6047d65ef82b9d866da9a42c8851841e7"
+        ],
+        "subject": "added nav back to start again",
+        "date": "2026-05-09 11:31",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "b1c640d6047d65ef82b9d866da9a42c8851841e7",
+        "hashShort": "b1c640d",
+        "parents": [
+          "228066e9c0f0b5629d610fd458381c3a59d8f2fb"
+        ],
+        "subject": "added nav back to start",
+        "date": "2026-05-09 11:29",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "228066e9c0f0b5629d610fd458381c3a59d8f2fb",
+        "hashShort": "228066e",
+        "parents": [
+          "758a7fc1edda34e11504ed8d8fb4f658475ffd4a"
+        ],
+        "subject": "added nav again and added button",
+        "date": "2026-05-09 11:27",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "758a7fc1edda34e11504ed8d8fb4f658475ffd4a",
+        "hashShort": "758a7fc",
+        "parents": [
+          "8afb23f5ce740963367d28ff29d93e2aee18cb6f"
+        ],
+        "subject": "fixed title yes",
+        "date": "2026-05-09 11:26",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "8afb23f5ce740963367d28ff29d93e2aee18cb6f",
+        "hashShort": "8afb23f",
+        "parents": [
+          "77cc80630169c1743eccc04e0914daad93c73a5f"
+        ],
+        "subject": "centered input",
+        "date": "2026-05-09 11:18",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "77cc80630169c1743eccc04e0914daad93c73a5f",
+        "hashShort": "77cc806",
+        "parents": [
+          "a3ca4d4063898a7251b7b3b446382593535aefe3"
+        ],
+        "subject": "centered button and added input",
+        "date": "2026-05-09 11:17",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "a3ca4d4063898a7251b7b3b446382593535aefe3",
+        "hashShort": "a3ca4d4",
+        "parents": [
+          "5501b6a4aca8717500493ef9f4fe09d2853036bc"
+        ],
+        "subject": "fixing title pt5",
+        "date": "2026-05-09 11:03",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "5501b6a4aca8717500493ef9f4fe09d2853036bc",
+        "hashShort": "5501b6a",
+        "parents": [
+          "bf7fdb04cea9fb7bd5d15c8bf5c349854457acf5"
+        ],
+        "subject": "fixing title pt3",
+        "date": "2026-05-09 11:02",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "bf7fdb04cea9fb7bd5d15c8bf5c349854457acf5",
+        "hashShort": "bf7fdb0",
+        "parents": [
+          "226bbdffc86b22c10d18268bebd6d100db5e6c0f"
+        ],
+        "subject": "fixed title again",
+        "date": "2026-05-09 11:02",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "226bbdffc86b22c10d18268bebd6d100db5e6c0f",
+        "hashShort": "226bbdf",
+        "parents": [
+          "8afe0f9d7c1eb299d2c7fa701609f402940c778e"
+        ],
+        "subject": "deleted duplicate nav",
+        "date": "2026-05-09 11:01",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "8afe0f9d7c1eb299d2c7fa701609f402940c778e",
+        "hashShort": "8afe0f9",
+        "parents": [
+          "349118c46d3f06b1fd4812566a7df4308210eca0"
+        ],
+        "subject": "making button larger",
+        "date": "2026-05-09 11:00",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "349118c46d3f06b1fd4812566a7df4308210eca0",
+        "hashShort": "349118c",
+        "parents": [
+          "5fbb1acf1b5ee5fe02fb431c8a3fd39b35c5500b"
+        ],
+        "subject": "adding button to p2html",
+        "date": "2026-05-09 10:58",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "5fbb1acf1b5ee5fe02fb431c8a3fd39b35c5500b",
+        "hashShort": "5fbb1ac",
+        "parents": [
+          "2974e8110983f4595c7d2def0db8b4ff022eb741"
+        ],
+        "subject": "turning links into buttons",
+        "date": "2026-05-09 10:50",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "2974e8110983f4595c7d2def0db8b4ff022eb741",
+        "hashShort": "2974e81",
+        "parents": [
+          "11b070cdd35c610f25b0a7cb5e1cce0e96ac7916"
+        ],
+        "subject": "tested img centering option, enjoyed result",
+        "date": "2026-05-09 10:47",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "11b070cdd35c610f25b0a7cb5e1cce0e96ac7916",
+        "hashShort": "11b070c",
+        "parents": [
+          "dbae157c0bdcdb45966eb51539f51942fd508ffa"
+        ],
+        "subject": "recentering list",
+        "date": "2026-05-09 10:45",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "dbae157c0bdcdb45966eb51539f51942fd508ffa",
+        "hashShort": "dbae157",
+        "parents": [
+          "9943bd186bf74330f5b58f3598dc6c06462dc33e"
+        ],
+        "subject": "changed background image",
+        "date": "2026-05-09 10:41",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "9943bd186bf74330f5b58f3598dc6c06462dc33e",
+        "hashShort": "9943bd1",
+        "parents": [
+          "156bd567f7b6df2659e7c1c9cbeed558431573f4"
+        ],
+        "subject": "closing message added",
+        "date": "2026-05-09 10:40",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "156bd567f7b6df2659e7c1c9cbeed558431573f4",
+        "hashShort": "156bd56",
+        "parents": [
+          "23fed2ca3c0c2f942a428fb07a586031c4d1978a"
+        ],
+        "subject": "centering list and adding to list",
+        "date": "2026-05-09 10:31",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "23fed2ca3c0c2f942a428fb07a586031c4d1978a",
+        "hashShort": "23fed2c",
+        "parents": [
+          "be3a614b4ce59c8c8de0c5e285e028b44a84ad8b"
+        ],
+        "subject": "starting happy list",
+        "date": "2026-05-09 10:30",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "be3a614b4ce59c8c8de0c5e285e028b44a84ad8b",
+        "hashShort": "be3a614",
+        "parents": [
+          "c24b64e14d60950be9a0c68b7213596645036014"
+        ],
+        "subject": "made text larger",
+        "date": "2026-05-09 10:29",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "c24b64e14d60950be9a0c68b7213596645036014",
+        "hashShort": "c24b64e",
+        "parents": [
+          "cd6a57e4bc4ea07a61a29ce93e4c8813d0006281"
+        ],
+        "subject": "centering all text",
+        "date": "2026-05-09 10:27",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "cd6a57e4bc4ea07a61a29ce93e4c8813d0006281",
+        "hashShort": "cd6a57e",
+        "parents": [
+          "87a56653af892ff9b35bb0f8450f1c91c83fac55"
+        ],
+        "subject": "centering heading",
+        "date": "2026-05-09 10:25",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "87a56653af892ff9b35bb0f8450f1c91c83fac55",
+        "hashShort": "87a5665",
+        "parents": [
+          "0d66875da6660c2d70e69dbe0df9f35f5b00d99a"
+        ],
+        "subject": "added font to heading",
+        "date": "2026-05-09 10:21",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "5473bf0901e79404f6ba99e083c3b4263c492b1e",
+        "hashShort": "5473bf0",
+        "parents": [
+          "441d29af1515f618b390a776a0c3c03576172dd0"
+        ],
+        "subject": "reformatting",
+        "date": "2026-05-09 01:21",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "441d29af1515f618b390a776a0c3c03576172dd0",
+        "hashShort": "441d29a",
+        "parents": [
+          "4a41eb64af72027906248a1ef81bad2635f6d097"
+        ],
+        "subject": "centered text",
+        "date": "2026-05-09 01:20",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "4a41eb64af72027906248a1ef81bad2635f6d097",
+        "hashShort": "4a41eb6",
+        "parents": [
+          "648a380d39b1178f5a7f3a2b2bb5905e9d476fb9"
+        ],
+        "subject": "formatting",
+        "date": "2026-05-09 01:18",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "648a380d39b1178f5a7f3a2b2bb5905e9d476fb9",
+        "hashShort": "648a380",
+        "parents": [
+          "689e30f9ef04e5ccb7f1478902f4350315e8c98b"
+        ],
+        "subject": "note to self",
+        "date": "2026-05-09 01:16",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "689e30f9ef04e5ccb7f1478902f4350315e8c98b",
+        "hashShort": "689e30f",
+        "parents": [
+          "9a0c1afe4e68910d1708edc715ea395f1a58ba7b"
+        ],
+        "subject": "had to add link again",
+        "date": "2026-05-09 01:12",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "9a0c1afe4e68910d1708edc715ea395f1a58ba7b",
+        "hashShort": "9a0c1af",
+        "parents": [
+          "a0970b8813adb4627da36569b5b68eb3221a7623"
+        ],
+        "subject": "updated title",
+        "date": "2026-05-09 01:10",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "a0970b8813adb4627da36569b5b68eb3221a7623",
+        "hashShort": "a0970b8",
+        "parents": [
+          "6977fcb52065ac1b69636db2a7e017dc4e423376"
+        ],
+        "subject": "updated title",
+        "date": "2026-05-09 01:09",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "6977fcb52065ac1b69636db2a7e017dc4e423376",
+        "hashShort": "6977fcb",
+        "parents": [
+          "be708cdb719963a65af246270291b0dc697b931f"
+        ],
+        "subject": "updated title",
+        "date": "2026-05-09 01:09",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "be708cdb719963a65af246270291b0dc697b931f",
+        "hashShort": "be708cd",
+        "parents": [
+          "0d66875da6660c2d70e69dbe0df9f35f5b00d99a"
+        ],
+        "subject": "updated title",
+        "date": "2026-05-09 01:08",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "0d66875da6660c2d70e69dbe0df9f35f5b00d99a",
+        "hashShort": "0d66875",
+        "parents": [
+          "2160563498e435489c64070a06c95fa305144869",
+          "3514eae67ff7224899e6fd92ede979bd217460f8"
+        ],
+        "subject": "merging main and no",
+        "date": "2026-05-09 01:06",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "2160563498e435489c64070a06c95fa305144869",
+        "hashShort": "2160563",
+        "parents": [
+          "cacf89a589ea673d64145610f484a29a792496ee",
+          "76cd999379b9f1a53d44c57166feee36f99289ae"
+        ],
+        "subject": "merging",
+        "date": "2026-05-09 01:01",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "76cd999379b9f1a53d44c57166feee36f99289ae",
+        "hashShort": "76cd999",
+        "parents": [
+          "d45cb096a3c033699da3d56f47e7ee5edd4ecfb7"
+        ],
+        "subject": "changed title",
+        "date": "2026-05-09 00:57",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "cacf89a589ea673d64145610f484a29a792496ee",
+        "hashShort": "cacf89a",
+        "parents": [
+          "28dba81d8a281a1432155431e351f6839e867a33",
+          "002dd09adfade300fd7b0299037a06ce971ea19c"
+        ],
+        "subject": "merged understandingdog and stupidhair",
+        "date": "2026-05-09 00:53",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "28dba81d8a281a1432155431e351f6839e867a33",
+        "hashShort": "28dba81",
+        "parents": [
+          "feea759b0fb0e9f14a3f10b80ab5953c8dbc19d7"
+        ],
+        "subject": "updated title",
+        "date": "2026-05-09 00:50",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "396d29f41792c979d77f2d6a5007e296cd769b9e",
+        "hashShort": "396d29f",
+        "parents": [
+          "9aa00634dd4005fb54d35ae97f33c65bdcbe95a9"
+        ],
+        "subject": "fixing",
+        "date": "2026-05-09 00:47",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "3514eae67ff7224899e6fd92ede979bd217460f8",
+        "hashShort": "3514eae",
+        "parents": [
+          "094561b945f8733f798e65c774a9b2fbf55d4ae9"
+        ],
+        "subject": "added text",
+        "date": "2026-05-09 00:45",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "094561b945f8733f798e65c774a9b2fbf55d4ae9",
+        "hashShort": "094561b",
+        "parents": [
+          "9aa00634dd4005fb54d35ae97f33c65bdcbe95a9"
+        ],
+        "subject": "changed title page and image",
+        "date": "2026-05-09 00:43",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "002dd09adfade300fd7b0299037a06ce971ea19c",
+        "hashShort": "002dd09",
+        "parents": [
+          "a502c71550c72225cefe5b6be77056921145382d"
+        ],
+        "subject": "renamed file",
+        "date": "2026-05-09 00:40",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "9aa00634dd4005fb54d35ae97f33c65bdcbe95a9",
+        "hashShort": "9aa0063",
+        "parents": [
+          "7d46b48f6592b6c147baee8e6bb9db09c92f182b"
+        ],
+        "subject": "added image and text and formatting",
+        "date": "2026-05-09 00:39",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "7d46b48f6592b6c147baee8e6bb9db09c92f182b",
+        "hashShort": "7d46b48",
+        "parents": [
+          "a502c71550c72225cefe5b6be77056921145382d"
+        ],
+        "subject": "changed file name",
+        "date": "2026-05-09 00:36",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "a502c71550c72225cefe5b6be77056921145382d",
+        "hashShort": "a502c71",
+        "parents": [
+          "d8facbb1b47d127c4d47b0b4ac1b0b3b16523ca0"
+        ],
+        "subject": "added two linked options",
+        "date": "2026-05-09 00:33",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "d8facbb1b47d127c4d47b0b4ac1b0b3b16523ca0",
+        "hashShort": "d8facbb",
+        "parents": [
+          "0ca4bd06ecfc6a9727ce5ec9bc637cb590960ead"
+        ],
+        "subject": "added image and text",
+        "date": "2026-05-08 19:13",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "0ca4bd06ecfc6a9727ce5ec9bc637cb590960ead",
+        "hashShort": "0ca4bd0",
+        "parents": [
+          "feea759b0fb0e9f14a3f10b80ab5953c8dbc19d7"
+        ],
+        "subject": "setting up pt5",
+        "date": "2026-05-08 19:07",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "feea759b0fb0e9f14a3f10b80ab5953c8dbc19d7",
+        "hashShort": "feea759",
+        "parents": [
+          "6c0f8aa67b9953600109820db5f3a7e74060c046"
+        ],
+        "subject": "moved nav and changed font size",
+        "date": "2026-05-08 19:00",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "6c0f8aa67b9953600109820db5f3a7e74060c046",
+        "hashShort": "6c0f8aa",
+        "parents": [
+          "4e4705520dc7e3e5ca01fb57d524d31b48ddae80"
+        ],
+        "subject": "added text and image",
+        "date": "2026-05-08 18:47",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "d45cb096a3c033699da3d56f47e7ee5edd4ecfb7",
+        "hashShort": "d45cb09",
+        "parents": [
+          "48be7299d60fad86a95deb6ca7c04c8e959542e7"
+        ],
+        "subject": "changed file name",
+        "date": "2026-05-07 21:51",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "48be7299d60fad86a95deb6ca7c04c8e959542e7",
+        "hashShort": "48be729",
+        "parents": [
+          "d13a5fbd581b8917976ac4a1b7120baf474b2ea1"
+        ],
+        "subject": "fixing",
+        "date": "2026-05-07 21:47",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "d13a5fbd581b8917976ac4a1b7120baf474b2ea1",
+        "hashShort": "d13a5fb",
+        "parents": [
+          "9b994150090771b1a3bebccb0a01f337afc17097"
+        ],
+        "subject": "added link",
+        "date": "2026-05-07 21:35",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "4e4705520dc7e3e5ca01fb57d524d31b48ddae80",
+        "hashShort": "4e47055",
+        "parents": [
+          "bd92e1759e8f2c4dce7c521821d293627c9a0ab8"
+        ],
+        "subject": "dog is reaching englightenment",
+        "date": "2026-05-07 21:31",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "bd92e1759e8f2c4dce7c521821d293627c9a0ab8",
+        "hashShort": "bd92e17",
+        "parents": [
+          "35b6963cce9f9a84f02dcf2cabcc636e1aaddd10"
+        ],
+        "subject": "adding notes to self",
+        "date": "2026-05-07 21:25",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "35b6963cce9f9a84f02dcf2cabcc636e1aaddd10",
+        "hashShort": "35b6963",
+        "parents": [
+          "fdbf94503fbfaf04b63a39318b130930ed6641af"
+        ],
+        "subject": "added image. identity provided",
+        "date": "2026-05-07 21:14",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "fdbf94503fbfaf04b63a39318b130930ed6641af",
+        "hashShort": "fdbf945",
+        "parents": [
+          "f5c455488f7a9eb1b78d7851cc4218faf32f04c2"
+        ],
+        "subject": "a new player has entered the ring",
+        "date": "2026-05-07 21:12",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "f5c455488f7a9eb1b78d7851cc4218faf32f04c2",
+        "hashShort": "f5c4554",
+        "parents": [
+          "03d3f437ae8ec3ae76a6d59639e5b5696003f9c9"
+        ],
+        "subject": "adding link",
+        "date": "2026-05-07 20:57",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "9b994150090771b1a3bebccb0a01f337afc17097",
+        "hashShort": "9b99415",
+        "parents": [
+          "dc8882c11e78e44e783418a6485896ad8c12c422"
+        ],
+        "subject": "manually merged pt3html data from learneddog branch since it didn't happ",
+        "date": "2026-05-07 20:50",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "03d3f437ae8ec3ae76a6d59639e5b5696003f9c9",
+        "hashShort": "03d3f43",
+        "parents": [
+          "0cd940f3880e4769098a6a489b6660b77b88d3d7",
+          "dc8882c11e78e44e783418a6485896ad8c12c422"
+        ],
+        "subject": "Merge branch 'main' into learneddog",
+        "date": "2026-05-07 20:41",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "dc8882c11e78e44e783418a6485896ad8c12c422",
+        "hashShort": "dc8882c",
+        "parents": [
+          "1b6b817006ee850a3308b8eef583d0b001c7c186"
+        ],
+        "subject": "fixing",
+        "date": "2026-05-07 20:37",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "0cd940f3880e4769098a6a489b6660b77b88d3d7",
+        "hashShort": "0cd940f",
+        "parents": [
+          "ec627c4d67a2807433fa72d5558062e7896d6acf",
+          "1b6b817006ee850a3308b8eef583d0b001c7c186"
+        ],
+        "subject": "merged learneddog",
+        "date": "2026-05-07 20:34",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "1b6b817006ee850a3308b8eef583d0b001c7c186",
+        "hashShort": "1b6b817",
+        "parents": [
+          "de5dbdc2976e5b44bb5a2e323d48d97f6bf01728"
+        ],
+        "subject": "fixing html names",
+        "date": "2026-05-07 20:29",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "de5dbdc2976e5b44bb5a2e323d48d97f6bf01728",
+        "hashShort": "de5dbdc",
+        "parents": [
+          "a581bf98f90bd9f65eb0ac48b935e019cc470737"
+        ],
+        "subject": "fixed",
+        "date": "2026-05-07 20:27",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "a581bf98f90bd9f65eb0ac48b935e019cc470737",
+        "hashShort": "a581bf9",
+        "parents": [
+          "ec2976d87615a0dd36f6c4f01cae19accece280c"
+        ],
+        "subject": "changing link name",
+        "date": "2026-05-07 20:26",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "ec2976d87615a0dd36f6c4f01cae19accece280c",
+        "hashShort": "ec2976d",
+        "parents": [
+          "076decb03c433b0172b3362a1381ec26ef83f74b"
+        ],
+        "subject": "had to fix index",
+        "date": "2026-05-07 20:21",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "076decb03c433b0172b3362a1381ec26ef83f74b",
+        "hashShort": "076decb",
+        "parents": [
+          "2e14eaeccd58112eb9c2c20d2976e038f3cc9136"
+        ],
+        "subject": "fixing formatting",
+        "date": "2026-05-07 20:14",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "2e14eaeccd58112eb9c2c20d2976e038f3cc9136",
+        "hashShort": "2e14eae",
+        "parents": [
+          "e8cb2f9bf7d6cfa4d610f894d173f35bc428bb0e"
+        ],
+        "subject": "Fixing",
+        "date": "2026-05-07 19:57",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "e8cb2f9bf7d6cfa4d610f894d173f35bc428bb0e",
+        "hashShort": "e8cb2f9",
+        "parents": [
+          "8c86329eb92c697241ad6d960a365da7803df778"
+        ],
+        "subject": "added nav",
+        "date": "2026-05-07 19:53",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "ec627c4d67a2807433fa72d5558062e7896d6acf",
+        "hashShort": "ec627c4",
+        "parents": [
+          "90cda6bdb4758c50032bf699774be14062283696"
+        ],
+        "subject": "trying to fix order of pages",
+        "date": "2026-05-07 19:50",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "90cda6bdb4758c50032bf699774be14062283696",
+        "hashShort": "90cda6b",
+        "parents": [
+          "d76ee2e83a61b2273951f7b5f12d7e7200b10f74"
+        ],
+        "subject": "added navigation",
+        "date": "2026-05-07 19:46",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "d76ee2e83a61b2273951f7b5f12d7e7200b10f74",
+        "hashShort": "d76ee2e",
+        "parents": [
+          "8c86329eb92c697241ad6d960a365da7803df778"
+        ],
+        "subject": "fixed formatting",
+        "date": "2026-05-07 19:39",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "8c86329eb92c697241ad6d960a365da7803df778",
+        "hashShort": "8c86329",
+        "parents": [
+          "c0c154ad773482d1e45a639a92bb4a7f45452342"
+        ],
+        "subject": "version change",
+        "date": "2026-05-07 16:53",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "8cc82c78449bd260d7b01e64d2f86d2541584b60",
+        "hashShort": "8cc82c7",
+        "parents": [
+          "c0c154ad773482d1e45a639a92bb4a7f45452342"
+        ],
+        "subject": "Updating",
+        "date": "2026-05-07 16:32",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "c0c154ad773482d1e45a639a92bb4a7f45452342",
+        "hashShort": "c0c154a",
+        "parents": [
+          "eb8a49645a00492587fe959a25c4c2c1f7286aa9"
+        ],
+        "subject": "silly and fun",
+        "date": "2026-05-07 15:54",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "eb8a49645a00492587fe959a25c4c2c1f7286aa9",
+        "hashShort": "eb8a496",
+        "parents": [
+          "7fb795de9a46159d36a4d465fd116a0072202488"
+        ],
+        "subject": "joyful dog",
+        "date": "2026-05-07 14:59",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "7fb795de9a46159d36a4d465fd116a0072202488",
+        "hashShort": "7fb795d",
+        "parents": [
+          "142ce596a6ced6419bd4355164555559541383a4"
+        ],
+        "subject": "messing around",
+        "date": "2026-05-07 14:53",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "142ce596a6ced6419bd4355164555559541383a4",
+        "hashShort": "142ce59",
+        "parents": [
+          "456525201c044f5bf3375aed0030676d6b3edee6"
+        ],
+        "subject": "bro",
+        "date": "2026-05-07 14:10",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "456525201c044f5bf3375aed0030676d6b3edee6",
+        "hashShort": "4565252",
+        "parents": [
+          "f25075e6f0bcdb5b73cfa309a9ed977e74933bfc"
+        ],
+        "subject": "deleted name",
+        "date": "2026-05-07 14:03",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "f25075e6f0bcdb5b73cfa309a9ed977e74933bfc",
+        "hashShort": "f25075e",
+        "parents": [
+          "4433687d500c6190b3cc2add8d242b56b97aeda9"
+        ],
+        "subject": "added last name",
+        "date": "2026-05-07 14:02",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "4433687d500c6190b3cc2add8d242b56b97aeda9",
+        "hashShort": "4433687",
+        "parents": [
+          "4e2e0dc28e05ccf3703944561280c719d99bf098"
+        ],
+        "subject": "added name",
+        "date": "2026-05-07 14:01",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "4e2e0dc28e05ccf3703944561280c719d99bf098",
+        "hashShort": "4e2e0dc",
+        "parents": [
+          "eb29390b0a5caab14f25b16cc1657224ebef5d3c"
+        ],
+        "subject": "Title page",
+        "date": "2026-05-07 13:49",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "eb29390b0a5caab14f25b16cc1657224ebef5d3c",
+        "hashShort": "eb29390",
+        "parents": [
+          "aee9259f8e01269dcbb4748f36b7d229fc66d4c0"
+        ],
+        "subject": "testing",
+        "date": "2026-05-06 09:57",
+        "author": "1mchughhal"
+      },
+      {
+        "hash": "aee9259f8e01269dcbb4748f36b7d229fc66d4c0",
+        "hashShort": "aee9259",
+        "parents": [],
+        "subject": "Initial commit",
+        "date": "2026-05-06 09:51",
+        "author": "1mchughhal"
+      }
+    ],
+    "branches": [
+      {
+        "name": "56da239",
+        "hash": "8cc82c78449bd260d7b01e64d2f86d2541584b60"
+      },
+      {
+        "name": "origin",
+        "hash": "638d9dcc9c65b93f571ceab37fe920388032fe2f"
+      },
+      {
+        "name": "angrydog",
+        "hash": "8c86329eb92c697241ad6d960a365da7803df778"
+      },
+      {
+        "name": "learneddog",
+        "hash": "f5c455488f7a9eb1b78d7851cc4218faf32f04c2"
+      },
+      {
+        "name": "main",
+        "hash": "638d9dcc9c65b93f571ceab37fe920388032fe2f"
+      },
+      {
+        "name": "no",
+        "hash": "0d66875da6660c2d70e69dbe0df9f35f5b00d99a"
+      },
+      {
+        "name": "sillydogv2",
+        "hash": "437225515ad4228506374cf3fe5fc0cf38956e7e"
+      },
+      {
+        "name": "sillydogv3",
+        "hash": "5fbb1acf1b5ee5fe02fb431c8a3fd39b35c5500b"
+      },
+      {
+        "name": "sillydogv4",
+        "hash": "a3ca4d4063898a7251b7b3b446382593535aefe3"
+      },
+      {
+        "name": "sillydogv5",
+        "hash": "228066e9c0f0b5629d610fd458381c3a59d8f2fb"
+      },
+      {
+        "name": "sillydogv6",
+        "hash": "437225515ad4228506374cf3fe5fc0cf38956e7e"
+      },
+      {
+        "name": "stupidhair",
+        "hash": "002dd09adfade300fd7b0299037a06ce971ea19c"
+      },
+      {
+        "name": "understandingdog",
+        "hash": "2160563498e435489c64070a06c95fa305144869"
+      },
+      {
+        "name": "yes",
+        "hash": "396d29f41792c979d77f2d6a5007e296cd769b9e"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "DocSam-44",
+    "author": "DocSam-44",
+    "remoteUrl": "https://github.com/DocSam-44/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "e0c9057657ee42f7912d77758fb99025a156d4d2",
+        "hashShort": "e0c9057",
+        "parents": [
+          "dee503ea63518fedd1ffc4137d116c8a07327f21"
+        ],
+        "subject": "removed unneeded links at bottom of website after moving them to the pro",
+        "date": "2026-05-09 23:52",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "dee503ea63518fedd1ffc4137d116c8a07327f21",
+        "hashShort": "dee503e",
+        "parents": [
+          "d35aa7cfea6f0df491a320f990653c91fbc44cba"
+        ],
+        "subject": "final sources for assignment one transferred from other repo",
+        "date": "2026-05-09 23:31",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "d35aa7cfea6f0df491a320f990653c91fbc44cba",
+        "hashShort": "d35aa7c",
+        "parents": [
+          "1666e82a51ff8cefa8666f391bd25b524ba0a4f4"
+        ],
+        "subject": "realized image editing was missing from makerspace info and added it to ",
+        "date": "2026-05-09 22:53",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "1666e82a51ff8cefa8666f391bd25b524ba0a4f4",
+        "hashShort": "1666e82",
+        "parents": [
+          "d52fdb1dbcdc34456dde8e8206ebaf636bc2f1bf"
+        ],
+        "subject": "altered language from prep to preparation to sound more preofessional",
+        "date": "2026-05-09 22:51",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "d52fdb1dbcdc34456dde8e8206ebaf636bc2f1bf",
+        "hashShort": "d52fdb1",
+        "parents": [
+          "eeafce95e4727529d59101e6e5f59916587dffe4"
+        ],
+        "subject": "added to sas write up that drop in times are available",
+        "date": "2026-05-09 22:50",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "eeafce95e4727529d59101e6e5f59916587dffe4",
+        "hashShort": "eeafce9",
+        "parents": [
+          "e3716f2226d0554cecc8527f1e3a3aaee422527e"
+        ],
+        "subject": "added clarification to sas case worker instructions",
+        "date": "2026-05-09 22:49",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "e3716f2226d0554cecc8527f1e3a3aaee422527e",
+        "hashShort": "e3716f2",
+        "parents": [
+          "fda8d15d75370f4918aff287a50e7bf91a053d66"
+        ],
+        "subject": "fixed redundant sentence under financial write up",
+        "date": "2026-05-09 22:47",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "fda8d15d75370f4918aff287a50e7bf91a053d66",
+        "hashShort": "fda8d15",
+        "parents": [
+          "d9305b21cdf72b61a1bdb4eddcd1423ec51a16e3"
+        ],
+        "subject": "version links and descriptions have been completed",
+        "date": "2026-05-09 21:21",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "d9305b21cdf72b61a1bdb4eddcd1423ec51a16e3",
+        "hashShort": "d9305b2",
+        "parents": [
+          "d982d2a0b051abbcec52591922be93ebb3ee3729"
+        ],
+        "subject": "all photos of food locations added",
+        "date": "2026-05-09 21:05",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "049fdcff264b77e6e8a13aeaa2c155b79d10ae66",
+        "hashShort": "049fdcf",
+        "parents": [
+          "c46a08b87aea407fecc730cc3a9e3d6ae51a8fd1",
+          "9662b1ffd33bb0a629c7b404acd8850b564c139d"
+        ],
+        "subject": "trying new branch merging combos",
+        "date": "2026-05-09 20:53",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "d982d2a0b051abbcec52591922be93ebb3ee3729",
+        "hashShort": "d982d2a",
+        "parents": [
+          "a17384fd19ed6973170df3e29b2aaf2d8fae0c26"
+        ],
+        "subject": "double checking saved",
+        "date": "2026-05-09 20:42",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "a17384fd19ed6973170df3e29b2aaf2d8fae0c26",
+        "hashShort": "a17384f",
+        "parents": [
+          "e1160cd328b5c38f187830db674cd8ef07cd947b"
+        ],
+        "subject": "added links",
+        "date": "2026-05-09 20:41",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "e1160cd328b5c38f187830db674cd8ef07cd947b",
+        "hashShort": "e1160cd",
+        "parents": [
+          "92674eb1f8a2ac1d3582b7b51fdf21835e6b628f"
+        ],
+        "subject": "fixed spelling error under list of html tools",
+        "date": "2026-05-09 20:18",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "92674eb1f8a2ac1d3582b7b51fdf21835e6b628f",
+        "hashShort": "92674eb",
+        "parents": [
+          "c9ecc4bb1944e17cb6c05a9160359e9d013ba445"
+        ],
+        "subject": "fixed multiple spelling mistakes caught",
+        "date": "2026-05-09 17:02",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "c9ecc4bb1944e17cb6c05a9160359e9d013ba445",
+        "hashShort": "c9ecc4b",
+        "parents": [
+          "17aa5b5e7b889548172fa2af4ce02b3bd9263e15"
+        ],
+        "subject": "fixed spelling error of chanes to changes under sas description",
+        "date": "2026-05-09 16:57",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "17aa5b5e7b889548172fa2af4ce02b3bd9263e15",
+        "hashShort": "17aa5b5",
+        "parents": [
+          "091ee3373b492e46f5a098da68dec17358e6c892"
+        ],
+        "subject": "added list of html tools used for this project and bolded text and chang",
+        "date": "2026-05-09 00:56",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "091ee3373b492e46f5a098da68dec17358e6c892",
+        "hashShort": "091ee33",
+        "parents": [
+          "6b0131e065de81d9e870633f9dc1d91574980013"
+        ],
+        "subject": "centered title, changed font",
+        "date": "2026-05-09 00:40",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "6b0131e065de81d9e870633f9dc1d91574980013",
+        "hashShort": "6b0131e",
+        "parents": [
+          "a3fc659bfd4c14e96706c8870afac5f4ef51e770"
+        ],
+        "subject": "located and fixed period placement in academic help/tutoring write up",
+        "date": "2026-05-09 00:25",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "a3fc659bfd4c14e96706c8870afac5f4ef51e770",
+        "hashShort": "a3fc659",
+        "parents": [
+          "42ad4322be14e39af8c3ea78b186e71ebdfe0f68"
+        ],
+        "subject": "fixed spelling error of lowengerber to lowenberger",
+        "date": "2026-05-09 00:23",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "42ad4322be14e39af8c3ea78b186e71ebdfe0f68",
+        "hashShort": "42ad432",
+        "parents": [
+          "c1eda265521337371c74d1cea21531af2cfa381c"
+        ],
+        "subject": "finished all write ups, next comes n=tinkering before due date to meet r",
+        "date": "2026-05-09 00:20",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "c1eda265521337371c74d1cea21531af2cfa381c",
+        "hashShort": "c1eda26",
+        "parents": [
+          "6a9eded4e79e04773ef66091648fde976f2eb102"
+        ],
+        "subject": "almost done adding all extracurriculars; just finished clubs",
+        "date": "2026-05-08 23:51",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "6a9eded4e79e04773ef66091648fde976f2eb102",
+        "hashShort": "6a9eded",
+        "parents": [
+          "fad8214739dbde9cb768715d379dde8efe795e51"
+        ],
+        "subject": "working through last bit of resource mybrocku details",
+        "date": "2026-05-08 22:59",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "fad8214739dbde9cb768715d379dde8efe795e51",
+        "hashShort": "fad8214",
+        "parents": [
+          "261ed6323ab7a0d07b4fe3a77bb60931d29c6dee"
+        ],
+        "subject": "added link and descriptions for transportation",
+        "date": "2026-05-08 21:46",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "261ed6323ab7a0d07b4fe3a77bb60931d29c6dee",
+        "hashShort": "261ed63",
+        "parents": [
+          "6c52e4445a4e68302c397f94b01050ee9bc9bdad"
+        ],
+        "subject": "most restauants added, link for menu added and functional",
+        "date": "2026-05-08 18:51",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "6c52e4445a4e68302c397f94b01050ee9bc9bdad",
+        "hashShort": "6c52e44",
+        "parents": [
+          "c301c139e737d0e53d26349dfe350161d6456cc8"
+        ],
+        "subject": "descriptions for Financial and SAS completed while career underway",
+        "date": "2026-05-08 18:15",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "c301c139e737d0e53d26349dfe350161d6456cc8",
+        "hashShort": "c301c13",
+        "parents": [
+          "e79680fac47c718c427c76fd1cc08c48f9b41062"
+        ],
+        "subject": "added link final locations for housing options",
+        "date": "2026-05-08 16:39",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "e79680fac47c718c427c76fd1cc08c48f9b41062",
+        "hashShort": "e79680f",
+        "parents": [
+          "c701794daa8ef38e2324d7f7b933dc794ae7158d"
+        ],
+        "subject": "tried a font and changed my mind",
+        "date": "2026-05-08 16:28",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "c701794daa8ef38e2324d7f7b933dc794ae7158d",
+        "hashShort": "c701794",
+        "parents": [
+          "a830ace0749266246186183bea16e3f7d282fc52"
+        ],
+        "subject": "finished link lists for tonight",
+        "date": "2026-05-08 00:03",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "a830ace0749266246186183bea16e3f7d282fc52",
+        "hashShort": "a830ace",
+        "parents": [
+          "dcd8a41b78ef4438aa867d9e88d55cf1363d9a43"
+        ],
+        "subject": "didn't want friends subsection anymore; since deleted",
+        "date": "2026-05-08 00:00",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "dcd8a41b78ef4438aa867d9e88d55cf1363d9a43",
+        "hashShort": "dcd8a41",
+        "parents": [
+          "aa91b97e9e5eb714f5e86a038d840ba2ba75076e"
+        ],
+        "subject": "housing options links added",
+        "date": "2026-05-07 23:54",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "aa91b97e9e5eb714f5e86a038d840ba2ba75076e",
+        "hashShort": "aa91b97",
+        "parents": [
+          "50a19b142d59e63b82a0fc71f2af55d983dd0249"
+        ],
+        "subject": "realized that one list was missing a / which made everything below shift",
+        "date": "2026-05-07 23:40",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "50a19b142d59e63b82a0fc71f2af55d983dd0249",
+        "hashShort": "50a19b1",
+        "parents": [
+          "3ef9ede976d29333086f28f21cb0b58ad5268fb6"
+        ],
+        "subject": "locations on campus turned into links",
+        "date": "2026-05-07 23:23",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "3ef9ede976d29333086f28f21cb0b58ad5268fb6",
+        "hashShort": "3ef9ede",
+        "parents": [
+          "de7f06d5c25fed497c2e39fd924975487e8cdbd7"
+        ],
+        "subject": "fixed gramatical errors and removed extra codes",
+        "date": "2026-05-07 23:17",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "de7f06d5c25fed497c2e39fd924975487e8cdbd7",
+        "hashShort": "de7f06d",
+        "parents": [
+          "d861a8665f99cc50135037fa12b297c923f9026f"
+        ],
+        "subject": "added extra background colouring for titles and changed background colou",
+        "date": "2026-05-07 23:14",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "d861a8665f99cc50135037fa12b297c923f9026f",
+        "hashShort": "d861a86",
+        "parents": [
+          "47df728312f4e3e99cacb7740456d01bc435c553"
+        ],
+        "subject": "reorganized layout and started to test subsection descriptions",
+        "date": "2026-05-07 23:08",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "47df728312f4e3e99cacb7740456d01bc435c553",
+        "hashShort": "47df728",
+        "parents": [
+          "49a3b6571922cb8dcf6baa49f23f0702dc658dfc"
+        ],
+        "subject": "extracurriculars turned into links",
+        "date": "2026-05-07 22:56",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "49a3b6571922cb8dcf6baa49f23f0702dc658dfc",
+        "hashShort": "49a3b65",
+        "parents": [
+          "a470fa0004215d35f26a3655137501b356efe43c"
+        ],
+        "subject": "link final locations have been added",
+        "date": "2026-05-07 22:47",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "a470fa0004215d35f26a3655137501b356efe43c",
+        "hashShort": "a470fa0",
+        "parents": [
+          "0af1f96989d43339fa7c470f98801bc08c261da3"
+        ],
+        "subject": "changed shade of financial to not match shade of links",
+        "date": "2026-05-07 22:42",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "0af1f96989d43339fa7c470f98801bc08c261da3",
+        "hashShort": "0af1f96",
+        "parents": [
+          "2bfc2f035c6be6240218fa70d5bc07ad0609dbb8"
+        ],
+        "subject": "took out extra words and made financial a link",
+        "date": "2026-05-07 22:38",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "2bfc2f035c6be6240218fa70d5bc07ad0609dbb8",
+        "hashShort": "2bfc2f0",
+        "parents": [
+          "e54e129e2c82b0f129922afcceb74f2c6050efd0"
+        ],
+        "subject": "capitalized resources list",
+        "date": "2026-05-07 22:24",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "e54e129e2c82b0f129922afcceb74f2c6050efd0",
+        "hashShort": "e54e129",
+        "parents": [
+          "6650383ed3dbf96ff09b9bd97852be8c30918e19",
+          "27ff7f46853c956f9e91fc86ee60eeb2cdb3f140"
+        ],
+        "subject": "fully merged into after class version",
+        "date": "2026-05-07 18:10",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "27ff7f46853c956f9e91fc86ee60eeb2cdb3f140",
+        "hashShort": "27ff7f4",
+        "parents": [
+          "63b1b442c81ace9153ad2e001779456982cebcd5"
+        ],
+        "subject": "prof assistance",
+        "date": "2026-05-07 18:04",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "63b1b442c81ace9153ad2e001779456982cebcd5",
+        "hashShort": "63b1b44",
+        "parents": [
+          "6a1ac5c4ba146c0b2521201b761ad2836aca4d69"
+        ],
+        "subject": "saving before adding a photo",
+        "date": "2026-05-07 17:23",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "6a1ac5c4ba146c0b2521201b761ad2836aca4d69",
+        "hashShort": "6a1ac5c",
+        "parents": [
+          "fab656c313de5e79f3a56d586d9a303fd8caa0a1"
+        ],
+        "subject": "added locations list",
+        "date": "2026-05-07 16:48",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "fab656c313de5e79f3a56d586d9a303fd8caa0a1",
+        "hashShort": "fab656c",
+        "parents": [
+          "b83d5f72887ef47a4c264af2a06ed4a160991dc7"
+        ],
+        "subject": "added list of extracurriculars",
+        "date": "2026-05-07 16:37",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "b83d5f72887ef47a4c264af2a06ed4a160991dc7",
+        "hashShort": "b83d5f7",
+        "parents": [
+          "9662b1ffd33bb0a629c7b404acd8850b564c139d"
+        ],
+        "subject": "added a list of resources",
+        "date": "2026-05-07 16:34",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "9662b1ffd33bb0a629c7b404acd8850b564c139d",
+        "hashShort": "9662b1f",
+        "parents": [
+          "6e43541d36fd8636ae8a4bf63845feddad6258ba"
+        ],
+        "subject": "adding colour coordinating table of contents p1",
+        "date": "2026-05-07 16:30",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "6e43541d36fd8636ae8a4bf63845feddad6258ba",
+        "hashShort": "6e43541",
+        "parents": [
+          "cb1f8b8b28a20baacbe7541982d3b0331bf9913a"
+        ],
+        "subject": "tranfering everything from other coding doc",
+        "date": "2026-05-07 15:50",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "cb1f8b8b28a20baacbe7541982d3b0331bf9913a",
+        "hashShort": "cb1f8b8",
+        "parents": [
+          "a4fc718f109c748f9baf28832d7c6e4faa94c1fc"
+        ],
+        "subject": "blah",
+        "date": "2026-05-07 15:16",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "a4fc718f109c748f9baf28832d7c6e4faa94c1fc",
+        "hashShort": "a4fc718",
+        "parents": [
+          "33b6717a66f0ccfcad91679e5fc89967751c996f"
+        ],
+        "subject": "whatever",
+        "date": "2026-05-07 15:14",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "33b6717a66f0ccfcad91679e5fc89967751c996f",
+        "hashShort": "33b6717",
+        "parents": [
+          "b56f49cb8e5c7f1e29774604f987fcbd1d0877ea"
+        ],
+        "subject": "raise your yayaya",
+        "date": "2026-05-07 14:54",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "b56f49cb8e5c7f1e29774604f987fcbd1d0877ea",
+        "hashShort": "b56f49c",
+        "parents": [
+          "5398e0ce21399559746f371aeb9f7a5761926e78"
+        ],
+        "subject": "new words",
+        "date": "2026-05-07 14:48",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "c46a08b87aea407fecc730cc3a9e3d6ae51a8fd1",
+        "hashShort": "c46a08b",
+        "parents": [
+          "620c74c74d9ed10e4623dd4c737eb7d47758c4ae"
+        ],
+        "subject": "extra letters",
+        "date": "2026-05-07 14:32",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "5398e0ce21399559746f371aeb9f7a5761926e78",
+        "hashShort": "5398e0c",
+        "parents": [
+          "620c74c74d9ed10e4623dd4c737eb7d47758c4ae"
+        ],
+        "subject": "batman",
+        "date": "2026-05-07 14:25",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "6650383ed3dbf96ff09b9bd97852be8c30918e19",
+        "hashShort": "6650383",
+        "parents": [
+          "8bc032e6aac1b409ec63270d4381265f3d05aa7c"
+        ],
+        "subject": "horse time",
+        "date": "2026-05-07 14:11",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "620c74c74d9ed10e4623dd4c737eb7d47758c4ae",
+        "hashShort": "620c74c",
+        "parents": [
+          "8bc032e6aac1b409ec63270d4381265f3d05aa7c"
+        ],
+        "subject": "yay for dogs",
+        "date": "2026-05-07 14:07",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "8bc032e6aac1b409ec63270d4381265f3d05aa7c",
+        "hashShort": "8bc032e",
+        "parents": [
+          "e14e5b6759f0e9f82bf9d82b0a325a700bab3a17"
+        ],
+        "subject": "took away name",
+        "date": "2026-05-07 14:03",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "e14e5b6759f0e9f82bf9d82b0a325a700bab3a17",
+        "hashShort": "e14e5b6",
+        "parents": [
+          "e1deab54eda0a539c596b2f0fc017dc5351d1b31"
+        ],
+        "subject": "gave bob a last name",
+        "date": "2026-05-07 14:02",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "e1deab54eda0a539c596b2f0fc017dc5351d1b31",
+        "hashShort": "e1deab5",
+        "parents": [
+          "c9d447c96249583144c8e36fa9c834a130519d73"
+        ],
+        "subject": "added name bob",
+        "date": "2026-05-07 14:01",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "c9d447c96249583144c8e36fa9c834a130519d73",
+        "hashShort": "c9d447c",
+        "parents": [
+          "a594c3f5788b84ffd5699ae7f9fb4223d23efad9"
+        ],
+        "subject": "initial code",
+        "date": "2026-05-07 13:40",
+        "author": "DocSam-44"
+      },
+      {
+        "hash": "a594c3f5788b84ffd5699ae7f9fb4223d23efad9",
+        "hashShort": "a594c3f",
+        "parents": [],
+        "subject": "Initial commit",
+        "date": "2026-05-07 13:32",
+        "author": "DocSam-44"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "e0c9057657ee42f7912d77758fb99025a156d4d2"
+      },
+      {
+        "name": "addpictures",
+        "hash": "9662b1ffd33bb0a629c7b404acd8850b564c139d"
+      },
+      {
+        "name": "changing_fonts",
+        "hash": "6b0131e065de81d9e870633f9dc1d91574980013"
+      },
+      {
+        "name": "colouring_details",
+        "hash": "d861a8665f99cc50135037fa12b297c923f9026f"
+      },
+      {
+        "name": "main",
+        "hash": "e0c9057657ee42f7912d77758fb99025a156d4d2"
+      },
+      {
+        "name": "myfriend",
+        "hash": "049fdcff264b77e6e8a13aeaa2c155b79d10ae66"
+      },
+      {
+        "name": "new4tinkering+",
+        "hash": "d982d2a0b051abbcec52591922be93ebb3ee3729"
+      },
+      {
+        "name": "newtrial",
+        "hash": "5398e0ce21399559746f371aeb9f7a5761926e78"
+      },
+      {
+        "name": "newtrialbranch2create",
+        "hash": "17aa5b5e7b889548172fa2af4ce02b3bd9263e15"
+      },
+      {
+        "name": "time4html",
+        "hash": "63b1b442c81ace9153ad2e001779456982cebcd5"
+      },
+      {
+        "name": "trying_a_photo",
+        "hash": "27ff7f46853c956f9e91fc86ee60eeb2cdb3f140"
+      },
+      {
+        "name": "trying_centering",
+        "hash": "6b0131e065de81d9e870633f9dc1d91574980013"
+      },
+      {
+        "name": "tryinglinks",
+        "hash": "fad8214739dbde9cb768715d379dde8efe795e51"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "Lanaalsaleh",
+    "author": "lanaalsaleh",
+    "remoteUrl": "https://github.com/Lanaalsaleh/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "b181a724f3ce8ef921745897c845ffd3ad75347e",
+        "hashShort": "b181a72",
+        "parents": [
+          "40d0563b4fb2126f230d05662d7cef12df9de222"
+        ],
+        "subject": "last-cleanup",
+        "date": "2026-05-08 21:41",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "40d0563b4fb2126f230d05662d7cef12df9de222",
+        "hashShort": "40d0563",
+        "parents": [
+          "70868c3eff89221d00f3587cc149776cc87657e1"
+        ],
+        "subject": "added-an-explanation-to-why-my-vid-wasnt-working",
+        "date": "2026-05-08 21:36",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "70868c3eff89221d00f3587cc149776cc87657e1",
+        "hashShort": "70868c3",
+        "parents": [
+          "7de0b3ead57270d123178e1bedd40ce9860a429b"
+        ],
+        "subject": "cleaning-final",
+        "date": "2026-05-08 21:29",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "7de0b3ead57270d123178e1bedd40ce9860a429b",
+        "hashShort": "7de0b3e",
+        "parents": [
+          "987ba155aed4ece3326e975c42f79640a8fb4aed"
+        ],
+        "subject": "yt-vid-embeded-link",
+        "date": "2026-05-08 21:25",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "987ba155aed4ece3326e975c42f79640a8fb4aed",
+        "hashShort": "987ba15",
+        "parents": [
+          "796be054716631a27d677282d5cd02c8e77d7af3"
+        ],
+        "subject": "changed-yt-video",
+        "date": "2026-05-08 21:18",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "796be054716631a27d677282d5cd02c8e77d7af3",
+        "hashShort": "796be05",
+        "parents": [
+          "29aa083f617499747f3037cd59793c1f586836a1"
+        ],
+        "subject": "added-background-color-to-h1",
+        "date": "2026-05-08 21:14",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "29aa083f617499747f3037cd59793c1f586836a1",
+        "hashShort": "29aa083",
+        "parents": [
+          "9c6f660867a358f385b452d2aa58e403f65af7ca"
+        ],
+        "subject": "fixing-yt-vid",
+        "date": "2026-05-08 21:11",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "9c6f660867a358f385b452d2aa58e403f65af7ca",
+        "hashShort": "9c6f660",
+        "parents": [
+          "e5b440c8e1228e58d66e14fedd57cbda3201007d"
+        ],
+        "subject": "edited-yt-vid-position",
+        "date": "2026-05-08 21:03",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "e5b440c8e1228e58d66e14fedd57cbda3201007d",
+        "hashShort": "e5b440c",
+        "parents": [
+          "bcfdef90e21a7d28c7b4a2405ade6c45f5ebea0f"
+        ],
+        "subject": "added-yt-vid",
+        "date": "2026-05-08 21:00",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "bcfdef90e21a7d28c7b4a2405ade6c45f5ebea0f",
+        "hashShort": "bcfdef9",
+        "parents": [
+          "3cab9b9a9eff2e2f3930c68e3b26fba1062852e4"
+        ],
+        "subject": "added-images",
+        "date": "2026-05-08 20:57",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "3cab9b9a9eff2e2f3930c68e3b26fba1062852e4",
+        "hashShort": "3cab9b9",
+        "parents": [
+          "42661f1f6fb0d3abd4511eaad7c1fcade946b05b"
+        ],
+        "subject": "added-texts-final",
+        "date": "2026-05-08 20:52",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "42661f1f6fb0d3abd4511eaad7c1fcade946b05b",
+        "hashShort": "42661f1",
+        "parents": [
+          "43239f944f5a87c822e3070e175f4032ca62245b"
+        ],
+        "subject": "first-edit-overall",
+        "date": "2026-05-08 20:40",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "43239f944f5a87c822e3070e175f4032ca62245b",
+        "hashShort": "43239f9",
+        "parents": [
+          "0b8524f2bd8cdedb662e04c199dd8a5b0e753a4a"
+        ],
+        "subject": "added-instruction-how-to-quit",
+        "date": "2026-05-08 20:34",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "0b8524f2bd8cdedb662e04c199dd8a5b0e753a4a",
+        "hashShort": "0b8524f",
+        "parents": [
+          "9b8fb3160dee3ee2054b5b0ae54c898f50a4dfee",
+          "600abe7a83f11d6973237d749e48b5c30975470b"
+        ],
+        "subject": "merged-loud-alarm-to-main",
+        "date": "2026-05-08 20:29",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "600abe7a83f11d6973237d749e48b5c30975470b",
+        "hashShort": "600abe7",
+        "parents": [
+          "89619e33e696a4df5147f0de4559b5414ca09328"
+        ],
+        "subject": "added-new-tags-to-loud-alarm",
+        "date": "2026-05-08 20:26",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "9b8fb3160dee3ee2054b5b0ae54c898f50a4dfee",
+        "hashShort": "9b8fb31",
+        "parents": [
+          "cc98781861a1f226749a00f8bfb799bba524e750",
+          "a9d7f70d4e06c1cd1d54cdbf6ca9f46b875b2ddb"
+        ],
+        "subject": "merged-updated-chalk-white",
+        "date": "2026-05-08 20:18",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "a9d7f70d4e06c1cd1d54cdbf6ca9f46b875b2ddb",
+        "hashShort": "a9d7f70",
+        "parents": [
+          "aa41ebad0bd9a0efe75d3bd735f6b752dbe46c96"
+        ],
+        "subject": "edited-section-chalk-white",
+        "date": "2026-05-08 20:16",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "cc98781861a1f226749a00f8bfb799bba524e750",
+        "hashShort": "cc98781",
+        "parents": [
+          "89451998349b95d529ea57033a3642079a3d6d29",
+          "a54797252edce066e4e5af2006ea51418f7d8cfc"
+        ],
+        "subject": "Merge branch 'sea-blue'",
+        "date": "2026-05-08 20:08",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "89451998349b95d529ea57033a3642079a3d6d29",
+        "hashShort": "8945199",
+        "parents": [
+          "04b0d43ddb8503e4c278521ea2e10d4148e4f3a8",
+          "aa41ebad0bd9a0efe75d3bd735f6b752dbe46c96"
+        ],
+        "subject": "merged-chalk-white-into-main",
+        "date": "2026-05-08 20:08",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "04b0d43ddb8503e4c278521ea2e10d4148e4f3a8",
+        "hashShort": "04b0d43",
+        "parents": [
+          "be428c53fb95e8d70bfb1f0dd8905e653fc1486d",
+          "4e7fbbf81f9b1f2ef71edaf93858e25274fe9e98"
+        ],
+        "subject": "merged-school-colors-into-main",
+        "date": "2026-05-08 20:07",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "a54797252edce066e4e5af2006ea51418f7d8cfc",
+        "hashShort": "a547972",
+        "parents": [
+          "141034b786b53a6f8401c120ae4f0057410005e9"
+        ],
+        "subject": "added-reminder",
+        "date": "2026-05-08 19:57",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "141034b786b53a6f8401c120ae4f0057410005e9",
+        "hashShort": "141034b",
+        "parents": [
+          "00f1240628751bf5c07f1719f42766b2f150aa9d"
+        ],
+        "subject": "change-background-color",
+        "date": "2026-05-08 19:55",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "00f1240628751bf5c07f1719f42766b2f150aa9d",
+        "hashShort": "00f1240",
+        "parents": [
+          "aa41ebad0bd9a0efe75d3bd735f6b752dbe46c96"
+        ],
+        "subject": "add-details-about-blue",
+        "date": "2026-05-08 19:52",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "aa41ebad0bd9a0efe75d3bd735f6b752dbe46c96",
+        "hashShort": "aa41eba",
+        "parents": [
+          "4e7fbbf81f9b1f2ef71edaf93858e25274fe9e98"
+        ],
+        "subject": "added-text-for-white",
+        "date": "2026-05-08 19:48",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "4e7fbbf81f9b1f2ef71edaf93858e25274fe9e98",
+        "hashShort": "4e7fbbf",
+        "parents": [
+          "89619e33e696a4df5147f0de4559b5414ca09328"
+        ],
+        "subject": "school-colors",
+        "date": "2026-05-08 15:40",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "be428c53fb95e8d70bfb1f0dd8905e653fc1486d",
+        "hashShort": "be428c5",
+        "parents": [
+          "f3d22ca91fe62b08af441950a9cd5315bd8eb759",
+          "6b78efeed8ffebe3d73d38970e5a3e1a419d37cc"
+        ],
+        "subject": "merged-forgotten-library-into-main",
+        "date": "2026-05-08 15:23",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "6b78efeed8ffebe3d73d38970e5a3e1a419d37cc",
+        "hashShort": "6b78efe",
+        "parents": [
+          "8e4a93feb280851121a0b9e7dea1790a5aad3183"
+        ],
+        "subject": "old-library",
+        "date": "2026-05-08 15:21",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "f3d22ca91fe62b08af441950a9cd5315bd8eb759",
+        "hashShort": "f3d22ca",
+        "parents": [
+          "fd4592beffb707768aa36a3183127be1ce3439ee",
+          "8e4a93feb280851121a0b9e7dea1790a5aad3183"
+        ],
+        "subject": "Merge branch 'plastic-seats'",
+        "date": "2026-05-08 15:06",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "49f911c23161744c1b4d046793ddcbd1c8d1cea9",
+        "hashShort": "49f911c",
+        "parents": [
+          "5b22bddf2a3f9158cb539dffe6c49ae7ea3e401a"
+        ],
+        "subject": "2-updated-file",
+        "date": "2026-05-08 15:03",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "fd4592beffb707768aa36a3183127be1ce3439ee",
+        "hashShort": "fd4592b",
+        "parents": [
+          "e7f33bce55c5dc73f53585058326628851cab951"
+        ],
+        "subject": "merged-into -main",
+        "date": "2026-05-08 14:57",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "e7f33bce55c5dc73f53585058326628851cab951",
+        "hashShort": "e7f33bc",
+        "parents": [
+          "2a0492ff1dfcd0bf62c75eb831a56edfa4ac5362"
+        ],
+        "subject": "merged-old-library-into-main",
+        "date": "2026-05-08 14:56",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "2a0492ff1dfcd0bf62c75eb831a56edfa4ac5362",
+        "hashShort": "2a0492f",
+        "parents": [
+          "06ade84c540713e9cb8e5c2a0c3dc497c2bb7fb0",
+          "5b22bddf2a3f9158cb539dffe6c49ae7ea3e401a"
+        ],
+        "subject": "Merge branch 'old-library'",
+        "date": "2026-05-08 14:54",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "5b22bddf2a3f9158cb539dffe6c49ae7ea3e401a",
+        "hashShort": "5b22bdd",
+        "parents": [
+          "7fd388c1ac76dc68066c0e333013eb28c04a8b4e"
+        ],
+        "subject": "added-reminder",
+        "date": "2026-05-08 14:52",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "7fd388c1ac76dc68066c0e333013eb28c04a8b4e",
+        "hashShort": "7fd388c",
+        "parents": [
+          "89619e33e696a4df5147f0de4559b5414ca09328"
+        ],
+        "subject": "library-memories",
+        "date": "2026-05-08 14:47",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "8e4a93feb280851121a0b9e7dea1790a5aad3183",
+        "hashShort": "8e4a93f",
+        "parents": [
+          "9154723f574b709f183ae47422cc80cf68446f4d"
+        ],
+        "subject": "updated-plastic-seat",
+        "date": "2026-05-08 14:36",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "9154723f574b709f183ae47422cc80cf68446f4d",
+        "hashShort": "9154723",
+        "parents": [
+          "1fd2d58163592fe6a14e88b27704facf184a87d4"
+        ],
+        "subject": "details-plastic-chairs",
+        "date": "2026-05-07 16:43",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "06ade84c540713e9cb8e5c2a0c3dc497c2bb7fb0",
+        "hashShort": "06ade84",
+        "parents": [
+          "1fd2d58163592fe6a14e88b27704facf184a87d4"
+        ],
+        "subject": "updating-web",
+        "date": "2026-05-07 16:21",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "ec4cd7de0b0dd4d16d365ace6e13f9168ff4f6b3",
+        "hashShort": "ec4cd7d",
+        "parents": [
+          "6e0fec2f3a6db281c503f98a6051f4a091b34222"
+        ],
+        "subject": "change-color-heading2",
+        "date": "2026-05-07 16:01",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "6e0fec2f3a6db281c503f98a6051f4a091b34222",
+        "hashShort": "6e0fec2",
+        "parents": [
+          "4c3985188961bcfb19e7e6fa5e9c58646fdd618d"
+        ],
+        "subject": "added-color-heading3",
+        "date": "2026-05-07 15:48",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "4c3985188961bcfb19e7e6fa5e9c58646fdd618d",
+        "hashShort": "4c39851",
+        "parents": [
+          "ca750da045377eb3111842a1c5a7ac11e8d7bc5a"
+        ],
+        "subject": "added-background-color-title",
+        "date": "2026-05-07 15:30",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "ca750da045377eb3111842a1c5a7ac11e8d7bc5a",
+        "hashShort": "ca750da",
+        "parents": [
+          "89c7a5e84d3321b989e3301002c9396e9e01de65"
+        ],
+        "subject": "made-my-intro-bold",
+        "date": "2026-05-07 15:25",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "89c7a5e84d3321b989e3301002c9396e9e01de65",
+        "hashShort": "89c7a5e",
+        "parents": [
+          "a9d354a523e229c66644f68ccdf1492d61b4aa43"
+        ],
+        "subject": "added-more-tags",
+        "date": "2026-05-07 14:52",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "a9d354a523e229c66644f68ccdf1492d61b4aa43",
+        "hashShort": "a9d354a",
+        "parents": [
+          "74ca61ec949b9d2c85c9f38f075e1743d8f1d016"
+        ],
+        "subject": "added-head-topic-for-hallways",
+        "date": "2026-05-07 14:41",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "74ca61ec949b9d2c85c9f38f075e1743d8f1d016",
+        "hashShort": "74ca61e",
+        "parents": [
+          "1fd2d58163592fe6a14e88b27704facf184a87d4"
+        ],
+        "subject": "endless-hallways-description",
+        "date": "2026-05-07 14:35",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "1fd2d58163592fe6a14e88b27704facf184a87d4",
+        "hashShort": "1fd2d58",
+        "parents": [
+          "485251e949695ff35ec7f02eb983ea670e4223f5"
+        ],
+        "subject": "details-about-light",
+        "date": "2026-05-07 14:27",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "485251e949695ff35ec7f02eb983ea670e4223f5",
+        "hashShort": "485251e",
+        "parents": [
+          "2d2af2eaa713db68ccb6c37203f874bb2e9082d3"
+        ],
+        "subject": "changed-text-to-uppercase",
+        "date": "2026-05-07 14:12",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "2d2af2eaa713db68ccb6c37203f874bb2e9082d3",
+        "hashShort": "2d2af2e",
+        "parents": [
+          "a34f667a966474a74eb8d51f4043f18b44340e68"
+        ],
+        "subject": "bright-lights",
+        "date": "2026-05-07 14:08",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "a34f667a966474a74eb8d51f4043f18b44340e68",
+        "hashShort": "a34f667",
+        "parents": [
+          "9a391818eff9863b1929accafbac49e720b9dd7f"
+        ],
+        "subject": "added-another-heading",
+        "date": "2026-05-07 13:58",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "9a391818eff9863b1929accafbac49e720b9dd7f",
+        "hashShort": "9a39181",
+        "parents": [
+          "10e6c74bcb02cc9939ec26c8265d76536d9b9735"
+        ],
+        "subject": "school-image-link-fixed",
+        "date": "2026-05-07 13:43",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "10e6c74bcb02cc9939ec26c8265d76536d9b9735",
+        "hashShort": "10e6c74",
+        "parents": [
+          "89619e33e696a4df5147f0de4559b5414ca09328"
+        ],
+        "subject": "classroom",
+        "date": "2026-05-07 13:17",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "89619e33e696a4df5147f0de4559b5414ca09328",
+        "hashShort": "89619e3",
+        "parents": [
+          "ab1b6c4e8a61934da4f8fe73ff4a7c3a63be28a0"
+        ],
+        "subject": "school memories",
+        "date": "2026-05-06 17:38",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "ab1b6c4e8a61934da4f8fe73ff4a7c3a63be28a0",
+        "hashShort": "ab1b6c4",
+        "parents": [
+          "7e3a92823d0f68f74a8086682de3b4b7306985f2"
+        ],
+        "subject": "start of project",
+        "date": "2026-05-06 17:02",
+        "author": "lanaalsaleh"
+      },
+      {
+        "hash": "7e3a92823d0f68f74a8086682de3b4b7306985f2",
+        "hashShort": "7e3a928",
+        "parents": [],
+        "subject": "Initial commit",
+        "date": "2026-05-06 16:01",
+        "author": "Lanaalsaleh"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "b181a724f3ce8ef921745897c845ffd3ad75347e"
+      },
+      {
+        "name": "bright-lights",
+        "hash": "1fd2d58163592fe6a14e88b27704facf184a87d4"
+      },
+      {
+        "name": "chalk-white",
+        "hash": "a9d7f70d4e06c1cd1d54cdbf6ca9f46b875b2ddb"
+      },
+      {
+        "name": "chaotic-hour",
+        "hash": "ec4cd7de0b0dd4d16d365ace6e13f9168ff4f6b3"
+      },
+      {
+        "name": "clustrophobic-hallways",
+        "hash": "89c7a5e84d3321b989e3301002c9396e9e01de65"
+      },
+      {
+        "name": "develop",
+        "hash": "1fd2d58163592fe6a14e88b27704facf184a87d4"
+      },
+      {
+        "name": "favorite-blue-room",
+        "hash": "a54797252edce066e4e5af2006ea51418f7d8cfc"
+      },
+      {
+        "name": "favorite-chaotic-school",
+        "hash": "9c6f660867a358f385b452d2aa58e403f65af7ca"
+      },
+      {
+        "name": "favorite-endless-hallways",
+        "hash": "70868c3eff89221d00f3587cc149776cc87657e1"
+      },
+      {
+        "name": "favorite-forgotten-library",
+        "hash": "9c6f660867a358f385b452d2aa58e403f65af7ca"
+      },
+      {
+        "name": "favorite-white-classroom",
+        "hash": "a9d7f70d4e06c1cd1d54cdbf6ca9f46b875b2ddb"
+      },
+      {
+        "name": "forgotten-library",
+        "hash": "6b78efeed8ffebe3d73d38970e5a3e1a419d37cc"
+      },
+      {
+        "name": "loud-alarm",
+        "hash": "600abe7a83f11d6973237d749e48b5c30975470b"
+      },
+      {
+        "name": "main",
+        "hash": "b181a724f3ce8ef921745897c845ffd3ad75347e"
+      },
+      {
+        "name": "nostalgic-school",
+        "hash": "89619e33e696a4df5147f0de4559b5414ca09328"
+      },
+      {
+        "name": "old-library",
+        "hash": "49f911c23161744c1b4d046793ddcbd1c8d1cea9"
+      },
+      {
+        "name": "plastic-seats",
+        "hash": "8e4a93feb280851121a0b9e7dea1790a5aad3183"
+      },
+      {
+        "name": "school-colors",
+        "hash": "4e7fbbf81f9b1f2ef71edaf93858e25274fe9e98"
+      },
+      {
+        "name": "sea-blue",
+        "hash": "a54797252edce066e4e5af2006ea51418f7d8cfc"
+      },
+      {
+        "name": "trapped-classroom",
+        "hash": "1fd2d58163592fe6a14e88b27704facf184a87d4"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "jadeb2158-jpg",
+    "author": "jadeb2158-jpg",
+    "remoteUrl": "https://github.com/jadeb2158-jpg/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "9036f46018bdc70007d022381c7e522ac4cde784",
+        "hashShort": "9036f46",
+        "parents": [
+          "ff6e45fdfa0bb28368ac9e92cd017c8ff7041fcf"
+        ],
+        "subject": "pushing",
+        "date": "2026-05-09 22:34",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "ff6e45fdfa0bb28368ac9e92cd017c8ff7041fcf",
+        "hashShort": "ff6e45f",
+        "parents": [
+          "178bec7df603c0372ad5dcc9724a859d0a88f72e",
+          "292c0719810230c4246a7d4e70aae4c60de1b7db"
+        ],
+        "subject": "ottersite",
+        "date": "2026-05-09 18:47",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "178bec7df603c0372ad5dcc9724a859d0a88f72e",
+        "hashShort": "178bec7",
+        "parents": [
+          "bad241f8b40a5bf47730ff2719290fe7f7a51db0",
+          "aee987bd159d2f641f7b98d48f60cee0b587f857"
+        ],
+        "subject": "mergeeeee",
+        "date": "2026-05-09 18:42",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "aee987bd159d2f641f7b98d48f60cee0b587f857",
+        "hashShort": "aee987b",
+        "parents": [
+          "ee67b300fe7aaff29f22f5d1dcbf68981d57afa4"
+        ],
+        "subject": "list",
+        "date": "2026-05-09 18:18",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "ee67b300fe7aaff29f22f5d1dcbf68981d57afa4",
+        "hashShort": "ee67b30",
+        "parents": [
+          "73b15da178ef27beb6bf6e8554e20ef34b118f81"
+        ],
+        "subject": "videoyt",
+        "date": "2026-05-09 18:11",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "73b15da178ef27beb6bf6e8554e20ef34b118f81",
+        "hashShort": "73b15da",
+        "parents": [
+          "6a59f632d46d96c95d2255fa12b5b621a9fc64bc"
+        ],
+        "subject": "buttonotter",
+        "date": "2026-05-09 17:58",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "6a59f632d46d96c95d2255fa12b5b621a9fc64bc",
+        "hashShort": "6a59f63",
+        "parents": [
+          "636bc112716e5022d26203b8e6ccd1f074c1d516"
+        ],
+        "subject": "ottergif",
+        "date": "2026-05-09 17:55",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "636bc112716e5022d26203b8e6ccd1f074c1d516",
+        "hashShort": "636bc11",
+        "parents": [
+          "5dca1be2089380320bd73d85b84a5de5d949f86e"
+        ],
+        "subject": "riverotterlink",
+        "date": "2026-05-09 17:44",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "5dca1be2089380320bd73d85b84a5de5d949f86e",
+        "hashShort": "5dca1be",
+        "parents": [
+          "6e3ff4a4d55ab2985f12de101caa7a20223269dd"
+        ],
+        "subject": "riverotterblue",
+        "date": "2026-05-09 17:41",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "6e3ff4a4d55ab2985f12de101caa7a20223269dd",
+        "hashShort": "6e3ff4a",
+        "parents": [
+          "288911198b585b33644bf32a88ec232bcc76debb"
+        ],
+        "subject": "riverotterr",
+        "date": "2026-05-09 17:28",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "bad241f8b40a5bf47730ff2719290fe7f7a51db0",
+        "hashShort": "bad241f",
+        "parents": [
+          "6d72d367db6b8b083de0b0a8cd8f0106d533d2c5"
+        ],
+        "subject": "gbargfgwrefbrfqewsfdg",
+        "date": "2026-05-09 17:16",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "5766be19910cda4c67f3e45d613eb3db86c09ee5",
+        "hashShort": "5766be1",
+        "parents": [
+          "165a245d6a2c7326db54e782f4729b05bac1f497"
+        ],
+        "subject": "z",
+        "date": "2026-05-09 17:06",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "6d72d367db6b8b083de0b0a8cd8f0106d533d2c5",
+        "hashShort": "6d72d36",
+        "parents": [
+          "21b1613a24fdc3c7ebe1aa71a50ceaee274f2d38",
+          "165a245d6a2c7326db54e782f4729b05bac1f497"
+        ],
+        "subject": "d",
+        "date": "2026-05-09 17:03",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "21b1613a24fdc3c7ebe1aa71a50ceaee274f2d38",
+        "hashShort": "21b1613",
+        "parents": [
+          "130f9c0eb98381af05ef20d496af29827c05feed",
+          "e81232242943d80549049028b7141460f24abade"
+        ],
+        "subject": "mergeeeee",
+        "date": "2026-05-09 16:57",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "130f9c0eb98381af05ef20d496af29827c05feed",
+        "hashShort": "130f9c0",
+        "parents": [
+          "18bc400976220f7a06be5284a9599caac11f77a2"
+        ],
+        "subject": "failedFUCKINGmerge",
+        "date": "2026-05-09 16:52",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "165a245d6a2c7326db54e782f4729b05bac1f497",
+        "hashShort": "165a245",
+        "parents": [
+          "e81232242943d80549049028b7141460f24abade"
+        ],
+        "subject": "mm",
+        "date": "2026-05-09 16:33",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "c41c94832b8cb73da41f990393fea781fed5fc46",
+        "hashShort": "c41c948",
+        "parents": [
+          "142e00ca0a0a30d4787e754fb2001eb3aeca3a35"
+        ],
+        "subject": "jart",
+        "date": "2026-05-09 16:23",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "142e00ca0a0a30d4787e754fb2001eb3aeca3a35",
+        "hashShort": "142e00c",
+        "parents": [
+          "bcce7313d59b38808cb003e7481db18b3384654c"
+        ],
+        "subject": "teacher",
+        "date": "2026-05-08 15:41",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "ce3949c2fa14643eff189ba48dd60b6b5d7ea402",
+        "hashShort": "ce3949c",
+        "parents": [
+          "033f815a7ce094a9410a9039d18fec54447cb91d"
+        ],
+        "subject": "bedroom",
+        "date": "2026-05-08 15:06",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "601267b3eab8b297c233a66999f77567eadcf589",
+        "hashShort": "601267b",
+        "parents": [
+          "85a0730a227e25dc94f4f2b7473641ff8e774d99"
+        ],
+        "subject": "kittyfriends",
+        "date": "2026-05-08 14:46",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "85a0730a227e25dc94f4f2b7473641ff8e774d99",
+        "hashShort": "85a0730",
+        "parents": [
+          "a01242ebc66c3bb43bfcc7c4690793873f334d8d"
+        ],
+        "subject": "myfriendss",
+        "date": "2026-05-08 14:42",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "a01242ebc66c3bb43bfcc7c4690793873f334d8d",
+        "hashShort": "a01242e",
+        "parents": [
+          "033f815a7ce094a9410a9039d18fec54447cb91d"
+        ],
+        "subject": "friendp",
+        "date": "2026-05-08 14:41",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "5c8d88d71175bab196a14c07de977d7ab6b6f913",
+        "hashShort": "5c8d88d",
+        "parents": [
+          "0c388f9dd2da117f2560e6c184bd80d30b241542"
+        ],
+        "subject": "rdjrdj",
+        "date": "2026-05-08 14:29",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "0c388f9dd2da117f2560e6c184bd80d30b241542",
+        "hashShort": "0c388f9",
+        "parents": [
+          "645cc35138fb7f05849650b7fee7dbccf4c815b1"
+        ],
+        "subject": "rdj12",
+        "date": "2026-05-08 14:23",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "645cc35138fb7f05849650b7fee7dbccf4c815b1",
+        "hashShort": "645cc35",
+        "parents": [
+          "033f815a7ce094a9410a9039d18fec54447cb91d"
+        ],
+        "subject": "rdjheader",
+        "date": "2026-05-08 14:08",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "e81232242943d80549049028b7141460f24abade",
+        "hashShort": "e812322",
+        "parents": [
+          "ebfaf68a87d3ab2036f9e3f5cb6a75998cd29b59"
+        ],
+        "subject": "jadebio",
+        "date": "2026-05-08 13:49",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "ebfaf68a87d3ab2036f9e3f5cb6a75998cd29b59",
+        "hashShort": "ebfaf68",
+        "parents": [
+          "3d683e9872c5c8a23d542b43f6dce103551aa7ce"
+        ],
+        "subject": "embolden and italic",
+        "date": "2026-05-08 13:09",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "3d683e9872c5c8a23d542b43f6dce103551aa7ce",
+        "hashShort": "3d683e9",
+        "parents": [
+          "bcce7313d59b38808cb003e7481db18b3384654c"
+        ],
+        "subject": "image add guitar",
+        "date": "2026-05-08 13:06",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "bcce7313d59b38808cb003e7481db18b3384654c",
+        "hashShort": "bcce731",
+        "parents": [
+          "7f068ec24943000d79b5d23ff4d810df54980781"
+        ],
+        "subject": "i am jade",
+        "date": "2026-05-08 12:59",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "7f068ec24943000d79b5d23ff4d810df54980781",
+        "hashShort": "7f068ec",
+        "parents": [
+          "db50a22c7e8d8a80b0351c01fea3b6219f20965a"
+        ],
+        "subject": "all abt me",
+        "date": "2026-05-08 12:57",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "db50a22c7e8d8a80b0351c01fea3b6219f20965a",
+        "hashShort": "db50a22",
+        "parents": [
+          "dae0ad5ab31424eb5ea2ceafe37f54be8e8cffe9"
+        ],
+        "subject": "newtitle",
+        "date": "2026-05-08 12:54",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "dae0ad5ab31424eb5ea2ceafe37f54be8e8cffe9",
+        "hashShort": "dae0ad5",
+        "parents": [
+          "887932a321f390ad0c0eafbb54b83d20990e84ca"
+        ],
+        "subject": "head",
+        "date": "2026-05-08 12:53",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "18bc400976220f7a06be5284a9599caac11f77a2",
+        "hashShort": "18bc400",
+        "parents": [
+          "033f815a7ce094a9410a9039d18fec54447cb91d",
+          "288911198b585b33644bf32a88ec232bcc76debb"
+        ],
+        "subject": "lllll",
+        "date": "2026-05-07 16:38",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "292c0719810230c4246a7d4e70aae4c60de1b7db",
+        "hashShort": "292c071",
+        "parents": [
+          "288911198b585b33644bf32a88ec232bcc76debb"
+        ],
+        "subject": "bleh",
+        "date": "2026-05-07 16:31",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "288911198b585b33644bf32a88ec232bcc76debb",
+        "hashShort": "2889111",
+        "parents": [
+          "f7f4f84452c15eb0bc9d13d147a4781b6e02be6d"
+        ],
+        "subject": "seaotterimg",
+        "date": "2026-05-07 15:52",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "f7f4f84452c15eb0bc9d13d147a4781b6e02be6d",
+        "hashShort": "f7f4f84",
+        "parents": [
+          "cf5a8bfebfd131018781da8dd59564a080041f4b"
+        ],
+        "subject": "italic",
+        "date": "2026-05-07 15:47",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "cf5a8bfebfd131018781da8dd59564a080041f4b",
+        "hashShort": "cf5a8bf",
+        "parents": [
+          "e6223eb65c29f67946b0e7974e6d0788fd3282f0"
+        ],
+        "subject": "bold",
+        "date": "2026-05-07 15:45",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "e6223eb65c29f67946b0e7974e6d0788fd3282f0",
+        "hashShort": "e6223eb",
+        "parents": [
+          "a0ef7cbc0308dc7a69602024676c11fc093ad2ba"
+        ],
+        "subject": "blue",
+        "date": "2026-05-07 15:43",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "a0ef7cbc0308dc7a69602024676c11fc093ad2ba",
+        "hashShort": "a0ef7cb",
+        "parents": [
+          "b823dacf9e502ba958791da6a89263f345891fe2"
+        ],
+        "subject": "sea otter image",
+        "date": "2026-05-07 15:35",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "b823dacf9e502ba958791da6a89263f345891fe2",
+        "hashShort": "b823dac",
+        "parents": [
+          "dec37769ebf8354723320928899ff251c6f9e75a"
+        ],
+        "subject": "sea otter heading and paragraph",
+        "date": "2026-05-07 14:55",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "dec37769ebf8354723320928899ff251c6f9e75a",
+        "hashShort": "dec3776",
+        "parents": [
+          "cd956ffdf175b35d0a62b335f48fb3574cbfaa4d"
+        ],
+        "subject": "heading",
+        "date": "2026-05-07 14:54",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "cd956ffdf175b35d0a62b335f48fb3574cbfaa4d",
+        "hashShort": "cd956ff",
+        "parents": [
+          "7306322ee8144bd208f8c804be7e4e75ac3474fd"
+        ],
+        "subject": "ptag",
+        "date": "2026-05-07 14:52",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "033f815a7ce094a9410a9039d18fec54447cb91d",
+        "hashShort": "033f815",
+        "parents": [
+          "457c2e888d44a64dcd54d137edb273bd5e72ea54",
+          "887932a321f390ad0c0eafbb54b83d20990e84ca"
+        ],
+        "subject": "merge",
+        "date": "2026-05-07 14:34",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "7306322ee8144bd208f8c804be7e4e75ac3474fd",
+        "hashShort": "7306322",
+        "parents": [
+          "457c2e888d44a64dcd54d137edb273bd5e72ea54",
+          "887932a321f390ad0c0eafbb54b83d20990e84ca"
+        ],
+        "subject": "merge",
+        "date": "2026-05-07 14:21",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "887932a321f390ad0c0eafbb54b83d20990e84ca",
+        "hashShort": "887932a",
+        "parents": [
+          "289fffe1ddf36bc7d6fac10f198c7d7216c61857"
+        ],
+        "subject": "menow",
+        "date": "2026-05-07 14:12",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "457c2e888d44a64dcd54d137edb273bd5e72ea54",
+        "hashShort": "457c2e8",
+        "parents": [
+          "289fffe1ddf36bc7d6fac10f198c7d7216c61857"
+        ],
+        "subject": "talking abt my friend",
+        "date": "2026-05-07 14:07",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "289fffe1ddf36bc7d6fac10f198c7d7216c61857",
+        "hashShort": "289fffe",
+        "parents": [
+          "60d941f7b53c7b10f3c7a0af09415e0728f3e64a"
+        ],
+        "subject": "delete name",
+        "date": "2026-05-07 14:03",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "60d941f7b53c7b10f3c7a0af09415e0728f3e64a",
+        "hashShort": "60d941f",
+        "parents": [
+          "b3dcb6c03ecdab1a396a8671aeb4b7fcb403d5d1"
+        ],
+        "subject": "last namee",
+        "date": "2026-05-07 14:02",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "b3dcb6c03ecdab1a396a8671aeb4b7fcb403d5d1",
+        "hashShort": "b3dcb6c",
+        "parents": [
+          "2fe297737f40b4ec17f60f30f53a95a78a07e258"
+        ],
+        "subject": "Jade B",
+        "date": "2026-05-07 14:01",
+        "author": "jadeb2158-jpg"
+      },
+      {
+        "hash": "2fe297737f40b4ec17f60f30f53a95a78a07e258",
+        "hashShort": "2fe2977",
+        "parents": [],
+        "subject": "a1",
+        "date": "2026-05-07 13:44",
+        "author": "jadeb2158-jpg"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "9036f46018bdc70007d022381c7e522ac4cde784"
+      },
+      {
+        "name": "Jarvis",
+        "hash": "5c8d88d71175bab196a14c07de977d7ab6b6f913"
+      },
+      {
+        "name": "addleg",
+        "hash": "e81232242943d80549049028b7141460f24abade"
+      },
+      {
+        "name": "jadeart",
+        "hash": "c41c94832b8cb73da41f990393fea781fed5fc46"
+      },
+      {
+        "name": "jadeartaaa",
+        "hash": "5766be19910cda4c67f3e45d613eb3db86c09ee5"
+      },
+      {
+        "name": "jadeguitaraaa",
+        "hash": "e81232242943d80549049028b7141460f24abade"
+      },
+      {
+        "name": "main",
+        "hash": "9036f46018bdc70007d022381c7e522ac4cde784"
+      },
+      {
+        "name": "menow",
+        "hash": "aee987bd159d2f641f7b98d48f60cee0b587f857"
+      },
+      {
+        "name": "myfriend",
+        "hash": "601267b3eab8b297c233a66999f77567eadcf589"
+      },
+      {
+        "name": "seaotter2",
+        "hash": "292c0719810230c4246a7d4e70aae4c60de1b7db"
+      },
+      {
+        "name": "seaotters",
+        "hash": "ce3949c2fa14643eff189ba48dd60b6b5d7ea402"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "kyliemcneil06-cmd",
+    "author": "kyliemcneil06-cmd",
+    "remoteUrl": "https://github.com/kyliemcneil06-cmd/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "f5927d2e7eedce1f4a91b564c165d71dcc26a804",
+        "hashShort": "f5927d2",
+        "parents": [
+          "b54487c82211ecb50f481db1977d51ec43ca4f20"
+        ],
+        "subject": "says I have to commit,so I will",
+        "date": "2026-05-09 15:56",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "b54487c82211ecb50f481db1977d51ec43ca4f20",
+        "hashShort": "b54487c",
+        "parents": [
+          "ca21b08ef551c61a5d79962b52c7e75f3a155832"
+        ],
+        "subject": "changed bonus colours text",
+        "date": "2026-05-09 12:15",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "ca21b08ef551c61a5d79962b52c7e75f3a155832",
+        "hashShort": "ca21b08",
+        "parents": [
+          "5a9d7eb1356d6d526b452fae3f3d4d9d993e2605"
+        ],
+        "subject": "added i'm a huge fan of er",
+        "date": "2026-05-09 12:13",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "5a9d7eb1356d6d526b452fae3f3d4d9d993e2605",
+        "hashShort": "5a9d7eb",
+        "parents": [
+          "f42a235564e68b3e83ee4f8a2a5d1a96670696d2"
+        ],
+        "subject": "added a large space",
+        "date": "2026-05-09 12:10",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "f42a235564e68b3e83ee4f8a2a5d1a96670696d2",
+        "hashShort": "f42a235",
+        "parents": [
+          "321ce9ebc5da24536e467233db173f60463fe5b5"
+        ],
+        "subject": "I made a table",
+        "date": "2026-05-09 12:09",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "321ce9ebc5da24536e467233db173f60463fe5b5",
+        "hashShort": "321ce9e",
+        "parents": [
+          "674c43e4eeef75396c0cbcee86d5956fcf6a8f89"
+        ],
+        "subject": "fix grammar and added my attempt to convinve",
+        "date": "2026-05-09 11:53",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "674c43e4eeef75396c0cbcee86d5956fcf6a8f89",
+        "hashShort": "674c43e",
+        "parents": [
+          "46ea92896d81da4e66bdcd94358756df07d9dfdd"
+        ],
+        "subject": "fixed rainbow letters",
+        "date": "2026-05-09 11:49",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "46ea92896d81da4e66bdcd94358756df07d9dfdd",
+        "hashShort": "46ea928",
+        "parents": [
+          "2859865da3da283bb52d7ad3f9247bd3555f8930"
+        ],
+        "subject": "emphasized some text",
+        "date": "2026-05-09 11:46",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "2859865da3da283bb52d7ad3f9247bd3555f8930",
+        "hashShort": "2859865",
+        "parents": [
+          "d623d9d5c9692af3051c847d4cb4986e39e6718e"
+        ],
+        "subject": "added dents between gifs",
+        "date": "2026-05-09 11:41",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "d623d9d5c9692af3051c847d4cb4986e39e6718e",
+        "hashShort": "d623d9d",
+        "parents": [
+          "9b3900fb62c7bdeacd10bc39af363da55f6af4b2"
+        ],
+        "subject": "added gifs",
+        "date": "2026-05-09 11:31",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "9b3900fb62c7bdeacd10bc39af363da55f6af4b2",
+        "hashShort": "9b3900f",
+        "parents": [
+          "f7340aa5ce77865f971c7c28a60425de3c2ba94e"
+        ],
+        "subject": "added an iframe",
+        "date": "2026-05-09 11:06",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "f7340aa5ce77865f971c7c28a60425de3c2ba94e",
+        "hashShort": "f7340aa",
+        "parents": [
+          "19fb257538c8b0e2f6aab8d1365b4c7d9ffcda18"
+        ],
+        "subject": "added some large spaces",
+        "date": "2026-05-09 10:46",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "19fb257538c8b0e2f6aab8d1365b4c7d9ffcda18",
+        "hashShort": "19fb257",
+        "parents": [
+          "3187505b1fa8a5d0f65ed409a00f4e769f8bbeb5"
+        ],
+        "subject": "added some arrows and the button link",
+        "date": "2026-05-09 10:33",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "3187505b1fa8a5d0f65ed409a00f4e769f8bbeb5",
+        "hashShort": "3187505",
+        "parents": [
+          "32cfdf5d913f293bec624aa6752b04a3bc415673"
+        ],
+        "subject": "added the rainbow text",
+        "date": "2026-05-09 10:03",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "32cfdf5d913f293bec624aa6752b04a3bc415673",
+        "hashShort": "32cfdf5",
+        "parents": [
+          "502d805367bc1a7b26c76f59546568b2481c592d"
+        ],
+        "subject": "go play elden ring",
+        "date": "2026-05-08 22:54",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "502d805367bc1a7b26c76f59546568b2481c592d",
+        "hashShort": "502d805",
+        "parents": [
+          "c33f0e3b619bede016e124cd3583ae1fdbc43922"
+        ],
+        "subject": "added all the colours and gold",
+        "date": "2026-05-08 22:52",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "c33f0e3b619bede016e124cd3583ae1fdbc43922",
+        "hashShort": "c33f0e3",
+        "parents": [
+          "0e7e45daa7af7aded3629e0321180557d1f2230d"
+        ],
+        "subject": "added soundtrack link",
+        "date": "2026-05-08 22:25",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "0e7e45daa7af7aded3629e0321180557d1f2230d",
+        "hashShort": "0e7e45d",
+        "parents": [
+          "95d97b3884a119ab4528d19a3c140646ceacdaed"
+        ],
+        "subject": "added morne and snow",
+        "date": "2026-05-08 22:19",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "95d97b3884a119ab4528d19a3c140646ceacdaed",
+        "hashShort": "95d97b3",
+        "parents": [
+          "06c10dcc7d165616a96e87850bb36fcf482ec401"
+        ],
+        "subject": "added grey text",
+        "date": "2026-05-08 22:11",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "06c10dcc7d165616a96e87850bb36fcf482ec401",
+        "hashShort": "06c10dc",
+        "parents": [
+          "af10394f3b250da972060f66bee218ca65810d37",
+          "c48829ed17acaccaa06f51836451d17938b29dea"
+        ],
+        "subject": "just another save just in case",
+        "date": "2026-05-08 21:57",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "af10394f3b250da972060f66bee218ca65810d37",
+        "hashShort": "af10394",
+        "parents": [
+          "adb2f11b02c4d04998723abdd7fae27a104bbfe5"
+        ],
+        "subject": "fixed purple capitilization",
+        "date": "2026-05-08 21:51",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "adb2f11b02c4d04998723abdd7fae27a104bbfe5",
+        "hashShort": "adb2f11",
+        "parents": [
+          "6a48a16db548a8a1508ef5635317d2d0c7aee047"
+        ],
+        "subject": "fixed spelling again",
+        "date": "2026-05-08 21:49",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "6a48a16db548a8a1508ef5635317d2d0c7aee047",
+        "hashShort": "6a48a16",
+        "parents": [
+          "c9d9f9824f04475d1a474a96026343760843cb1d"
+        ],
+        "subject": "went back in time and made a branch",
+        "date": "2026-05-08 21:45",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "c48829ed17acaccaa06f51836451d17938b29dea",
+        "hashShort": "c48829e",
+        "parents": [
+          "c9d9f9824f04475d1a474a96026343760843cb1d"
+        ],
+        "subject": "spell check",
+        "date": "2026-05-08 21:15",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "c9d9f9824f04475d1a474a96026343760843cb1d",
+        "hashShort": "c9d9f98",
+        "parents": [
+          "7724746b4f93bce3b83ae244fd325bb648be54dc"
+        ],
+        "subject": "trying to save properly",
+        "date": "2026-05-08 21:02",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "7724746b4f93bce3b83ae244fd325bb648be54dc",
+        "hashShort": "7724746",
+        "parents": [
+          "881fe8cad4096314bf45660d310221a41497beea"
+        ],
+        "subject": "added all the pictures",
+        "date": "2026-05-08 21:00",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "881fe8cad4096314bf45660d310221a41497beea",
+        "hashShort": "881fe8c",
+        "parents": [
+          "9682ba6cd6a452986cad96e1a95b003aeb0460ed"
+        ],
+        "subject": "added names",
+        "date": "2026-05-07 16:27",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "9682ba6cd6a452986cad96e1a95b003aeb0460ed",
+        "hashShort": "9682ba6",
+        "parents": [
+          "4d7e51f64990fc902f9b2421c9834e6e32003643",
+          "4501b280807a9a84885145bfe2ae969ba9d24e0e"
+        ],
+        "subject": "Hopefully works",
+        "date": "2026-05-07 15:44",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "4d7e51f64990fc902f9b2421c9834e6e32003643",
+        "hashShort": "4d7e51f",
+        "parents": [
+          "9cd8bd4791034dd04cb2b832bab88364967fcd28"
+        ],
+        "subject": "I added all the colours",
+        "date": "2026-05-07 15:40",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "9cd8bd4791034dd04cb2b832bab88364967fcd28",
+        "hashShort": "9cd8bd4",
+        "parents": [
+          "63a1947d6557847d12e386907aeefbe1c35a6b4d"
+        ],
+        "subject": "I added a bunch of colours",
+        "date": "2026-05-07 15:31",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "63a1947d6557847d12e386907aeefbe1c35a6b4d",
+        "hashShort": "63a1947",
+        "parents": [
+          "3eb08b4586138f0bbe599cab5bd7890a688ad9b7"
+        ],
+        "subject": "added a bunch of stuff",
+        "date": "2026-05-07 15:08",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "3eb08b4586138f0bbe599cab5bd7890a688ad9b7",
+        "hashShort": "3eb08b4",
+        "parents": [
+          "49e6d672ab3bb50d53ecb3f185596a8532376baa"
+        ],
+        "subject": "did stuff",
+        "date": "2026-05-07 14:53",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "49e6d672ab3bb50d53ecb3f185596a8532376baa",
+        "hashShort": "49e6d67",
+        "parents": [
+          "062d2436acdc204c73015850313729e0d86704a6",
+          "8580525839c15d41f6ec71211955d2bcb4143891"
+        ],
+        "subject": "solaire again",
+        "date": "2026-05-07 14:50",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "8580525839c15d41f6ec71211955d2bcb4143891",
+        "hashShort": "8580525",
+        "parents": [
+          "aef200bc9f314a6eeea6924384b64e2263fbcfaf"
+        ],
+        "subject": "added Radahn",
+        "date": "2026-05-07 14:32",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "062d2436acdc204c73015850313729e0d86704a6",
+        "hashShort": "062d243",
+        "parents": [
+          "aef200bc9f314a6eeea6924384b64e2263fbcfaf"
+        ],
+        "subject": "added messmer",
+        "date": "2026-05-07 14:30",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "aef200bc9f314a6eeea6924384b64e2263fbcfaf",
+        "hashShort": "aef200b",
+        "parents": [
+          "00372a6dab9d989275e36eeceb2b1b3b704df8fc"
+        ],
+        "subject": "starting from scratch",
+        "date": "2026-05-07 14:25",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "4501b280807a9a84885145bfe2ae969ba9d24e0e",
+        "hashShort": "4501b28",
+        "parents": [
+          "00372a6dab9d989275e36eeceb2b1b3b704df8fc"
+        ],
+        "subject": "talking about my friend",
+        "date": "2026-05-07 14:07",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "00372a6dab9d989275e36eeceb2b1b3b704df8fc",
+        "hashShort": "00372a6",
+        "parents": [
+          "5319fd2472b73970d8b5b8a990b2a8d914b1149d"
+        ],
+        "subject": "got rid of last name",
+        "date": "2026-05-07 14:04",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "5319fd2472b73970d8b5b8a990b2a8d914b1149d",
+        "hashShort": "5319fd2",
+        "parents": [
+          "d8e19f795bfd64328644f1cbe380710c7d603efa"
+        ],
+        "subject": "added last name",
+        "date": "2026-05-07 14:03",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "d8e19f795bfd64328644f1cbe380710c7d603efa",
+        "hashShort": "d8e19f7",
+        "parents": [
+          "58c64083aa5e48cb62438796a454f0a262276d90"
+        ],
+        "subject": "added my name",
+        "date": "2026-05-07 14:01",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "58c64083aa5e48cb62438796a454f0a262276d90",
+        "hashShort": "58c6408",
+        "parents": [
+          "83ec990907149761ea1b8f4ad8c9ed2e4ce2362c"
+        ],
+        "subject": "solaire",
+        "date": "2026-05-07 13:55",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "83ec990907149761ea1b8f4ad8c9ed2e4ce2362c",
+        "hashShort": "83ec990",
+        "parents": [
+          "ea77882740fbd7280dc2664a7ccf8925bae5952e"
+        ],
+        "subject": "added weeee",
+        "date": "2026-05-07 13:51",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "ea77882740fbd7280dc2664a7ccf8925bae5952e",
+        "hashShort": "ea77882",
+        "parents": [
+          "040c85dfb487ef67a1dcfb20163f9271e4882126"
+        ],
+        "subject": "I added a name to this websiteeee",
+        "date": "2026-05-07 13:37",
+        "author": "kyliemcneil06-cmd"
+      },
+      {
+        "hash": "040c85dfb487ef67a1dcfb20163f9271e4882126",
+        "hashShort": "040c85d",
+        "parents": [],
+        "subject": "Initial commit",
+        "date": "2026-05-07 13:32",
+        "author": "Kylie"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "f5927d2e7eedce1f4a91b564c165d71dcc26a804"
+      },
+      {
+        "name": "bonusimages",
+        "hash": "32cfdf5d913f293bec624aa6752b04a3bc415673"
+      },
+      {
+        "name": "colourtext",
+        "hash": "f5927d2e7eedce1f4a91b564c165d71dcc26a804"
+      },
+      {
+        "name": "final",
+        "hash": "f5927d2e7eedce1f4a91b564c165d71dcc26a804"
+      },
+      {
+        "name": "fixpic",
+        "hash": "32cfdf5d913f293bec624aa6752b04a3bc415673"
+      },
+      {
+        "name": "images",
+        "hash": "c9d9f9824f04475d1a474a96026343760843cb1d"
+      },
+      {
+        "name": "main",
+        "hash": "f5927d2e7eedce1f4a91b564c165d71dcc26a804"
+      },
+      {
+        "name": "spellchecks",
+        "hash": "c48829ed17acaccaa06f51836451d17938b29dea"
+      },
+      {
+        "name": "spellchecktwo",
+        "hash": "06c10dcc7d165616a96e87850bb36fcf482ec401"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "linr5662",
+    "author": "linr5662",
+    "remoteUrl": "https://github.com/linr5662/a1-git-labyrinth1",
+    "commits": [
+      {
+        "hash": "0d0ddc89258614b2ea255f856f945998dd593829",
+        "hashShort": "0d0ddc8",
+        "parents": [
+          "d606623f260e083af59ad4cf690c3bcf94ba44af"
+        ],
+        "subject": "end2",
+        "date": "2026-05-09 01:34",
+        "author": "linr5662"
+      },
+      {
+        "hash": "d606623f260e083af59ad4cf690c3bcf94ba44af",
+        "hashShort": "d606623",
+        "parents": [
+          "ea7f68b0f64c2b5d72a60159f1975ce890dbbf87"
+        ],
+        "subject": "end",
+        "date": "2026-05-09 01:30",
+        "author": "linr5662"
+      },
+      {
+        "hash": "ea7f68b0f64c2b5d72a60159f1975ce890dbbf87",
+        "hashShort": "ea7f68b",
+        "parents": [
+          "185d0f09dc26faf8ae6bfd479208be166c4d4a64"
+        ],
+        "subject": "title",
+        "date": "2026-05-09 01:29",
+        "author": "linr5662"
+      },
+      {
+        "hash": "185d0f09dc26faf8ae6bfd479208be166c4d4a64",
+        "hashShort": "185d0f0",
+        "parents": [
+          "862a3567e911a09656166cd72644db3651637080"
+        ],
+        "subject": "warn",
+        "date": "2026-05-09 01:22",
+        "author": "linr5662"
+      },
+      {
+        "hash": "862a3567e911a09656166cd72644db3651637080",
+        "hashShort": "862a356",
+        "parents": [
+          "177e13110d27aac8f120775ce926b20586bcc9be"
+        ],
+        "subject": "feeling",
+        "date": "2026-05-09 01:20",
+        "author": "linr5662"
+      },
+      {
+        "hash": "177e13110d27aac8f120775ce926b20586bcc9be",
+        "hashShort": "177e131",
+        "parents": [
+          "a74e51a5185b65326faeb545a1c1ed7592164ce0"
+        ],
+        "subject": "text",
+        "date": "2026-05-09 01:18",
+        "author": "linr5662"
+      },
+      {
+        "hash": "a74e51a5185b65326faeb545a1c1ed7592164ce0",
+        "hashShort": "a74e51a",
+        "parents": [
+          "80a848274dfc9faf6e5e59e1b932209ac4504c26"
+        ],
+        "subject": "title",
+        "date": "2026-05-09 01:14",
+        "author": "linr5662"
+      },
+      {
+        "hash": "80a848274dfc9faf6e5e59e1b932209ac4504c26",
+        "hashShort": "80a8482",
+        "parents": [
+          "967a16d598de5ccc4e921eddaff2ed5333f9fddb"
+        ],
+        "subject": "change ul to ol",
+        "date": "2026-05-09 01:08",
+        "author": "linr5662"
+      },
+      {
+        "hash": "967a16d598de5ccc4e921eddaff2ed5333f9fddb",
+        "hashShort": "967a16d",
+        "parents": [
+          "8f9bf3eb1d60f3284480b739269daf8a81275cad"
+        ],
+        "subject": "feeling",
+        "date": "2026-05-09 01:07",
+        "author": "linr5662"
+      },
+      {
+        "hash": "8f9bf3eb1d60f3284480b739269daf8a81275cad",
+        "hashShort": "8f9bf3e",
+        "parents": [
+          "5653a4b00eb6900bde89a5306e0aae1d4119a9e4"
+        ],
+        "subject": "change pic size",
+        "date": "2026-05-09 01:03",
+        "author": "linr5662"
+      },
+      {
+        "hash": "5653a4b00eb6900bde89a5306e0aae1d4119a9e4",
+        "hashShort": "5653a4b",
+        "parents": [
+          "1bb414575c29e4af63821e685b26edaa866ab5d5"
+        ],
+        "subject": "pic",
+        "date": "2026-05-09 01:03",
+        "author": "linr5662"
+      },
+      {
+        "hash": "1bb414575c29e4af63821e685b26edaa866ab5d5",
+        "hashShort": "1bb4145",
+        "parents": [
+          "211a3b5f462e640f9a5176a279bc80dc5884bc5d"
+        ],
+        "subject": "nothing",
+        "date": "2026-05-09 01:00",
+        "author": "linr5662"
+      },
+      {
+        "hash": "211a3b5f462e640f9a5176a279bc80dc5884bc5d",
+        "hashShort": "211a3b5",
+        "parents": [
+          "ea31bddefcba09cb463dd2ea3a89b703c5ace098"
+        ],
+        "subject": "title",
+        "date": "2026-05-09 00:58",
+        "author": "linr5662"
+      },
+      {
+        "hash": "ea31bddefcba09cb463dd2ea3a89b703c5ace098",
+        "hashShort": "ea31bdd",
+        "parents": [
+          "557a8484759f0d937d1c4ea861ad1082caf79615"
+        ],
+        "subject": "where",
+        "date": "2026-05-09 00:52",
+        "author": "linr5662"
+      },
+      {
+        "hash": "557a8484759f0d937d1c4ea861ad1082caf79615",
+        "hashShort": "557a848",
+        "parents": [
+          "b1f6eb2065528c302b7f8ed32a4175d0766d1ec4"
+        ],
+        "subject": "text",
+        "date": "2026-05-09 00:48",
+        "author": "linr5662"
+      },
+      {
+        "hash": "b1f6eb2065528c302b7f8ed32a4175d0766d1ec4",
+        "hashShort": "b1f6eb2",
+        "parents": [
+          "23e61fa3a5415c07c72f50a2aa7600551e1175c2"
+        ],
+        "subject": "delete h7 h8",
+        "date": "2026-05-09 00:00",
+        "author": "linr5662"
+      },
+      {
+        "hash": "23e61fa3a5415c07c72f50a2aa7600551e1175c2",
+        "hashShort": "23e61fa",
+        "parents": [
+          "7d58d5de46e7ebe675d165777f93cfd7f7246fd7"
+        ],
+        "subject": "heard",
+        "date": "2026-05-09 00:00",
+        "author": "linr5662"
+      },
+      {
+        "hash": "7d58d5de46e7ebe675d165777f93cfd7f7246fd7",
+        "hashShort": "7d58d5d",
+        "parents": [
+          "f1d128f0f222c6a4efe21eb2b7a4779f04b8b059"
+        ],
+        "subject": "title",
+        "date": "2026-05-08 23:55",
+        "author": "linr5662"
+      },
+      {
+        "hash": "f1d128f0f222c6a4efe21eb2b7a4779f04b8b059",
+        "hashShort": "f1d128f",
+        "parents": [
+          "37441677822de52224702ee0af82774cb6550bb7"
+        ],
+        "subject": "nothing",
+        "date": "2026-05-08 20:30",
+        "author": "linr5662"
+      },
+      {
+        "hash": "37441677822de52224702ee0af82774cb6550bb7",
+        "hashShort": "3744167",
+        "parents": [
+          "1e343a34c82f1d6734542d958d9fabc9170c6297"
+        ],
+        "subject": "text",
+        "date": "2026-05-08 20:17",
+        "author": "linr5662"
+      },
+      {
+        "hash": "1e343a34c82f1d6734542d958d9fabc9170c6297",
+        "hashShort": "1e343a3",
+        "parents": [
+          "2a5092a67353e9448a888420c387d338b88d8829"
+        ],
+        "subject": "title",
+        "date": "2026-05-08 20:07",
+        "author": "linr5662"
+      },
+      {
+        "hash": "2a5092a67353e9448a888420c387d338b88d8829",
+        "hashShort": "2a5092a",
+        "parents": [
+          "226aedc2aa4fc574efaf2c1341a117cd4c77e57c"
+        ],
+        "subject": "change color",
+        "date": "2026-05-08 19:58",
+        "author": "linr5662"
+      },
+      {
+        "hash": "226aedc2aa4fc574efaf2c1341a117cd4c77e57c",
+        "hashShort": "226aedc",
+        "parents": [
+          "bf4dd9695101bb5ba46203be6c96a91673641808"
+        ],
+        "subject": "furniture",
+        "date": "2026-05-08 19:57",
+        "author": "linr5662"
+      },
+      {
+        "hash": "bf4dd9695101bb5ba46203be6c96a91673641808",
+        "hashShort": "bf4dd96",
+        "parents": [
+          "6b282239748fb0b48e9a917d5266b3c17273d22b"
+        ],
+        "subject": "content",
+        "date": "2026-05-08 19:55",
+        "author": "linr5662"
+      },
+      {
+        "hash": "6b282239748fb0b48e9a917d5266b3c17273d22b",
+        "hashShort": "6b28223",
+        "parents": [
+          "6161bf283d182b91250a893a960d6cf867d54775"
+        ],
+        "subject": "delete bg color",
+        "date": "2026-05-08 19:52",
+        "author": "linr5662"
+      },
+      {
+        "hash": "6161bf283d182b91250a893a960d6cf867d54775",
+        "hashShort": "6161bf2",
+        "parents": [
+          "295eef2f754f107a9f529f7263fa2a7c1093a288"
+        ],
+        "subject": "bg color",
+        "date": "2026-05-08 19:51",
+        "author": "linr5662"
+      },
+      {
+        "hash": "295eef2f754f107a9f529f7263fa2a7c1093a288",
+        "hashShort": "295eef2",
+        "parents": [
+          "e26809f815d368c644ea90156f7b2d35bd01ba1f"
+        ],
+        "subject": "add title",
+        "date": "2026-05-08 19:50",
+        "author": "linr5662"
+      },
+      {
+        "hash": "e26809f815d368c644ea90156f7b2d35bd01ba1f",
+        "hashShort": "e26809f",
+        "parents": [
+          "114fafa7c6f9b42efbac6552076bcc72b119050c"
+        ],
+        "subject": "end",
+        "date": "2026-05-08 19:45",
+        "author": "linr5662"
+      },
+      {
+        "hash": "114fafa7c6f9b42efbac6552076bcc72b119050c",
+        "hashShort": "114fafa",
+        "parents": [
+          "e5ea0429b96f6b31d1e17a8a0159109fb4c4296b"
+        ],
+        "subject": "furniture",
+        "date": "2026-05-08 19:43",
+        "author": "linr5662"
+      },
+      {
+        "hash": "e5ea0429b96f6b31d1e17a8a0159109fb4c4296b",
+        "hashShort": "e5ea042",
+        "parents": [
+          "65d250d2b56ade08b22563f634190479a3f57a68"
+        ],
+        "subject": "discription",
+        "date": "2026-05-08 19:36",
+        "author": "linr5662"
+      },
+      {
+        "hash": "65d250d2b56ade08b22563f634190479a3f57a68",
+        "hashShort": "65d250d",
+        "parents": [
+          "90d30a47806830b33f1c2f4c26c2f72889ceb2be"
+        ],
+        "subject": "new title",
+        "date": "2026-05-08 19:31",
+        "author": "linr5662"
+      },
+      {
+        "hash": "90d30a47806830b33f1c2f4c26c2f72889ceb2be",
+        "hashShort": "90d30a4",
+        "parents": [
+          "69788f9a5b078a9497cc148c8991e9eb6ac689c1"
+        ],
+        "subject": "change text type",
+        "date": "2026-05-08 12:28",
+        "author": "linr5662"
+      },
+      {
+        "hash": "69788f9a5b078a9497cc148c8991e9eb6ac689c1",
+        "hashShort": "69788f9",
+        "parents": [
+          "e18c40cf413e57ea557c0fd4fd71bdf0f858d8d9"
+        ],
+        "subject": "emphasize",
+        "date": "2026-05-08 12:27",
+        "author": "linr5662"
+      },
+      {
+        "hash": "e18c40cf413e57ea557c0fd4fd71bdf0f858d8d9",
+        "hashShort": "e18c40c",
+        "parents": [
+          "0c8d0e52c626ebec24fdaf35785e620c4bf30d81"
+        ],
+        "subject": "layout",
+        "date": "2026-05-08 12:24",
+        "author": "linr5662"
+      },
+      {
+        "hash": "0c8d0e52c626ebec24fdaf35785e620c4bf30d81",
+        "hashShort": "0c8d0e5",
+        "parents": [
+          "605e8282fcf24cbac98a15346cf38e87aa32eeb9"
+        ],
+        "subject": "dream content",
+        "date": "2026-05-08 12:21",
+        "author": "linr5662"
+      },
+      {
+        "hash": "605e8282fcf24cbac98a15346cf38e87aa32eeb9",
+        "hashShort": "605e828",
+        "parents": [
+          "2ac63b3c02c3e7fa2454e5ac4eca214bf6a12334"
+        ],
+        "subject": "add wrong",
+        "date": "2026-05-08 12:19",
+        "author": "linr5662"
+      },
+      {
+        "hash": "2ac63b3c02c3e7fa2454e5ac4eca214bf6a12334",
+        "hashShort": "2ac63b3",
+        "parents": [
+          "fa06d7efec391c29c7338dfd2bc0348070eadcd5"
+        ],
+        "subject": "change background color",
+        "date": "2026-05-08 12:13",
+        "author": "linr5662"
+      },
+      {
+        "hash": "fa06d7efec391c29c7338dfd2bc0348070eadcd5",
+        "hashShort": "fa06d7e",
+        "parents": [
+          "e8b8b36da0a90b2722f0c8cd795fa66c4fa7e6af"
+        ],
+        "subject": "change title size",
+        "date": "2026-05-08 12:10",
+        "author": "linr5662"
+      },
+      {
+        "hash": "e8b8b36da0a90b2722f0c8cd795fa66c4fa7e6af",
+        "hashShort": "e8b8b36",
+        "parents": [
+          "f3e69c10a609d2afb0fdad8bb82e59c713dc3049"
+        ],
+        "subject": "add new title",
+        "date": "2026-05-08 12:09",
+        "author": "linr5662"
+      },
+      {
+        "hash": "f3e69c10a609d2afb0fdad8bb82e59c713dc3049",
+        "hashShort": "f3e69c1",
+        "parents": [
+          "40d81d755f85347ae67dc8944a001a660d2bd965"
+        ],
+        "subject": "add picture",
+        "date": "2026-05-08 11:49",
+        "author": "linr5662"
+      },
+      {
+        "hash": "40d81d755f85347ae67dc8944a001a660d2bd965",
+        "hashShort": "40d81d7",
+        "parents": [
+          "5770e7112089560dffb38fbd2b0b4f71b8ec544c"
+        ],
+        "subject": "now",
+        "date": "2026-05-08 11:42",
+        "author": "linr5662"
+      },
+      {
+        "hash": "5770e7112089560dffb38fbd2b0b4f71b8ec544c",
+        "hashShort": "5770e71",
+        "parents": [
+          "ca949ac0a56aafc06a6c0df5d6926fabc7ec9087"
+        ],
+        "subject": "add memory",
+        "date": "2026-05-08 11:37",
+        "author": "linr5662"
+      },
+      {
+        "hash": "ca949ac0a56aafc06a6c0df5d6926fabc7ec9087",
+        "hashShort": "ca949ac",
+        "parents": [
+          "a5d7834df2bad7b70e1725652c62a6ce8089debd"
+        ],
+        "subject": "change background color",
+        "date": "2026-05-08 11:34",
+        "author": "linr5662"
+      },
+      {
+        "hash": "a5d7834df2bad7b70e1725652c62a6ce8089debd",
+        "hashShort": "a5d7834",
+        "parents": [
+          "c142fac043e260b4b6f26c213d2de8ddbc266782"
+        ],
+        "subject": "add toy type",
+        "date": "2026-05-08 11:33",
+        "author": "linr5662"
+      },
+      {
+        "hash": "c142fac043e260b4b6f26c213d2de8ddbc266782",
+        "hashShort": "c142fac",
+        "parents": [
+          "869f324adb344e3740314b085e8ce0f83de0d933"
+        ],
+        "subject": "toy branch",
+        "date": "2026-05-08 11:29",
+        "author": "linr5662"
+      },
+      {
+        "hash": "869f324adb344e3740314b085e8ce0f83de0d933",
+        "hashShort": "869f324",
+        "parents": [
+          "be909e49c1aa8c7fb59f3a9b3cc6ad6eb2e48ee4"
+        ],
+        "subject": "furniture",
+        "date": "2026-05-08 11:19",
+        "author": "linr5662"
+      },
+      {
+        "hash": "be909e49c1aa8c7fb59f3a9b3cc6ad6eb2e48ee4",
+        "hashShort": "be909e4",
+        "parents": [
+          "bd3c8781f2f342a2d0b6592d3acb0e042243e733"
+        ],
+        "subject": "bedroom",
+        "date": "2026-05-08 11:16",
+        "author": "linr5662"
+      },
+      {
+        "hash": "bd3c8781f2f342a2d0b6592d3acb0e042243e733",
+        "hashShort": "bd3c878",
+        "parents": [
+          "8f8006d0175c4f9816da9807f86a20fd50daaa27"
+        ],
+        "subject": "introduction",
+        "date": "2026-05-08 11:13",
+        "author": "linr5662"
+      },
+      {
+        "hash": "8f8006d0175c4f9816da9807f86a20fd50daaa27",
+        "hashShort": "8f8006d",
+        "parents": [
+          "f0e555cb15bf5c582eabb544e71ca45d2223dc1a"
+        ],
+        "subject": "write title",
+        "date": "2026-05-08 11:11",
+        "author": "linr5662"
+      },
+      {
+        "hash": "f0e555cb15bf5c582eabb544e71ca45d2223dc1a",
+        "hashShort": "f0e555c",
+        "parents": [
+          "0bba8e6135340cd13702c242743397802d4ebffd"
+        ],
+        "subject": "HTML Boilerplate",
+        "date": "2026-05-08 11:07",
+        "author": "linr5662"
+      },
+      {
+        "hash": "0bba8e6135340cd13702c242743397802d4ebffd",
+        "hashShort": "0bba8e6",
+        "parents": [],
+        "subject": "Initial commit",
+        "date": "2026-05-08 10:58",
+        "author": "linr5662"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "2a5092a67353e9448a888420c387d338b88d8829"
+      },
+      {
+        "name": "creepyroom",
+        "hash": "f1d128f0f222c6a4efe21eb2b7a4779f04b8b059"
+      },
+      {
+        "name": "distortedroom",
+        "hash": "185d0f09dc26faf8ae6bfd479208be166c4d4a64"
+      },
+      {
+        "name": "dreamroom",
+        "hash": "f1d128f0f222c6a4efe21eb2b7a4779f04b8b059"
+      },
+      {
+        "name": "echoroom",
+        "hash": "185d0f09dc26faf8ae6bfd479208be166c4d4a64"
+      },
+      {
+        "name": "emptyroom",
+        "hash": "f1d128f0f222c6a4efe21eb2b7a4779f04b8b059"
+      },
+      {
+        "name": "final",
+        "hash": "0d0ddc89258614b2ea255f856f945998dd593829"
+      },
+      {
+        "name": "main",
+        "hash": "2a5092a67353e9448a888420c387d338b88d8829"
+      },
+      {
+        "name": "memoryroom",
+        "hash": "f1d128f0f222c6a4efe21eb2b7a4779f04b8b059"
+      },
+      {
+        "name": "toyroom",
+        "hash": "f3e69c10a609d2afb0fdad8bb82e59c713dc3049"
+      },
+      {
+        "name": "voidroom",
+        "hash": "80a848274dfc9faf6e5e59e1b932209ac4504c26"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "singufridge",
+    "author": "singufridge",
+    "remoteUrl": "https://github.com/singufridge/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "c2dbe8b46c3fa79ec987ca457a7cb629b6336b25",
+        "hashShort": "c2dbe8b",
+        "parents": [
+          "77d3cc36b0949cf2953964222503c433f184442d"
+        ],
+        "subject": "cleaned up code and commented",
+        "date": "2026-05-09 18:27",
+        "author": "singufridge"
+      },
+      {
+        "hash": "77d3cc36b0949cf2953964222503c433f184442d",
+        "hashShort": "77d3cc3",
+        "parents": [
+          "e6f214cd886481762ea3a89432d695a3f668914a"
+        ],
+        "subject": "fixed issue with seaweed img",
+        "date": "2026-05-09 18:25",
+        "author": "singufridge"
+      },
+      {
+        "hash": "e6f214cd886481762ea3a89432d695a3f668914a",
+        "hashShort": "e6f214c",
+        "parents": [
+          "adeb4eea0b66c9bc749c1550053f202d05bc309b"
+        ],
+        "subject": "added sand",
+        "date": "2026-05-09 18:23",
+        "author": "singufridge"
+      },
+      {
+        "hash": "adeb4eea0b66c9bc749c1550053f202d05bc309b",
+        "hashShort": "adeb4ee",
+        "parents": [
+          "d84a55d67695a6536ed236f09b07357b19b2fb17"
+        ],
+        "subject": "changed messages",
+        "date": "2026-05-09 18:19",
+        "author": "singufridge"
+      },
+      {
+        "hash": "d84a55d67695a6536ed236f09b07357b19b2fb17",
+        "hashShort": "d84a55d",
+        "parents": [
+          "3cf0caa3f27a11b4f2d61ec0df395f2c8e2ddd82"
+        ],
+        "subject": "turned trees into water",
+        "date": "2026-05-09 18:16",
+        "author": "singufridge"
+      },
+      {
+        "hash": "3cf0caa3f27a11b4f2d61ec0df395f2c8e2ddd82",
+        "hashShort": "3cf0caa",
+        "parents": [
+          "f7fdc3bb077528a7baddd405b8f49296355fe0df",
+          "43d4b7eb363d22f57d1458463692577412073eff"
+        ],
+        "subject": "merge with weirdAnimalsExpanded",
+        "date": "2026-05-09 18:14",
+        "author": "singufridge"
+      },
+      {
+        "hash": "f7fdc3bb077528a7baddd405b8f49296355fe0df",
+        "hashShort": "f7fdc3b",
+        "parents": [
+          "6c226177b771fa10f38816ce1450b2dcb24a6cf6"
+        ],
+        "subject": "added photos of crabs",
+        "date": "2026-05-09 18:11",
+        "author": "singufridge"
+      },
+      {
+        "hash": "6c226177b771fa10f38816ce1450b2dcb24a6cf6",
+        "hashShort": "6c22617",
+        "parents": [
+          "1e52b062ecaff441630cadb973fca95e267e1790"
+        ],
+        "subject": "took away list and added messages",
+        "date": "2026-05-09 18:04",
+        "author": "singufridge"
+      },
+      {
+        "hash": "43d4b7eb363d22f57d1458463692577412073eff",
+        "hashShort": "43d4b7e",
+        "parents": [
+          "b30bcb68b569f56b8938fbc907ed80ee3718a8aa"
+        ],
+        "subject": "message added and images shrunk'",
+        "date": "2026-05-09 17:45",
+        "author": "singufridge"
+      },
+      {
+        "hash": "b30bcb68b569f56b8938fbc907ed80ee3718a8aa",
+        "hashShort": "b30bcb6",
+        "parents": [
+          "2322f294733196330c5523a22922c4817df4077b"
+        ],
+        "subject": "added seaweed and sand",
+        "date": "2026-05-09 17:44",
+        "author": "singufridge"
+      },
+      {
+        "hash": "2322f294733196330c5523a22922c4817df4077b",
+        "hashShort": "2322f29",
+        "parents": [
+          "87a32dea397db54b65e281f35049538a2dd363fb"
+        ],
+        "subject": "changed bg to water",
+        "date": "2026-05-09 17:40",
+        "author": "singufridge"
+      },
+      {
+        "hash": "87a32dea397db54b65e281f35049538a2dd363fb",
+        "hashShort": "87a32de",
+        "parents": [
+          "ad948c09670ea6b8a1ca849154d3b92eb06a3b31"
+        ],
+        "subject": "added more capys",
+        "date": "2026-05-09 17:28",
+        "author": "singufridge"
+      },
+      {
+        "hash": "ad948c09670ea6b8a1ca849154d3b92eb06a3b31",
+        "hashShort": "ad948c0",
+        "parents": [
+          "92711bcce9eb1872644764efd155661b0239a840"
+        ],
+        "subject": "changed messages text",
+        "date": "2026-05-09 17:15",
+        "author": "singufridge"
+      },
+      {
+        "hash": "92711bcce9eb1872644764efd155661b0239a840",
+        "hashShort": "92711bc",
+        "parents": [
+          "4249b6b53d6e31a03e96201bdb899566d3d6ad13",
+          "379122707592bfb6d9d1f7f33de63ed58eb4c5ff"
+        ],
+        "subject": "changed background colour",
+        "date": "2026-05-09 17:06",
+        "author": "singufridge"
+      },
+      {
+        "hash": "379122707592bfb6d9d1f7f33de63ed58eb4c5ff",
+        "hashShort": "3791227",
+        "parents": [
+          "c2c4519335126d5cf52c184236f29d022fd95b47"
+        ],
+        "subject": "formatting code and adding text",
+        "date": "2026-05-09 17:00",
+        "author": "singufridge"
+      },
+      {
+        "hash": "c2c4519335126d5cf52c184236f29d022fd95b47",
+        "hashShort": "c2c4519",
+        "parents": [
+          "521a42fc028dc001cc396e5dfd314c241ef659b1"
+        ],
+        "subject": "initial capycrab commit",
+        "date": "2026-05-09 16:54",
+        "author": "singufridge"
+      },
+      {
+        "hash": "521a42fc028dc001cc396e5dfd314c241ef659b1",
+        "hashShort": "521a42f",
+        "parents": [
+          "3393d2612d1033b13fb9a910c5cffaf1f00fac04"
+        ],
+        "subject": "minor changes to css and code structure",
+        "date": "2026-05-09 16:52",
+        "author": "singufridge"
+      },
+      {
+        "hash": "c62bc49904b0088d2c57dd453534c50fc9970189",
+        "hashShort": "c62bc49",
+        "parents": [
+          "3393d2612d1033b13fb9a910c5cffaf1f00fac04"
+        ],
+        "subject": "added capy fun facts",
+        "date": "2026-05-09 16:48",
+        "author": "singufridge"
+      },
+      {
+        "hash": "03b428b0d78aca695a82231ad2dab520b4ac5d26",
+        "hashShort": "03b428b",
+        "parents": [
+          "5b9c91b64a54bf069ca8dff5daaaf8128f4cf217"
+        ],
+        "subject": "fixed issues with form",
+        "date": "2026-05-09 16:42",
+        "author": "singufridge"
+      },
+      {
+        "hash": "5b9c91b64a54bf069ca8dff5daaaf8128f4cf217",
+        "hashShort": "5b9c91b",
+        "parents": [
+          "cbf126034615ca49f018c85e0e136815cb6c7ab7"
+        ],
+        "subject": "added feedback form",
+        "date": "2026-05-09 16:36",
+        "author": "singufridge"
+      },
+      {
+        "hash": "cbf126034615ca49f018c85e0e136815cb6c7ab7",
+        "hashShort": "cbf1260",
+        "parents": [
+          "d18948b2ccac5ba933d5ecd5f13ac5c808e16f1f"
+        ],
+        "subject": "css and formatting changes",
+        "date": "2026-05-09 16:27",
+        "author": "singufridge"
+      },
+      {
+        "hash": "d18948b2ccac5ba933d5ecd5f13ac5c808e16f1f",
+        "hashShort": "d18948b",
+        "parents": [
+          "3bf7e9a889827948f22900ab60690e130ea9478a"
+        ],
+        "subject": "added content to table",
+        "date": "2026-05-09 16:19",
+        "author": "singufridge"
+      },
+      {
+        "hash": "3bf7e9a889827948f22900ab60690e130ea9478a",
+        "hashShort": "3bf7e9a",
+        "parents": [
+          "5266441523598ecf02eea18618bc3924ca5fae35"
+        ],
+        "subject": "added css to table elements",
+        "date": "2026-05-09 14:35",
+        "author": "singufridge"
+      },
+      {
+        "hash": "5266441523598ecf02eea18618bc3924ca5fae35",
+        "hashShort": "5266441",
+        "parents": [
+          "1e52b062ecaff441630cadb973fca95e267e1790"
+        ],
+        "subject": "added info section at bottom",
+        "date": "2026-05-09 14:26",
+        "author": "singufridge"
+      },
+      {
+        "hash": "1e52b062ecaff441630cadb973fca95e267e1790",
+        "hashShort": "1e52b06",
+        "parents": [
+          "6dba60188db965ca0b7046034bff14f50455d9fe"
+        ],
+        "subject": "moved crab into trees",
+        "date": "2026-05-09 14:11",
+        "author": "singufridge"
+      },
+      {
+        "hash": "6dba60188db965ca0b7046034bff14f50455d9fe",
+        "hashShort": "6dba601",
+        "parents": [
+          "06bbbe10945c938634dc2f01851a9faac382df30"
+        ],
+        "subject": "merged addLimb and myFriend",
+        "date": "2026-05-08 22:54",
+        "author": "singufridge"
+      },
+      {
+        "hash": "06bbbe10945c938634dc2f01851a9faac382df30",
+        "hashShort": "06bbbe1",
+        "parents": [
+          "33a65486f1a02c61835bcaad421326bc3bdd1938"
+        ],
+        "subject": "made trees smalelr",
+        "date": "2026-05-08 22:49",
+        "author": "singufridge"
+      },
+      {
+        "hash": "33a65486f1a02c61835bcaad421326bc3bdd1938",
+        "hashShort": "33a6548",
+        "parents": [
+          "27d4a4e4c09f4c31efefc9ea9ac5b5ad729bf208"
+        ],
+        "subject": "changed bg to rain clouds, widened padding",
+        "date": "2026-05-08 22:42",
+        "author": "singufridge"
+      },
+      {
+        "hash": "27d4a4e4c09f4c31efefc9ea9ac5b5ad729bf208",
+        "hashShort": "27d4a4e",
+        "parents": [
+          "bff3e389acef2336967bf4028fdde8d32bd41664"
+        ],
+        "subject": "added rocks, changed text",
+        "date": "2026-05-08 22:39",
+        "author": "singufridge"
+      },
+      {
+        "hash": "bff3e389acef2336967bf4028fdde8d32bd41664",
+        "hashShort": "bff3e38",
+        "parents": [
+          "ae048ced970fc3785492669bd27a1a84ebad4dea"
+        ],
+        "subject": "added worms, changed text",
+        "date": "2026-05-08 20:46",
+        "author": "singufridge"
+      },
+      {
+        "hash": "ae048ced970fc3785492669bd27a1a84ebad4dea",
+        "hashShort": "ae048ce",
+        "parents": [
+          "e7151d50101d8b8c9a28fd01744709333d90385c"
+        ],
+        "subject": "got rid of breaks and made imgs even smaller",
+        "date": "2026-05-08 20:42",
+        "author": "singufridge"
+      },
+      {
+        "hash": "e7151d50101d8b8c9a28fd01744709333d90385c",
+        "hashShort": "e7151d5",
+        "parents": [
+          "4249b6b53d6e31a03e96201bdb899566d3d6ad13"
+        ],
+        "subject": "made imgs and garden scale relatively",
+        "date": "2026-05-08 20:39",
+        "author": "singufridge"
+      },
+      {
+        "hash": "4249b6b53d6e31a03e96201bdb899566d3d6ad13",
+        "hashShort": "4249b6b",
+        "parents": [
+          "905aefd62d7625c22841060436740e8c97493db8"
+        ],
+        "subject": "added shrubs to the garden",
+        "date": "2026-05-08 20:29",
+        "author": "singufridge"
+      },
+      {
+        "hash": "905aefd62d7625c22841060436740e8c97493db8",
+        "hashShort": "905aefd",
+        "parents": [
+          "511a697483924899745c2cb4318252304056177a"
+        ],
+        "subject": "changed trees to flowers, rewrote text",
+        "date": "2026-05-08 20:21",
+        "author": "singufridge"
+      },
+      {
+        "hash": "511a697483924899745c2cb4318252304056177a",
+        "hashShort": "511a697",
+        "parents": [
+          "3974126e1c168c122455fae593cf13d3db1512f0"
+        ],
+        "subject": "added comments",
+        "date": "2026-05-08 19:54",
+        "author": "singufridge"
+      },
+      {
+        "hash": "3974126e1c168c122455fae593cf13d3db1512f0",
+        "hashShort": "3974126",
+        "parents": [
+          "4db00201d08a3e32780ebc45f38804f4fed5ae29"
+        ],
+        "subject": "fixed margin/padding issues and cleaned code",
+        "date": "2026-05-08 19:46",
+        "author": "singufridge"
+      },
+      {
+        "hash": "4db00201d08a3e32780ebc45f38804f4fed5ae29",
+        "hashShort": "4db0020",
+        "parents": [
+          "d29da8255949b8d5b74717992eb1ea0e90c66e16"
+        ],
+        "subject": "added sky background, transferred garden to its own div",
+        "date": "2026-05-08 19:42",
+        "author": "singufridge"
+      },
+      {
+        "hash": "d29da8255949b8d5b74717992eb1ea0e90c66e16",
+        "hashShort": "d29da82",
+        "parents": [
+          "adc6bf9ed8aa111dc86657d9206bdb66f7a9f5d1"
+        ],
+        "subject": "added way more trees + padding",
+        "date": "2026-05-08 19:13",
+        "author": "singufridge"
+      },
+      {
+        "hash": "adc6bf9ed8aa111dc86657d9206bdb66f7a9f5d1",
+        "hashShort": "adc6bf9",
+        "parents": [
+          "9d408381bac026216b04ccb881e9ad67fe4f0ca8"
+        ],
+        "subject": "made img class for 'tree'",
+        "date": "2026-05-08 19:09",
+        "author": "singufridge"
+      },
+      {
+        "hash": "9d408381bac026216b04ccb881e9ad67fe4f0ca8",
+        "hashShort": "9d40838",
+        "parents": [
+          "e460a841900720d18bc041b3cf4e3b72016a9865"
+        ],
+        "subject": "added trees, aligned to center",
+        "date": "2026-05-08 19:03",
+        "author": "singufridge"
+      },
+      {
+        "hash": "e460a841900720d18bc041b3cf4e3b72016a9865",
+        "hashShort": "e460a84",
+        "parents": [
+          "df49093ecf16f5465346e280c848e82cb986b614"
+        ],
+        "subject": "added more classes, list displays inline",
+        "date": "2026-05-08 18:54",
+        "author": "singufridge"
+      },
+      {
+        "hash": "df49093ecf16f5465346e280c848e82cb986b614",
+        "hashShort": "df49093",
+        "parents": [
+          "a6078a1471e5bcd7b2e95e8eea0b9270ef344c23"
+        ],
+        "subject": "added css style tag and div class",
+        "date": "2026-05-08 18:44",
+        "author": "singufridge"
+      },
+      {
+        "hash": "a6078a1471e5bcd7b2e95e8eea0b9270ef344c23",
+        "hashShort": "a6078a1",
+        "parents": [
+          "b1c89d7cdd8cdd77eb2f8e6e67cbd61be19eefb2"
+        ],
+        "subject": "new limb starter commit",
+        "date": "2026-05-08 11:07",
+        "author": "singufridge"
+      },
+      {
+        "hash": "3393d2612d1033b13fb9a910c5cffaf1f00fac04",
+        "hashShort": "3393d26",
+        "parents": [
+          "147516573a502459d373d0e5e195383b0b65f694"
+        ],
+        "subject": "horseshoe info",
+        "date": "2026-05-07 16:11",
+        "author": "singufridge"
+      },
+      {
+        "hash": "147516573a502459d373d0e5e195383b0b65f694",
+        "hashShort": "1475165",
+        "parents": [
+          "220f6a08b9b1d3ed7da4f2190e789ed0f9364a26"
+        ],
+        "subject": "fixed list",
+        "date": "2026-05-07 15:46",
+        "author": "singufridge"
+      },
+      {
+        "hash": "220f6a08b9b1d3ed7da4f2190e789ed0f9364a26",
+        "hashShort": "220f6a0",
+        "parents": [
+          "20967c6423b64065d286e5bb2e7f1468661aedd2"
+        ],
+        "subject": "capybara list",
+        "date": "2026-05-07 15:40",
+        "author": "singufridge"
+      },
+      {
+        "hash": "20967c6423b64065d286e5bb2e7f1468661aedd2",
+        "hashShort": "20967c6",
+        "parents": [
+          "b1c89d7cdd8cdd77eb2f8e6e67cbd61be19eefb2"
+        ],
+        "subject": "capybara button",
+        "date": "2026-05-07 15:23",
+        "author": "singufridge"
+      },
+      {
+        "hash": "b1c89d7cdd8cdd77eb2f8e6e67cbd61be19eefb2",
+        "hashShort": "b1c89d7",
+        "parents": [
+          "fd50d4ec43f61906493ceb4db295a6526dce61aa",
+          "809452bc390d3411e0f5969d317887f7efed1ef1"
+        ],
+        "subject": "My turn",
+        "date": "2026-05-07 15:04",
+        "author": "singufridge"
+      },
+      {
+        "hash": "809452bc390d3411e0f5969d317887f7efed1ef1",
+        "hashShort": "809452b",
+        "parents": [
+          "c8e772defc57c9c4af95c1618c1e785cb00053a9"
+        ],
+        "subject": "talking about me",
+        "date": "2026-05-07 14:11",
+        "author": "singufridge"
+      },
+      {
+        "hash": "fd50d4ec43f61906493ceb4db295a6526dce61aa",
+        "hashShort": "fd50d4e",
+        "parents": [
+          "c8e772defc57c9c4af95c1618c1e785cb00053a9"
+        ],
+        "subject": "talking about my friend",
+        "date": "2026-05-07 14:08",
+        "author": "singufridge"
+      },
+      {
+        "hash": "c8e772defc57c9c4af95c1618c1e785cb00053a9",
+        "hashShort": "c8e772d",
+        "parents": [
+          "997a064f77d1c1364132a6c4df4d968314e56184"
+        ],
+        "subject": "welcome to cadence's site",
+        "date": "2026-05-07 13:28",
+        "author": "singufridge"
+      },
+      {
+        "hash": "997a064f77d1c1364132a6c4df4d968314e56184",
+        "hashShort": "997a064",
+        "parents": [],
+        "subject": "Initial commit",
+        "date": "2026-05-07 13:25",
+        "author": "singufridge"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "c62bc49904b0088d2c57dd453534c50fc9970189"
+      },
+      {
+        "name": "addLimb",
+        "hash": "06bbbe10945c938634dc2f01851a9faac382df30"
+      },
+      {
+        "name": "capyCrab",
+        "hash": "379122707592bfb6d9d1f7f33de63ed58eb4c5ff"
+      },
+      {
+        "name": "gardenCrab",
+        "hash": "03b428b0d78aca695a82231ad2dab520b4ac5d26"
+      },
+      {
+        "name": "main",
+        "hash": "c62bc49904b0088d2c57dd453534c50fc9970189"
+      },
+      {
+        "name": "myFriend",
+        "hash": "521a42fc028dc001cc396e5dfd314c241ef659b1"
+      },
+      {
+        "name": "weirdAnimals",
+        "hash": "87a32dea397db54b65e281f35049538a2dd363fb"
+      },
+      {
+        "name": "weirdAnimalsExpanded",
+        "hash": "43d4b7eb363d22f57d1458463692577412073eff"
+      },
+      {
+        "name": "weirdCrabs",
+        "hash": "c2dbe8b46c3fa79ec987ca457a7cb629b6336b25"
+      },
+      {
+        "name": "weirdFlowers",
+        "hash": "92711bcce9eb1872644764efd155661b0239a840"
+      },
+      {
+        "name": "weirdFlowersExpanded",
+        "hash": "33a65486f1a02c61835bcaad421326bc3bdd1938"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "t7ru",
+    "author": "Benjamin",
+    "remoteUrl": "https://github.com/t7ru/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "caad0654bc363dda61f5c5b53ce9e2fc100cbb1d",
+        "hashShort": "caad065",
+        "parents": [
+          "ca8937bbdae5591a45a22587907a6b4130274c36"
+        ],
+        "subject": "style: swap body font",
+        "date": "2026-05-09 02:36",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "ca8937bbdae5591a45a22587907a6b4130274c36",
+        "hashShort": "ca8937b",
+        "parents": [
+          "49fffa98e549d700761d0110a15e6701c4ebdf5a"
+        ],
+        "subject": "chore: reword summary",
+        "date": "2026-05-09 02:34",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "49fffa98e549d700761d0110a15e6701c4ebdf5a",
+        "hashShort": "49fffa9",
+        "parents": [
+          "80cc04353e9dbcb519a5440d553ea8d5b9d1fc45"
+        ],
+        "subject": "chore: punctuate credit",
+        "date": "2026-05-09 02:33",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "80cc04353e9dbcb519a5440d553ea8d5b9d1fc45",
+        "hashShort": "80cc043",
+        "parents": [
+          "06743285a11547af732da356bf71b141e58e256e"
+        ],
+        "subject": "chore: update image text",
+        "date": "2026-05-09 02:31",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "06743285a11547af732da356bf71b141e58e256e",
+        "hashShort": "0674328",
+        "parents": [
+          "f8ba12d212f87be425b9aaa53cb1584be2b8668d"
+        ],
+        "subject": "chore: reshuffle noise",
+        "date": "2026-05-09 02:30",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "f8ba12d212f87be425b9aaa53cb1584be2b8668d",
+        "hashShort": "f8ba12d",
+        "parents": [
+          "3a465901780858b7a0ee21f1f419b9b8d8e448c0"
+        ],
+        "subject": "chore: tweak decay note",
+        "date": "2026-05-09 02:28",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "3a465901780858b7a0ee21f1f419b9b8d8e448c0",
+        "hashShort": "3a46590",
+        "parents": [
+          "6d9cba74356d013ee1cc3898c4ad5dba4045dd1a"
+        ],
+        "subject": "style: smooth animation",
+        "date": "2026-05-09 02:27",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6d9cba74356d013ee1cc3898c4ad5dba4045dd1a",
+        "hashShort": "6d9cba7",
+        "parents": [
+          "692d3315ec082c3e61ea0f31b69777d01d166b70"
+        ],
+        "subject": "style: lift vignette",
+        "date": "2026-05-09 02:27",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "692d3315ec082c3e61ea0f31b69777d01d166b70",
+        "hashShort": "692d331",
+        "parents": [
+          "4057ccc43d0b5797683a4ce562c17438cf7d4898"
+        ],
+        "subject": "style: dim overlay",
+        "date": "2026-05-09 02:25",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "4057ccc43d0b5797683a4ce562c17438cf7d4898",
+        "hashShort": "4057ccc",
+        "parents": [
+          "e0a9ad79e83474b4fa96bae1c5ea3b109ef75a3e"
+        ],
+        "subject": "style: speed up fade",
+        "date": "2026-05-09 02:24",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "e0a9ad79e83474b4fa96bae1c5ea3b109ef75a3e",
+        "hashShort": "e0a9ad7",
+        "parents": [
+          "6de61171db7fab75a82dff13b2e0df834a2b5fe6"
+        ],
+        "subject": "style: tune quote color",
+        "date": "2026-05-09 02:22",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6de61171db7fab75a82dff13b2e0df834a2b5fe6",
+        "hashShort": "6de6117",
+        "parents": [
+          "93246d53c1329ae2b1f60e885ad60bc8d71debc4"
+        ],
+        "subject": "style: thicken quote border",
+        "date": "2026-05-09 02:21",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "93246d53c1329ae2b1f60e885ad60bc8d71debc4",
+        "hashShort": "93246d5",
+        "parents": [
+          "7c063ad959f5138dfa109ac3b01541919ce1ca4b"
+        ],
+        "subject": "style: lighten soft text",
+        "date": "2026-05-09 02:21",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "7c063ad959f5138dfa109ac3b01541919ce1ca4b",
+        "hashShort": "7c063ad",
+        "parents": [
+          "ced18272f23df47d22d618fb94533bc29165ebc5"
+        ],
+        "subject": "style: raise caption opacity",
+        "date": "2026-05-09 02:19",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "ced18272f23df47d22d618fb94533bc29165ebc5",
+        "hashShort": "ced1827",
+        "parents": [
+          "6a829622500e26bf3f79ee50e49e6e64f9d7e892"
+        ],
+        "subject": "style: bump caption size",
+        "date": "2026-05-09 02:18",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6a829622500e26bf3f79ee50e49e6e64f9d7e892",
+        "hashShort": "6a82962",
+        "parents": [
+          "9f6bd86b6436f5beaf218b33bddd36bf6a6d1a33"
+        ],
+        "subject": "style: soften image filter",
+        "date": "2026-05-09 02:16",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "9f6bd86b6436f5beaf218b33bddd36bf6a6d1a33",
+        "hashShort": "9f6bd86",
+        "parents": [
+          "50674a6cda4f179ee4b652496c0ff3b658b44630"
+        ],
+        "subject": "style: refine figure tilt",
+        "date": "2026-05-09 02:15",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "50674a6cda4f179ee4b652496c0ff3b658b44630",
+        "hashShort": "50674a6",
+        "parents": [
+          "5d989e543429c1a1983fe925a218cdf3a84e4ad6"
+        ],
+        "subject": "style: tighten spacing",
+        "date": "2026-05-09 02:13",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "5d989e543429c1a1983fe925a218cdf3a84e4ad6",
+        "hashShort": "5d989e5",
+        "parents": [
+          "a77e89497db13fe94a5af9bb71846456da98de04"
+        ],
+        "subject": "style: adjust accent tone",
+        "date": "2026-05-09 02:12",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "a77e89497db13fe94a5af9bb71846456da98de04",
+        "hashShort": "a77e894",
+        "parents": [
+          "0de6add650ffc16e98a2bf15e1e3f7a1add41ee4"
+        ],
+        "subject": "style: soften heading tilt",
+        "date": "2026-05-09 02:12",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "0de6add650ffc16e98a2bf15e1e3f7a1add41ee4",
+        "hashShort": "0de6add",
+        "parents": [
+          "05dca30d6f8a7e9a363b79d294a44c04a0be2257"
+        ],
+        "subject": "style: tune body color",
+        "date": "2026-05-09 02:10",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "05dca30d6f8a7e9a363b79d294a44c04a0be2257",
+        "hashShort": "05dca30",
+        "parents": [
+          "404b2a9b89f373686d5f1581ba9c5973f7dc1ddc"
+        ],
+        "subject": "style: nudge palette",
+        "date": "2026-05-09 02:09",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "404b2a9b89f373686d5f1581ba9c5973f7dc1ddc",
+        "hashShort": "404b2a9",
+        "parents": [
+          "beb41149f5d68f2bf7618cab8ee6e4faa9d273c3"
+        ],
+        "subject": "feat: adjust alt text",
+        "date": "2026-05-09 02:07",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "beb41149f5d68f2bf7618cab8ee6e4faa9d273c3",
+        "hashShort": "beb4114",
+        "parents": [
+          "6fb38ac41dcab6520ec20c14b4fa89a927a3262d"
+        ],
+        "subject": "feat: refine attribution",
+        "date": "2026-05-09 02:06",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6fb38ac41dcab6520ec20c14b4fa89a927a3262d",
+        "hashShort": "6fb38ac",
+        "parents": [
+          "c9ceaebb86660dfbabcebf12036924b891327ee0"
+        ],
+        "subject": "feat: polish quote",
+        "date": "2026-05-09 02:06",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "c9ceaebb86660dfbabcebf12036924b891327ee0",
+        "hashShort": "c9ceaeb",
+        "parents": [
+          "6b379dd3851d4c9e6295fb3389ee93b0a46f240e"
+        ],
+        "subject": "feat: trim description",
+        "date": "2026-05-09 02:04",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6b379dd3851d4c9e6295fb3389ee93b0a46f240e",
+        "hashShort": "6b379dd",
+        "parents": [
+          "81d2eb751b2d0842f53000f325784197b5cea850"
+        ],
+        "subject": "feat: soften list wording",
+        "date": "2026-05-09 02:03",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "81d2eb751b2d0842f53000f325784197b5cea850",
+        "hashShort": "81d2eb7",
+        "parents": [
+          "e853b1f1a0c45a0df21ee6482f3a6cab4140536a"
+        ],
+        "subject": "feat: simplify room copy",
+        "date": "2026-05-09 02:01",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "e853b1f1a0c45a0df21ee6482f3a6cab4140536a",
+        "hashShort": "e853b1f",
+        "parents": [
+          "141b0a7bdba2ac469e132a86d2de6ec7a7159e34"
+        ],
+        "subject": "feat: tighten intro copy",
+        "date": "2026-05-09 02:00",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "141b0a7bdba2ac469e132a86d2de6ec7a7159e34",
+        "hashShort": "141b0a7",
+        "parents": [
+          "bdcc4456c35c60592d83d66f2148d7d06e97a575"
+        ],
+        "subject": "feat: retitle page",
+        "date": "2026-05-09 02:00",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "b311cc222f4c74cce743ae79efc9d464da60e4be",
+        "hashShort": "b311cc2",
+        "parents": [
+          "d1e633445e812393e3ff02a1fb4540729767dbd8"
+        ],
+        "subject": "chore: update readme",
+        "date": "2026-05-07 14:45",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "c4dd8f00de80c40e0d16d66abbdcb3814fe4f820",
+        "hashShort": "c4dd8f0",
+        "parents": [
+          "6556f7a5eda416aba4139820dd51d81e9203de05",
+          "35e2a7bbe5c9b438eae05dc5cdda2c814dc28a8c"
+        ],
+        "subject": "chore: merge branch 'v1b' into v0-content",
+        "date": "2026-05-07 14:37",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "bdcc4456c35c60592d83d66f2148d7d06e97a575",
+        "hashShort": "bdcc445",
+        "parents": [
+          "5b551ab95dde16f1a2a9f6c7fecdce303066ec53",
+          "9624ea0939faf9f81ca5900f0a13b30f05b2822d"
+        ],
+        "subject": "chore: merge branch 'v1a' into v4-collapsing",
+        "date": "2026-05-07 14:35",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "35e2a7bbe5c9b438eae05dc5cdda2c814dc28a8c",
+        "hashShort": "35e2a7b",
+        "parents": [
+          "727ea611e6918d3e8136da8bfc5622d1fbfd7784"
+        ],
+        "subject": "feat: add shrinks",
+        "date": "2026-05-07 13:40",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "9624ea0939faf9f81ca5900f0a13b30f05b2822d",
+        "hashShort": "9624ea0",
+        "parents": [
+          "a77d23685198fbebe610558a4292ba74d0cffa3c"
+        ],
+        "subject": "feat: filter whole page",
+        "date": "2026-05-07 13:29",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "a77d23685198fbebe610558a4292ba74d0cffa3c",
+        "hashShort": "a77d236",
+        "parents": [
+          "dc8f56517f87d7f6c812b466fa0f271a162626ed"
+        ],
+        "subject": "feat: new color scheme",
+        "date": "2026-05-07 13:24",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "dc8f56517f87d7f6c812b466fa0f271a162626ed",
+        "hashShort": "dc8f565",
+        "parents": [
+          "3d1e4873a26a136c931f1258d38e30470fc0f83a"
+        ],
+        "subject": "refactor: change hardcoded values to vars",
+        "date": "2026-05-07 13:23",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "3d1e4873a26a136c931f1258d38e30470fc0f83a",
+        "hashShort": "3d1e487",
+        "parents": [
+          "727ea611e6918d3e8136da8bfc5622d1fbfd7784"
+        ],
+        "subject": "feat: theme inversion",
+        "date": "2026-05-07 13:16",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "d1e633445e812393e3ff02a1fb4540729767dbd8",
+        "hashShort": "d1e6334",
+        "parents": [
+          "add47ed1d42d3a7bf5a20ff50c4d424536545fac",
+          "aba65d8967c9cf4130bb6f19a6d8be1cb945a6c7"
+        ],
+        "subject": "chore: merge branch 'develop'",
+        "date": "2026-05-05 07:24",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "aba65d8967c9cf4130bb6f19a6d8be1cb945a6c7",
+        "hashShort": "aba65d8",
+        "parents": [
+          "74ea549549397ab0bea6e2d0d03cf9406b3c5473"
+        ],
+        "subject": "refactor: nest body's pseudoelement",
+        "date": "2026-05-05 07:24",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "add47ed1d42d3a7bf5a20ff50c4d424536545fac",
+        "hashShort": "add47ed",
+        "parents": [
+          "588967555650c4cadea158926d395a65d9759b46"
+        ],
+        "subject": "chore: add readme",
+        "date": "2026-05-05 04:38",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "588967555650c4cadea158926d395a65d9759b46",
+        "hashShort": "5889675",
+        "parents": [
+          "e19a7f03a0a3a23b3505d20444e41926c0172741",
+          "74ea549549397ab0bea6e2d0d03cf9406b3c5473"
+        ],
+        "subject": "chore: merge branch 'develop'",
+        "date": "2026-05-05 04:22",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "74ea549549397ab0bea6e2d0d03cf9406b3c5473",
+        "hashShort": "74ea549",
+        "parents": [
+          "2c5e82ad2c22da0d2d357bdbad15c5d73e147809"
+        ],
+        "subject": "chore: remove bun",
+        "date": "2026-05-05 04:22",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "e19a7f03a0a3a23b3505d20444e41926c0172741",
+        "hashShort": "e19a7f0",
+        "parents": [
+          "bf0e3ab1d72df6500a976b1b1c5321e08a3856ee",
+          "2c5e82ad2c22da0d2d357bdbad15c5d73e147809"
+        ],
+        "subject": "chore: merge branch 'develop'",
+        "date": "2026-05-05 04:21",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "2c5e82ad2c22da0d2d357bdbad15c5d73e147809",
+        "hashShort": "2c5e82a",
+        "parents": [
+          "c3726a3b401377d4fc8ebc9dfa3787d2f765ff70"
+        ],
+        "subject": "refactor: simplify preEat() to be index only",
+        "date": "2026-05-05 04:21",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "c3726a3b401377d4fc8ebc9dfa3787d2f765ff70",
+        "hashShort": "c3726a3",
+        "parents": [
+          "22bc567d38212a6f4bdbd9232f5ac1e85a251fec"
+        ],
+        "subject": "chore: center footer",
+        "date": "2026-05-05 04:16",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "22bc567d38212a6f4bdbd9232f5ac1e85a251fec",
+        "hashShort": "22bc567",
+        "parents": [
+          "c3b16c495ec7cfedb60c325417b2fe5447ae9ce2",
+          "5b551ab95dde16f1a2a9f6c7fecdce303066ec53"
+        ],
+        "subject": "chore: merge branch 'v4-collapsing' into develop",
+        "date": "2026-05-05 04:13",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "5b551ab95dde16f1a2a9f6c7fecdce303066ec53",
+        "hashShort": "5b551ab",
+        "parents": [
+          "c19c159ecb6c1dc72772078cbad1efcf645d0ca2"
+        ],
+        "subject": "feat: add aggressive degration",
+        "date": "2026-05-05 04:12",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "c19c159ecb6c1dc72772078cbad1efcf645d0ca2",
+        "hashShort": "c19c159",
+        "parents": [
+          "e6932a67e1631a802d4e3f6675fce6c659ee82fd"
+        ],
+        "subject": "feat: add vignette and degradation on start",
+        "date": "2026-05-05 04:09",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "e6932a67e1631a802d4e3f6675fce6c659ee82fd",
+        "hashShort": "e6932a6",
+        "parents": [
+          "7826a1e4bdbf2caa4f3a0e2bb65a261fe2aab66c"
+        ],
+        "subject": "feat: add noise refresh",
+        "date": "2026-05-05 03:59",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "7826a1e4bdbf2caa4f3a0e2bb65a261fe2aab66c",
+        "hashShort": "7826a1e",
+        "parents": [
+          "6d64267c626ad4dee2b075d5d880d5c747df33a5"
+        ],
+        "subject": "feat: add random char swap after a certain amount of time",
+        "date": "2026-05-05 03:59",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6d64267c626ad4dee2b075d5d880d5c747df33a5",
+        "hashShort": "6d64267",
+        "parents": [
+          "c3d61953e78bf27816c0636ee008e9f0cb8c5d47"
+        ],
+        "subject": "chore: comment for noise appearance",
+        "date": "2026-05-05 03:48",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "c3d61953e78bf27816c0636ee008e9f0cb8c5d47",
+        "hashShort": "c3d6195",
+        "parents": [
+          "d7d526da88db95fe08b6de2d1f79ef61c26e049f"
+        ],
+        "subject": "feat: add one random list item flicker",
+        "date": "2026-05-05 03:48",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "d7d526da88db95fe08b6de2d1f79ef61c26e049f",
+        "hashShort": "d7d526d",
+        "parents": [
+          "b6ae283613365dfb363931a7c51008359067a53c"
+        ],
+        "subject": "feat: add image yellowing after 10s",
+        "date": "2026-05-05 03:47",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "b6ae283613365dfb363931a7c51008359067a53c",
+        "hashShort": "b6ae283",
+        "parents": [
+          "727ea611e6918d3e8136da8bfc5622d1fbfd7784"
+        ],
+        "subject": "feat: add mono field",
+        "date": "2026-05-05 03:46",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "727ea611e6918d3e8136da8bfc5622d1fbfd7784",
+        "hashShort": "727ea61",
+        "parents": [
+          "c3b16c495ec7cfedb60c325417b2fe5447ae9ce2"
+        ],
+        "subject": "feat: add foggy effect after 10s",
+        "date": "2026-05-05 03:32",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "c3b16c495ec7cfedb60c325417b2fe5447ae9ce2",
+        "hashShort": "c3b16c4",
+        "parents": [
+          "e9620cba58455b3321056d0dbe3d56ce752d6610"
+        ],
+        "subject": "chore: legal",
+        "date": "2026-05-05 03:22",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "e9620cba58455b3321056d0dbe3d56ce752d6610",
+        "hashShort": "e9620cb",
+        "parents": [
+          "d7dbdb08aae7db214389df76567efdd97fb0dba6",
+          "4e77d5f9f162856dbac00f62c038ad7e78fc6c58"
+        ],
+        "subject": "chore: merge branch 'styling' into develop",
+        "date": "2026-05-05 03:22",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "4e77d5f9f162856dbac00f62c038ad7e78fc6c58",
+        "hashShort": "4e77d5f",
+        "parents": [
+          "d7dbdb08aae7db214389df76567efdd97fb0dba6"
+        ],
+        "subject": "feat: add styling",
+        "date": "2026-05-05 03:21",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "d7dbdb08aae7db214389df76567efdd97fb0dba6",
+        "hashShort": "d7dbdb0",
+        "parents": [
+          "512b646b2d17baac2daddb3f5c5f38c153a5909e",
+          "6556f7a5eda416aba4139820dd51d81e9203de05"
+        ],
+        "subject": "chore: merge branch 'content' into develop",
+        "date": "2026-05-05 02:53",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "6556f7a5eda416aba4139820dd51d81e9203de05",
+        "hashShort": "6556f7a",
+        "parents": [
+          "512b646b2d17baac2daddb3f5c5f38c153a5909e"
+        ],
+        "subject": "feat: text content",
+        "date": "2026-05-05 02:46",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "512b646b2d17baac2daddb3f5c5f38c153a5909e",
+        "hashShort": "512b646",
+        "parents": [
+          "bf0e3ab1d72df6500a976b1b1c5321e08a3856ee",
+          "726341ee6490bbe483d7eb6591453b4290f495c6"
+        ],
+        "subject": "chore: merge branch 'boilerplate'",
+        "date": "2026-05-05 02:29",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "726341ee6490bbe483d7eb6591453b4290f495c6",
+        "hashShort": "726341e",
+        "parents": [
+          "df396ea0612d403d250dc56f70f23b34b735e127"
+        ],
+        "subject": "chore: add vite dev",
+        "date": "2026-05-05 02:22",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "df396ea0612d403d250dc56f70f23b34b735e127",
+        "hashShort": "df396ea",
+        "parents": [
+          "bf0e3ab1d72df6500a976b1b1c5321e08a3856ee"
+        ],
+        "subject": "feat: boilerplate index",
+        "date": "2026-05-05 02:19",
+        "author": "Benjamin"
+      },
+      {
+        "hash": "bf0e3ab1d72df6500a976b1b1c5321e08a3856ee",
+        "hashShort": "bf0e3ab",
+        "parents": [],
+        "subject": "chore: init",
+        "date": "2026-05-05 02:11",
+        "author": "Benjamin"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "b311cc222f4c74cce743ae79efc9d464da60e4be"
+      },
+      {
+        "name": "boilerplate",
+        "hash": "726341ee6490bbe483d7eb6591453b4290f495c6"
+      },
+      {
+        "name": "develop",
+        "hash": "74ea549549397ab0bea6e2d0d03cf9406b3c5473"
+      },
+      {
+        "name": "main",
+        "hash": "b311cc222f4c74cce743ae79efc9d464da60e4be"
+      },
+      {
+        "name": "v0-content",
+        "hash": "c4dd8f00de80c40e0d16d66abbdcb3814fe4f820"
+      },
+      {
+        "name": "v0-old-copy",
+        "hash": "d7dbdb08aae7db214389df76567efdd97fb0dba6"
+      },
+      {
+        "name": "v1-pristine",
+        "hash": "727ea611e6918d3e8136da8bfc5622d1fbfd7784"
+      },
+      {
+        "name": "v1a",
+        "hash": "9624ea0939faf9f81ca5900f0a13b30f05b2822d"
+      },
+      {
+        "name": "v1b",
+        "hash": "35e2a7bbe5c9b438eae05dc5cdda2c814dc28a8c"
+      },
+      {
+        "name": "v2-settling",
+        "hash": "6d64267c626ad4dee2b075d5d880d5c747df33a5"
+      },
+      {
+        "name": "v3-eating",
+        "hash": "e6932a67e1631a802d4e3f6675fce6c659ee82fd"
+      },
+      {
+        "name": "v4-collapsing",
+        "hash": "caad0654bc363dda61f5c5b53ce9e2fc100cbb1d"
+      },
+      {
+        "name": "v4-old-copy",
+        "hash": "5b551ab95dde16f1a2a9f6c7fecdce303066ec53"
+      }
+    ],
+    "tags": []
+  },
+  {
+    "repo": "yasminelgerf",
+    "author": "yasminElgerf",
+    "remoteUrl": "https://github.com/yasminelgerf/a1-git-labyrinth",
+    "commits": [
+      {
+        "hash": "88ec17aefb0e670a6afc3ed14d97b6b59cb21ee1",
+        "hashShort": "88ec17a",
+        "parents": [
+          "52f449ca66939b97ea2451336d8b2d63f8d27c34"
+        ],
+        "subject": "fixed fav commits",
+        "date": "2026-05-09 22:20",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "52f449ca66939b97ea2451336d8b2d63f8d27c34",
+        "hashShort": "52f449c",
+        "parents": [
+          "0a1998a81b2fafc004054cb0e4a84dde6fec2782"
+        ],
+        "subject": "added the fav commits",
+        "date": "2026-05-09 22:19",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "0a1998a81b2fafc004054cb0e4a84dde6fec2782",
+        "hashShort": "0a1998a",
+        "parents": [
+          "646eca1b2dc4c1f899a3bf09562ad10954f94a2c"
+        ],
+        "subject": "added comments in the footer section",
+        "date": "2026-05-09 21:54",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "646eca1b2dc4c1f899a3bf09562ad10954f94a2c",
+        "hashShort": "646eca1",
+        "parents": [
+          "09b531186bf20752e11f4f384125d49ae2402345"
+        ],
+        "subject": "added the comments for the form section",
+        "date": "2026-05-09 21:53",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "09b531186bf20752e11f4f384125d49ae2402345",
+        "hashShort": "09b5311",
+        "parents": [
+          "530847a0abaed84c3324b50e57e33fdae9a8d794"
+        ],
+        "subject": "did the same for the window section to make it clickable",
+        "date": "2026-05-09 21:52",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "530847a0abaed84c3324b50e57e33fdae9a8d794",
+        "hashShort": "530847a",
+        "parents": [
+          "9dcd6dea96655efc26b783ae75846eb164f4b097"
+        ],
+        "subject": "made the bathroom section clickable in the navigation section",
+        "date": "2026-05-09 21:51",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "9dcd6dea96655efc26b783ae75846eb164f4b097",
+        "hashShort": "9dcd6de",
+        "parents": [
+          "748e160510971ae095175df235d03c60f49095f8"
+        ],
+        "subject": "made the office-room section clickable",
+        "date": "2026-05-09 21:51",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "748e160510971ae095175df235d03c60f49095f8",
+        "hashShort": "748e160",
+        "parents": [
+          "577da3f54a102d06b1876b4051cadd255fa4a099"
+        ],
+        "subject": "did the same for the bedroom section",
+        "date": "2026-05-09 21:50",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "577da3f54a102d06b1876b4051cadd255fa4a099",
+        "hashShort": "577da3f",
+        "parents": [
+          "435ae53b5f54cb65cb7b7e30c4b0338ccee8d71c"
+        ],
+        "subject": "navigation fields clickable so when clicked they take you to that specif",
+        "date": "2026-05-09 21:49",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "435ae53b5f54cb65cb7b7e30c4b0338ccee8d71c",
+        "hashShort": "435ae53",
+        "parents": [
+          "317214a2ec0ba5e9758f8d2054e3f2a615c9e3a8"
+        ],
+        "subject": "changed the background color of the whole page",
+        "date": "2026-05-09 21:46",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "317214a2ec0ba5e9758f8d2054e3f2a615c9e3a8",
+        "hashShort": "317214a",
+        "parents": [
+          "ade501538bd7d0267433b5d66c79335d12efde21"
+        ],
+        "subject": "upadated the kitchen description",
+        "date": "2026-05-09 21:43",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "ade501538bd7d0267433b5d66c79335d12efde21",
+        "hashShort": "ade5015",
+        "parents": [
+          "f981d17b3885c4fb1f95847487cf93809472acd6"
+        ],
+        "subject": "updated the living room memeory description",
+        "date": "2026-05-09 21:42",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "f981d17b3885c4fb1f95847487cf93809472acd6",
+        "hashShort": "f981d17",
+        "parents": [
+          "e5b5699439599b40460fbdd6f232b87b593cf0aa"
+        ],
+        "subject": "changed the description for the front door section to make it sound bett",
+        "date": "2026-05-09 21:42",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "e5b5699439599b40460fbdd6f232b87b593cf0aa",
+        "hashShort": "e5b5699",
+        "parents": [
+          "a9d75a0a093b0f305007c4410908e5e6719d2adf"
+        ],
+        "subject": "added description for window",
+        "date": "2026-05-09 21:40",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "a9d75a0a093b0f305007c4410908e5e6719d2adf",
+        "hashShort": "a9d75a0",
+        "parents": [
+          "b746e86b7f2bf50de351a62715c899c19e01af97"
+        ],
+        "subject": "added description for bathroom",
+        "date": "2026-05-09 21:40",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "b746e86b7f2bf50de351a62715c899c19e01af97",
+        "hashShort": "b746e86",
+        "parents": [
+          "bc1a697d42be868df64c1a0ecc8202727fd3408c"
+        ],
+        "subject": "added the description for the office room",
+        "date": "2026-05-09 21:39",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "bc1a697d42be868df64c1a0ecc8202727fd3408c",
+        "hashShort": "bc1a697",
+        "parents": [
+          "6983a0f11068bb2d27fe58f1464f93b897ed875f"
+        ],
+        "subject": "added the description for the bedroom",
+        "date": "2026-05-09 21:38",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "6983a0f11068bb2d27fe58f1464f93b897ed875f",
+        "hashShort": "6983a0f",
+        "parents": [
+          "a43d2e6698a0a96bcd46e0f3bb800a8c13738b0a"
+        ],
+        "subject": "added the memery description for the stairs",
+        "date": "2026-05-09 21:37",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "a43d2e6698a0a96bcd46e0f3bb800a8c13738b0a",
+        "hashShort": "a43d2e6",
+        "parents": [
+          "48105c792011d72055a8b38818978ed7413c2c8c",
+          "896f9bca57e3a6cd4d428e74fbcb9f1acb499f58"
+        ],
+        "subject": "resolved merge conflict in index.html",
+        "date": "2026-05-09 21:36",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "48105c792011d72055a8b38818978ed7413c2c8c",
+        "hashShort": "48105c7",
+        "parents": [
+          "2604dfa60ac4d61db1493975b8f81e4df1eec3a3"
+        ],
+        "subject": "added the memory description of the hallway",
+        "date": "2026-05-09 21:29",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "896f9bca57e3a6cd4d428e74fbcb9f1acb499f58",
+        "hashShort": "896f9bc",
+        "parents": [
+          "d1e5db2372bd7d3007bb321dfccd279a139236c7",
+          "2604dfa60ac4d61db1493975b8f81e4df1eec3a3"
+        ],
+        "subject": "Merge pull request #3 from yasminElgerf/window",
+        "date": "2026-05-09 21:24",
+        "author": "Yasmin Elgerf"
+      },
+      {
+        "hash": "2604dfa60ac4d61db1493975b8f81e4df1eec3a3",
+        "hashShort": "2604dfa",
+        "parents": [
+          "e0eeb7003890d735fe255cc99b13376413de4316"
+        ],
+        "subject": "Window section added",
+        "date": "2026-05-09 21:23",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "e0eeb7003890d735fe255cc99b13376413de4316",
+        "hashShort": "e0eeb70",
+        "parents": [
+          "3cefc1470d7f7f4a422e563cb4bb99a9981bc851"
+        ],
+        "subject": "added the bathroom section",
+        "date": "2026-05-09 21:22",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "3cefc1470d7f7f4a422e563cb4bb99a9981bc851",
+        "hashShort": "3cefc14",
+        "parents": [
+          "8e416f19979835baf36275a3fcb118fa4bf1264c"
+        ],
+        "subject": "office room section, will add description later",
+        "date": "2026-05-09 21:21",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "d1e5db2372bd7d3007bb321dfccd279a139236c7",
+        "hashShort": "d1e5db2",
+        "parents": [
+          "2bfd696c0af9a8d42c0791a748111b75831061de",
+          "8e416f19979835baf36275a3fcb118fa4bf1264c"
+        ],
+        "subject": "Merge pull request #2 from yasminElgerf/bedroom",
+        "date": "2026-05-09 21:20",
+        "author": "Yasmin Elgerf"
+      },
+      {
+        "hash": "8e416f19979835baf36275a3fcb118fa4bf1264c",
+        "hashShort": "8e416f1",
+        "parents": [
+          "7cb139c7895d62b3b1e8d6d2a4edacbb0c8c2d53"
+        ],
+        "subject": "added the bedroom section, will fix the description later",
+        "date": "2026-05-09 21:19",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "7cb139c7895d62b3b1e8d6d2a4edacbb0c8c2d53",
+        "hashShort": "7cb139c",
+        "parents": [
+          "09a3a5e998891f1acccb33a9692afc5e3cefd3cc"
+        ],
+        "subject": "added the stairs section",
+        "date": "2026-05-09 21:17",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "2bfd696c0af9a8d42c0791a748111b75831061de",
+        "hashShort": "2bfd696",
+        "parents": [
+          "18cbb058574d6174a02dcfeab74da97f12d2f683",
+          "09a3a5e998891f1acccb33a9692afc5e3cefd3cc"
+        ],
+        "subject": "Merge pull request #1 from yasminElgerf/hallway",
+        "date": "2026-05-09 21:15",
+        "author": "Yasmin Elgerf"
+      },
+      {
+        "hash": "09a3a5e998891f1acccb33a9692afc5e3cefd3cc",
+        "hashShort": "09a3a5e",
+        "parents": [
+          "312212e36427a3e2e30e48b82a79dd8eb19eb90f"
+        ],
+        "subject": "added the hallway section",
+        "date": "2026-05-09 21:14",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "312212e36427a3e2e30e48b82a79dd8eb19eb90f",
+        "hashShort": "312212e",
+        "parents": [
+          "98cdef88d9fd920946b9945a53868a0d300a5ed5"
+        ],
+        "subject": "added the kitchen section",
+        "date": "2026-05-09 21:12",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "98cdef88d9fd920946b9945a53868a0d300a5ed5",
+        "hashShort": "98cdef8",
+        "parents": [
+          "47a83a83e4a8b11f2652b3b694df8d6bb01cf8b8"
+        ],
+        "subject": "added the living room memory section",
+        "date": "2026-05-09 21:10",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "47a83a83e4a8b11f2652b3b694df8d6bb01cf8b8",
+        "hashShort": "47a83a8",
+        "parents": [
+          "18cbb058574d6174a02dcfeab74da97f12d2f683"
+        ],
+        "subject": "expanded front door section",
+        "date": "2026-05-09 21:06",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "18cbb058574d6174a02dcfeab74da97f12d2f683",
+        "hashShort": "18cbb05",
+        "parents": [
+          "c8099479d4bac31f7b7c230ebaf263148a1edc3a"
+        ],
+        "subject": "upadted the form section",
+        "date": "2026-05-09 21:00",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "c8099479d4bac31f7b7c230ebaf263148a1edc3a",
+        "hashShort": "c809947",
+        "parents": [
+          "efc6fe39b18f2332230c8e6dd2f577db3bc61614"
+        ],
+        "subject": "updated the welcome inside section, the form section, added a heading an",
+        "date": "2026-05-09 20:43",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "efc6fe39b18f2332230c8e6dd2f577db3bc61614",
+        "hashShort": "efc6fe3",
+        "parents": [
+          "86bb5eb05ad63cd973b569004e57303d516622c7"
+        ],
+        "subject": "added information inside the text",
+        "date": "2026-05-09 20:18",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "86bb5eb05ad63cd973b569004e57303d516622c7",
+        "hashShort": "86bb5eb",
+        "parents": [
+          "5a258cf30033b6559d249e54003b842d39b00d78"
+        ],
+        "subject": "added a section where i try to show the path through the house",
+        "date": "2026-05-09 20:07",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "5a258cf30033b6559d249e54003b842d39b00d78",
+        "hashShort": "5a258cf",
+        "parents": [
+          "a3f9a576ab1bc3f3d918b0d255c9380057d05701"
+        ],
+        "subject": "Added a navigation box with rooms in the house so the users can click on",
+        "date": "2026-05-09 20:04",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "a3f9a576ab1bc3f3d918b0d255c9380057d05701",
+        "hashShort": "a3f9a57",
+        "parents": [
+          "e5ca1e9f13fa2ea0aacc9ef85fd66e0a22780fc8"
+        ],
+        "subject": "Added a section tag to greet the viewers and also added a small paragrap",
+        "date": "2026-05-09 20:01",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "e5ca1e9f13fa2ea0aacc9ef85fd66e0a22780fc8",
+        "hashShort": "e5ca1e9",
+        "parents": [
+          "a6f22a565c971dddc3eea1104d4b9d1d4a50339c"
+        ],
+        "subject": "fixed the header by adding a link to it so you can refresh the page by j",
+        "date": "2026-05-09 19:58",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "a6f22a565c971dddc3eea1104d4b9d1d4a50339c",
+        "hashShort": "a6f22a5",
+        "parents": [
+          "14ec35ec97ec561d3e0ee6e520471571665a8740"
+        ],
+        "subject": "Trying new tags",
+        "date": "2026-05-09 19:22",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "14ec35ec97ec561d3e0ee6e520471571665a8740",
+        "hashShort": "14ec35e",
+        "parents": [
+          "2123ca02ac3bf23e0724f0c2e2ef92ab148f0917"
+        ],
+        "subject": "removed the nav tag",
+        "date": "2026-05-09 19:10",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "2123ca02ac3bf23e0724f0c2e2ef92ab148f0917",
+        "hashShort": "2123ca0",
+        "parents": [
+          "c8453b961dc3d920145621c7cd7a46f3a4b10379"
+        ],
+        "subject": "removed the url links from the list as they are not being used",
+        "date": "2026-05-09 19:04",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "c8453b961dc3d920145621c7cd7a46f3a4b10379",
+        "hashShort": "c8453b9",
+        "parents": [
+          "67fcce2d44fe2a2b094885f506a6120d7a5977d9"
+        ],
+        "subject": "added a footer",
+        "date": "2026-05-09 18:43",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "67fcce2d44fe2a2b094885f506a6120d7a5977d9",
+        "hashShort": "67fcce2",
+        "parents": [
+          "21e47666b4bffcdb118aff5621f357cc9422bbe4"
+        ],
+        "subject": "Organized room links inside navigation box",
+        "date": "2026-05-09 18:37",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "21e47666b4bffcdb118aff5621f357cc9422bbe4",
+        "hashShort": "21e4766",
+        "parents": [
+          "28af05333fe6b7ad77130be4d8f5ca2952a1a5fc"
+        ],
+        "subject": "Updated homepage descriptition",
+        "date": "2026-05-09 12:01",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "28af05333fe6b7ad77130be4d8f5ca2952a1a5fc",
+        "hashShort": "28af053",
+        "parents": [
+          "9987096e695a745c79a4218d2b6e15c42a9f7fa2"
+        ],
+        "subject": "More adjusments-bullet points and picutre size",
+        "date": "2026-05-09 11:56",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "9987096e695a745c79a4218d2b6e15c42a9f7fa2",
+        "hashShort": "9987096",
+        "parents": [
+          "abb1b366d6adfbcfc645289bca5700a4de615d0e"
+        ],
+        "subject": "Centered everything on the webpage (header & main)",
+        "date": "2026-05-09 11:37",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "abb1b366d6adfbcfc645289bca5700a4de615d0e",
+        "hashShort": "abb1b36",
+        "parents": [
+          "a0bbff9d40870f5946ea0ce44037a1743910d241"
+        ],
+        "subject": "fixed the list and picture size",
+        "date": "2026-05-09 11:34",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "a0bbff9d40870f5946ea0ce44037a1743910d241",
+        "hashShort": "a0bbff9",
+        "parents": [
+          "8a33023bd04c6fa4798d9a952b498feed727a995"
+        ],
+        "subject": "added picture of a house",
+        "date": "2026-05-09 11:00",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "8a33023bd04c6fa4798d9a952b498feed727a995",
+        "hashShort": "8a33023",
+        "parents": [
+          "9eb12bd6f8a372f1630b87e93019908a6408eb9e"
+        ],
+        "subject": "created the homepage with simple structure",
+        "date": "2026-05-09 10:41",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "9eb12bd6f8a372f1630b87e93019908a6408eb9e",
+        "hashShort": "9eb12bd",
+        "parents": [
+          "2204911bfeecafbda5e815bbc66529639b0fdfa1"
+        ],
+        "subject": "Made a simple page with a title",
+        "date": "2026-05-08 20:54",
+        "author": "yasminElgerf"
+      },
+      {
+        "hash": "2204911bfeecafbda5e815bbc66529639b0fdfa1",
+        "hashShort": "2204911",
+        "parents": [],
+        "subject": "first commit",
+        "date": "2026-05-08 20:50",
+        "author": "yasminElgerf"
+      }
+    ],
+    "branches": [
+      {
+        "name": "origin",
+        "hash": "88ec17aefb0e670a6afc3ed14d97b6b59cb21ee1"
+      },
+      {
+        "name": "bathroom",
+        "hash": "e0eeb7003890d735fe255cc99b13376413de4316"
+      },
+      {
+        "name": "bedroom",
+        "hash": "8e416f19979835baf36275a3fcb118fa4bf1264c"
+      },
+      {
+        "name": "front-door",
+        "hash": "47a83a83e4a8b11f2652b3b694df8d6bb01cf8b8"
+      },
+      {
+        "name": "hallway",
+        "hash": "09a3a5e998891f1acccb33a9692afc5e3cefd3cc"
+      },
+      {
+        "name": "kitchen",
+        "hash": "312212e36427a3e2e30e48b82a79dd8eb19eb90f"
+      },
+      {
+        "name": "living-room",
+        "hash": "98cdef88d9fd920946b9945a53868a0d300a5ed5"
+      },
+      {
+        "name": "main",
+        "hash": "88ec17aefb0e670a6afc3ed14d97b6b59cb21ee1"
+      },
+      {
+        "name": "office-room",
+        "hash": "3cefc1470d7f7f4a422e563cb4bb99a9981bc851"
+      },
+      {
+        "name": "stairs",
+        "hash": "7cb139c7895d62b3b1e8d6d2a4edacbb0c8c2d53"
+      },
+      {
+        "name": "window",
+        "hash": "2604dfa60ac4d61db1493975b8f81e4df1eec3a3"
+      }
+    ],
+    "tags": []
+  }
+]

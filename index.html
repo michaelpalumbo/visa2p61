@@ -265,6 +265,7 @@
         <button onclick="switchTab('assignments', this)">Assignment Guides</button>
         <button onclick="switchTab('shortcuts', this)">Shortcuts</button>
         <button onclick="switchTab('VS-Code-Tips', this)">VS Code Tips</button>
+        <button onclick="switchTab('git-graphs', this)">Git Graphs</button>
       </nav>
 
   <div id="how-to-guides" class="tab-panel active">
@@ -890,9 +891,9 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
               <li>Identify 5 commits you like best — put each on its own branch with a meaningful name (e.g. <code>glitchy-mirror</code>, <code>dreamlike-v2</code>)</li>
             </ol>
           </div> -->
-          <div class="url-box" id="add-links-to-home-site">
+          <div class="url-box" id="add-links">
   
-  <h3 >Add Links To Your Home Site</h3>
+  <h3 id="add-links-to-home-site">Add Links To Your username.github.io Site</h3>
   <p>I Recommend waiting until you are finished coding your website. This section is about making a short documentation about your process.</p>
   <p>You are now going to report your work by adding links to your <code>username.github.io</code> site. You will need <strong>two VS Code windows</strong> open to do this efficiently.</p>
   
@@ -907,7 +908,7 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
 
     <li>
       <strong>Window 2 (The Source):</strong> Keep your <code>a1-git-labyrinth</code> project open.
-      <p class="note" style="color: #d9534f; font-weight: bold;">IMPORTANT: You must run the next step (step 3) in the terminal of your A1 project, NOT your portfolio project!</p>
+      <p class="note" style="color: #d9534f; font-weight: bold;">IMPORTANT: You must run the next step (step 3) in the terminal of your A1 project, NOT your username.github.io project!</p>
     </li>
 
     <!-- <div class="url-box" id="add-links">
@@ -965,7 +966,7 @@ mno7890  First attempt at the endless hallway</code></pre>
         <code>https://github.com/yourUsername/a1-git-labyrinth</code><br><br>
         
         <strong>3. Links to 5 Favourite Commits:</strong><br>
-        <p>Go back to your portfolio's <code>scratch pad</code>. Take the IDs from each commit and replace the "PASTE_ID_HERE" with that ID:</p>
+        <p>Go back to your username.github.io's <code>scratch pad</code>. Take the IDs from each commit and replace the "PASTE_ID_HERE" with that ID:</p>
         <code>https://github.com/yourUsername/a1-git-labyrinth/commit/<strong>PASTE_ID_HERE</strong></code>
         <strong><br><br>3.a. Repeat Step 3 until you have all 5 versions in their own url element</strong><br>
       </div>
@@ -1265,6 +1266,9 @@ git push</pre>
     </div>
   </div>
 
+  <div id="git-graphs" class="tab-panel">
+    <iframe src="analysis.html" style="width:100%; height:calc(100vh - 48px); border:none;"></iframe>
+  </div>
 
 
     <footer>
