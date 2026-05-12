@@ -23,7 +23,7 @@ const get = (flag) => {
   return i !== -1 ? args[i + 1] : null;
 };
 
-const reposDir = path.resolve(get("--repos") || "-repos");
+const reposDir = path.resolve(get("--repos") || "./repos");
 const outDir = path.resolve(get("--out") || "./");
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
