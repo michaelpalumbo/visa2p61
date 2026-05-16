@@ -84,39 +84,80 @@
 
 
     /* ── Top Navbar ── */
-    .top-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: white;
-      border-bottom: 2px solid var(--accent);
-      display: flex;
-      gap: 0;
-      padding: 0 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
 
-    .top-nav button {
-      padding: 14px 20px;
-      font-size: 0.95rem;
-      font-family: inherit;
-      font-weight: 500;
-      color: #888;
-      background: transparent;
-      border: none;
-      border-bottom: 3px solid transparent;
-      margin-bottom: -2px;
-      cursor: pointer;
-      transition: color 0.15s, border-color 0.15s;
-      white-space: nowrap;
-    }
+.top-nav-inner {
+  display: flex;
+  flex-wrap: wrap;  /* allows buttons to wrap to a 2nd line */
+  gap: 0;
+  padding: 0 20px;
+}
 
-    .top-nav button:hover { color: var(--accent); }
+.top-nav button {
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #888;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
 
-    .top-nav button.active {
-      color: var(--accent);
-      border-bottom: 3px solid var(--accent);
-    }
+.top-nav button:hover { color: var(--accent); }
+.top-nav button.active {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+}
+
+/* ── Hamburger button (hidden by default) ── */
+.hamburger {
+  display: none;
+  font-size: 5rem;
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+  margin-left: auto;
+}
+
+/* ── When screen is very narrow: hide wrapped buttons, show hamburger ── */
+@media (max-width: 480px) {
+  .top-nav-inner {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    max-height: 51px; /* single row height */
+    transition: max-height 0.3s ease;
+  }
+
+  .top-nav-inner.open {
+    flex-wrap: wrap;
+    max-height: 500px; /* tall enough to show all buttons */
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .top-nav {
+    position: sticky;
+    top: 0;
+  }
+}
 
     /* ── Tab panels ── */
     .tab-panel { display: none; }
@@ -274,6 +315,22 @@
         font-weight: bold;
     }
 
+    .pdf-download {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .pdf-download:hover {
+      background: #357abd;
+      color: white;
+    }
+
     </style>
   </head>
   <body>
@@ -282,13 +339,16 @@
 
       <!-- ── Top Navbar ── -->
       <nav class="top-nav">
-        <button onclick="switchTab('about', this)">About</button>
-
-        <button class="active" onclick="switchTab('how-to-guides', this)">How-To Guides</button>
-        <button onclick="switchTab('assignments', this)">Assignment Guides</button>
-        <button onclick="switchTab('shortcuts', this)">Shortcuts</button>
-        <button onclick="switchTab('VS-Code-Tips', this)">VS Code Tips</button>
-        <button onclick="switchTab('git-graphs', this)">Git Graphs</button>
+        <button class="hamburger" onclick="toggleNav(this)" aria-label="Menu">☰</button>
+        <div class="top-nav-inner">
+          <button onclick="switchTab('about', this)">About</button>
+          <button class="active" onclick="switchTab('how-to-guides', this)">How-To Guides</button>
+          <button onclick="switchTab('assignments', this)">Assignment Guides</button>
+          <button onclick="switchTab('rubrics', this)">Assignment Rubrics</button>
+          <button onclick="switchTab('shortcuts', this)">Shortcuts</button>
+          <button onclick="switchTab('VS-Code-Tips', this)">VS Code Tips</button>
+          <button onclick="switchTab('git-graphs', this)">Git Graphs</button>
+        </div>
       </nav>
 
   <div id="how-to-guides" class="tab-panel active">
@@ -1535,6 +1595,107 @@ git push</pre>
     <iframe src="analysis.html" style="width:100%; height:calc(100vh - 48px); border:none;"></iframe>
   </div>
 
+  <!-- ══════════════════════════════════════════
+       TAB 4: Readings
+  ══════════════════════════════════════════ -->
+  <div id="VS-Code-Tips" class="tab-panel">
+    <div class="page-wrap">
+      <!-- <div class="placeholder"> -->
+        <h2>VS Code Tips</h2>
+          
+      
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technique</th>
+                        <th>How to do it</th>
+                        <th>Why use this?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Split Editor</strong></td>
+                        <td>Right-click a file's tab &gt; <strong>Split Right</strong></td>
+                        <td>To edit/view 2 or more files side-by-side.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Format Document</strong></td>
+                      <td>Right-click within your document (ideally in a blank space) > select <strong>"Format Document."</strong></td>
+                      <td>If your code gets messy this will automatically fix the indentation!</td>
+                    </tr>
+                     
+                    <tr>
+                        <td><strong>Move Terminal</strong></td>
+                        <td>Right-click terminal header &gt; <strong>Panel Position</strong></td>
+                        <td>Moving it to the <strong>Right</strong> is great for wide monitors or if you expect a long response from a terminal command.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Split Terminal</strong></td>
+                        <td>Click the <strong>Split Pane icon</strong> (looks like two boxes)</td>
+                        <td>For example: try running <code>git log --oneline</code> in one terminal, and then using the other one to checkout different commits!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kill Terminal</strong></td>
+                        <td>Click the <strong>Trash Can icon</strong></td>
+                        <td>To close a terminal session, especially if a command gets stuck or buggy.</td>
+                    </tr>
+                    <tr>
+                <td><strong>Find Text</strong></td>
+                <td><code>Ctrl/Cmd + F</code></td>
+                <td>
+                    A search box appears at the top right. 
+                    <span class="instruction-note">Use the <strong>Up/Down arrows</strong> in the bar to jump through every time that word appears in your code.</span>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Find & Replace</strong></td>
+                <td><code>Ctrl/Cmd + F</code> + <strong>Arrow</strong></td>
+                <td>
+                    Click the <strong>small arrow <code>></code></strong> to the left of the search box to open Replace mode.
+                    <span class="instruction-note">• Type your new text in the second box.</span>
+                    <span class="instruction-note">• Click the <strong>c</strong> icon to replace just one instance.</span>
+                    <span class="instruction-note">• Click the <strong>ac</strong> icon (overlapping boxes) to replace <strong>ALL</strong> instances at once.</span>
+                </td>
+            </tr>
+                </tbody>
+            </table>
+
+            <h3>The Power of Word Wrap</h3>
+            <p>By default, long lines of code go off the screen. <strong>Word Wrap</strong> keeps everything visible without horizontal scrolling.</p>
+            <p><em>Fix: Gear Icon &gt; Settings &gt; Search "wrap" &gt; Turn "Editor: Word Wrap" to <strong>on</strong>.</em></p>
+
+            <div class="code-comparison">
+                <div class="box no-wrap">
+                    <strong>Without Word Wrap (Annoying):</strong><br>
+                    &lt;p&gt;This is a very long line of HTML that requires you to scroll forever to the right to see the end of the sentence...
+                </div>
+                <div class="box wrap">
+                    <strong>With Word Wrap (Better):</strong><br>
+                    &lt;p&gt;This is a very long line of HTML that wraps around so you can see everything at once.
+                </div>
+            </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <section id="rubrics">
+    <h2>A2 Rubric</h2>
+
+    <!-- Download button -->
+    <a href="/media/A2 Rubric - VISA 2P61 - 2026 - Dr. Michael Palumbo.pdf" download>
+      ⬇ Download Rubric (PDF)
+    </a>
+
+    <!-- Embedded viewer -->
+    <iframe
+      src="/media/A2 Rubric - VISA 2P61 - 2026 - Dr. Michael Palumbo.pdf"
+      width="100%"
+      height="800px"
+      style="border: none; margin-top: 15px; border-radius: 8px;"
+      title="A2 Rubric">
+    </iframe>
+  </section>
+
 
     <footer>
       <div class="container">
@@ -1566,6 +1727,12 @@ git push</pre>
       document.querySelectorAll('.top-nav button').forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
       btn.classList.add('active');
+    }
+
+    function toggleNav(btn) {
+      const inner = document.querySelector('.top-nav-inner');
+      inner.classList.toggle('open');
+      btn.textContent = inner.classList.contains('open') ? '✕' : '☰';
     }
   
   function handleDeepLink() {
