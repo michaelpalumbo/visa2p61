@@ -658,6 +658,9 @@ git push                   # Upload your changes to GitHub
     &lt;!-- ...notice how the text inside of these arrows dont show up in your webpage online? These are code comments! --&gt;
 
   &lt;/body&gt;
+  &lt;!-- Include your javascript file here: --&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+
 &lt;/html&gt;</pre>
 
         <p class="note"><strong>How to use:</strong> Copy and paste this entire block, as is, into an empty <code>index.html</code> file. Then Add your text and other html elements between the <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags</p>
@@ -937,12 +940,251 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
 
           <ul class="toc-list">
             <!-- <li><a href="#general">General (Coming soonApplies to all Assignments)</a></li> -->
+             <li><a href="#a3-overview">Assignment 3 Guide</a></li>
              <li><a href="#a2-rubric">Assignment 2 Rubric</a></li>
              <li><a href="#a2-overview">Assignment 2 Guide</a></li>
             <li><a href="#a1-overview">Assignment 1 Guide</a></li>
             
           </ul>
           
+           <section id="a3-overview">
+            <h1>Assignment 3: Misbehaving Interface Step-by-Step</h1>
+            <div class="url-box">
+<!-- 
+              <a href="media/A2_Rubric_VISA_2P61_2026_Dr_Michael_Palumbo.pdf" download>
+              ⬇ Download Rubric (PDF)
+            </a> -->
+            <p></p>
+            </div>
+    
+    <!-- SETUP -->
+    <div class="url-box">
+      
+      <h3>Setup</h3>
+      <ol>
+        <li>Create a new GitHub repo named exactly <code>a3-misbehaving-interface</code></li>
+        <li>Follow the remainder of the setup steps <a href="https://michaelpalumbo.github.io/index.html#starting-assignments">here</a></li>
+      </ol>
+    </div>
+      <div class="url-box">
+
+      <a href="media/A3_Rubric_VISA_2P61_2026_Dr_Michael_Palumbo.pdf" download>
+      ⬇ Download Rubric (PDF)
+      </a>
+    
+    </div>
+
+    <!-- PROJECT STRUCTURE -->
+    <div class="url-box">
+      <h3>Set Up Your Project Structure</h3>
+      <p>Similar to A2, this assignment requires a specific folder structure. Before writing any code, set it up:</p>
+      <ol>
+        <li>
+          Inside your <code>a3-misbehaving-interface</code> folder, create these three things:
+          <pre>a3-misbehaving-interface/
+  index.html
+  index.css
+  script.js</pre>
+        </li>
+        
+        
+      </ol>
+    </div>
+
+
+    <!-- BUILD YOUR PAGE -->
+    <div class="url-box">
+      <h3>Build Your Page (the content)</h3>
+      <p>
+        Add at least 5 HTML UI objects (i.e. buttons, input fields, etc)
+      </p>
+      <p>
+        The following are some suggestions for ways that the UI elements on your page might behave to frustrate your website's visitors:
+      </p>
+      <ol>
+        <li>Buttons that move, shrink, or disappear when you try to click them</li>
+        <li>An input that erases itself, fights back, or changes what you typed</li>
+        <li>A menu that changes its own options based on what you've already selected</li>
+        <li>Clicking one element causes something completely unrelated to change</li>
+        <li>Hovering your mouse over an element triggers a cascade of unexpected consequences</li>
+        <li>Satisfying one condition breaks or undoes another</li>
+        <li>Elements that multiply the more you interact with them</li>
+        <li>Elements that decay or disappear if left alone too long</li>
+        <li>A slider or input whose label lies i.e. it says volume but interacting with it causes changes in font size, or says brightness but it moves other elements around the page</li>
+        <li>A form that's never quite submittable: the submit button stays disabled until all fields are filled, but filling one field empties another</li>
+        <li>Feedback that gaslights the user: success/error messages that are wrong, delayed, or contradict what just happened</li>
+        <li>An element that is important for the page (i.e. in order to submit your email address, or whatever) moves whenever your cursor tries to click on it</li>
+        <li>Scrolling has unexpected side effects: scrolling down makes text bigger, or moves elements horizontally</li>
+        <li>A countdown or progress bar that doesn't behave linearly: speeds up, slows down, or resets arbitrarily</li>
+        <li>Text that changes to something different each time the page is reloaded</li>
+ 
+      </ol>
+    </div>
+
+    <!-- GITHUB ISSUES -->
+    <div class="url-box">
+      <h3>camelCase</h3>
+      <p>
+        A3 introduces a new concept: <strong>camelCase</strong>. camelCase is a way to create compound words from multiple individual words. The way it is structured involves a lowercase word, followed by capitalizing the first letter of each next word. Reading it, we understand each new capital letter to indicate the start of a new word.
+        
+        <br>For instance, if we want to name a variable involving <i>click</i> and <i>counter</i>, we can't just write <code>click counter</code>, because the computer will interpret that as two separate variables. Written in camelCase, it would look like this <code>clickCounter</code>. 
+
+        <br><br> You will see camelCase used all over javascript, for example: <code>document.addEventListener('keydown', (event) => { })</code>. It is easier for us to read <i>addEventListener</i>, compared with, say, <i>addeventlistener</i>
+      </p>
+      
+    </div>
+
+    <!-- GIT LABYRINTH -->
+    <div class="url-box">
+      <h3>Making Commits</h3>
+      <ol>
+        <li>
+          Make at least <strong>30 commits</strong> with descriptive messages
+          (e.g. "applied extreme blur filter to section 2 for dreamlike effect", not "update").
+          <br><a href="https://michaelpalumbo.github.io/visa2p61/#workflow">See this</a> if you want a reminder on making commits.
+        </li>
+        <li>
+          Create at least <strong>10 branches</strong> branching off other feature branches.
+          <a href="https://michaelpalumbo.github.io/visa2p61/#git-advanced">Reminder on how to create a branch.</a>
+        </li>
+        <li>
+          Make at least <strong>5 merge commits</strong> between branches.
+          <a href="https://michaelpalumbo.github.io/visa2p61/#git-advanced">Reminder on how to merge 2 branches.</a>
+        </li>
+        <li>
+          Push <strong>all branches</strong> to GitHub:
+          <pre>git push --all</pre>
+        </li>
+      </ol>
+    </div>
+
+    <!-- ADD LINKS -->
+    <div class="url-box" id="add-links">
+      <h3 id="add-links-to-home-site">Add Links To Your username.github.io Site</h3>
+      <p>Finish coding your page first. This section is about documenting your process.</p>
+      <p>
+        You are going to report your work by adding links to your <code>username.github.io</code> site.
+        You will need <strong>two VS Code windows</strong> open to do this efficiently.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Window 1 (The Destination):</strong> Open your <code>username.github.io</code> project.
+          <ul>
+            <li>Ensure you are on <code>main</code>: <code>git checkout main</code></li>
+            <li>Open <code>index.html</code>. This is where you will <strong>paste</strong> the links.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Window 2 (The Source):</strong> Keep your <code>a2-one-image-x5</code> project open.
+          <p class="note" style="font-weight: bold;">IMPORTANT: Run the next step (step 3) in the terminal of your A2 project, NOT your username.github.io project!</p>
+        </li>
+
+        <li>
+          <strong>Find your Commit IDs:</strong>
+          <ol type="a">
+            <li>
+              In the <code>a2-one-image-x5</code> terminal, run:
+              <pre>git log --oneline --all</pre>
+              <p class="note"><strong>Pro-Tip:</strong> <code>--all</code> shows the history of every branch at once, so you don't have to switch branches to find your favorites!</p>
+            </li>
+            <li>Scroll through and find 5 commits that represent significant changes.</li>
+            <li><strong>Create a "Scratch Pad":</strong> Open a new empty tab in VS Code (<code>Cmd + N</code> or <code>Ctrl + N</code>).</li>
+            <li>
+              <strong>Copy the full line:</strong> Highlight the 7-character ID <em>and</em> the message,
+              then paste them into your Scratch Pad. It should look like this:
+              <pre><code>abc1234  Add extreme blur filter to section 2
+def5678  Merge branch 'tiling-experiment' into main
+ghi9012  Try skew transform on full-width image
+jkl3456  Add mix-blend-mode layering to section 4
+mno7890  First typographic image background attempt</code></pre>
+            </li>
+            <li>Type <code>q</code> to exit the log when finished. Once you have all 5 IDs, you can close the A2 terminal.</li>
+          </ol>
+        </li>
+
+        <li>
+          <strong>Create the Links (In Window 1):</strong>
+          <p>Return to Window 1 (your username.github.io project).</p>
+          <p>
+            You'll need the <code>&lt;a&gt;</code> tag for these steps.
+            If you don't remember, see <a href="https://www.w3schools.com/html/html_links.asp">this quick guide on adding links.</a>
+          </p>
+          <div style="background: #fff; padding: 15px; border: 1px solid #ddd; margin: 10px 0;">
+            <strong>1. Link to Live Site:</strong><br>
+            <code>https://yourUsername.github.io/a2-one-image-x5</code><br><br>
+
+            <strong>2. Link to Repo:</strong><br>
+            <code>https://github.com/yourUsername/a2-one-image-x5</code><br><br>
+
+            <strong>3. Links to 5 Favourite Commits:</strong><br>
+            <p>Take the IDs from your Scratch Pad and replace "PASTE_ID_HERE":</p>
+            <code>https://github.com/yourUsername/a2-one-image-x5/commit/<strong>PASTE_ID_HERE</strong></code>
+            <br><br>
+            <strong>3.a. Repeat Step 3 until you have all 5 versions as their own link.</strong>
+          </div>
+
+          <p>By the time you are done, your code in Window 1 should look like this:</p>
+          <pre><code>&lt;!-- My A2 Significant Versions --&gt;
+&lt;a href="https://github.com/yourUsername/a2-one-image-x5/commit/abc1234"&gt;Version 1: Extreme Blur&lt;/a&gt;
+&lt;a href="https://github.com/yourUsername/a2-one-image-x5/commit/def5678"&gt;Version 2: The Tile&lt;/a&gt;
+&lt;a href="https://github.com/yourUsername/a2-one-image-x5/commit/ghi9012"&gt;Version 3: Skewed Reality&lt;/a&gt;
+&lt;!-- ...and so on for all five --&gt;</code></pre>
+        </li>
+
+        <li>
+          <strong>Add Annotations:</strong>
+          <p>Add a brief <code>&lt;p&gt;</code> below each favourite version link explaining why it's significant. Use your commit messages from the Scratch Pad to help write these.</p>
+          <pre><code>&lt;a href="https://github.com/yourUsername/a2-one-image-x5/commit/abc1234"&gt;Favourite Version #1: Extreme Blur&lt;/a&gt;
+&lt;p&gt;In this version I pushed the CSS blur filter far beyond normal to create an unrecognizable smear,
+inspired by the Manifesto's idea that glitch reveals the hidden workings of the image.&lt;/p&gt;</code></pre>
+        </li>
+
+        <li>
+          Your new Assignment 2 links section on your <code>username.github.io</code> index.html should look something like this:
+          <br><br>
+          <div style="border: 1px solid #ddd; padding: 1rem; background: #fff; border-radius: 4px;">
+            <strong>Assignment 2 Links</strong><br><br>
+            <a href="#">Link to my assignment 2 page</a><br>
+            <a href="#">Link to my assignment 2 repo</a><br>
+            <a href="#">Favourite Version #1</a><br>
+            <p>In this version I pushed the CSS blur filter far beyond normal to create an unrecognizable smear, inspired by the Manifesto's idea that glitch reveals the hidden workings of the image.</p>
+            <a href="#">Favourite Version #2</a><br>
+            <p>notes on this version...</p>
+            <a href="#">Favourite Version #3</a><br>
+            <p>notes on this version...</p>
+            <a href="#">Favourite Version #4</a><br>
+            <p>notes on this version...</p>
+            <a href="#">Favourite Version #5</a><br>
+            <p>notes on this version...</p>
+          </div>
+          <br>
+          <em>NOTE: The links above are fake examples. It's up to you to fill them in correctly with your real username and commit IDs.</em>
+        </li>
+
+        <li>
+          <strong>Test:</strong>
+          Check your site locally with <strong>Live Server</strong>. Click every link.
+          If they lead to "404 Not Found" pages, double-check your username and commit IDs.
+        </li>
+
+        <li>
+          <strong>Push:</strong>
+          <pre>git add .
+git commit -m "added a2 links and annotations"
+git push</pre>
+        </li>
+
+        <li>
+          <strong>Lastly: Submit your username.github.io link to the Assignment 2 submission page on Brightspace (before midnight on Sunday May 24).</strong>
+        </li>
+      </ol>
+    </div>
+
+    
+
+  </section>
        
           <section id="a2-overview">
     <h1>Assignment 2: One Image x5 Step-by-Step</h1>
