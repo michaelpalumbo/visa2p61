@@ -444,7 +444,7 @@ q                     # Quit: Use this to get out of 'git log' or stuck screens
 
       <section id="workflow">
         <h2>The Development Loop (Save/Commit/Push)</h2>
-        <p>This is the cycle you will repeat every time you work. Think of it as: <strong>Create/Modify → Save → Record (commit) → Upload (push).</strong></p>
+        <p>This is the cycle you will repeat every time you work. Think of it as: <strong>Create/Modify -&gt; Save -&gt; Record (commit) -&gt; Upload (push).</strong></p>
         
         <ol>
           <li><strong>Modify:</strong> Make changes to your <code>index.html</code> (add text, new elements, images, etc.).</li>
@@ -940,22 +940,247 @@ git merge feature-c        # Blend feature-c into your current branch</pre>
 
           <ul class="toc-list">
             <!-- <li><a href="#general">General (Coming soonApplies to all Assignments)</a></li> -->
+             <li><a href="#a4-overview">Assignment 4 Guide</a></li>
+             <!-- <li><a href="#a4-rubric">Assignment 4 Rubric</a></li> -->
              <li><a href="#a3-overview">Assignment 3 Guide</a></li>
              <li><a href="#a2-rubric">Assignment 2 Rubric</a></li>
              <li><a href="#a2-overview">Assignment 2 Guide</a></li>
             <li><a href="#a1-overview">Assignment 1 Guide</a></li>
             
           </ul>
+       
           
-           <section id="a3-overview">
-            <h1>Assignment 3: Misbehaving Interface Step-by-Step</h1>
-            <div class="url-box">
+  <section id="a4-overview">
+    
+  <h1>Assignment 4: Remix — Step-by-Step</h1>
+
+  <div id="a4-rubric" class="url-box">
+    <a href="media/A4_Rubric_VISA_2P61_2026_Dr_Michael_Palumbo.pdf" download>
+      ⬇ Download Rubric (PDF)
+    </a>
+    <p></p>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="url-box">
+    <h3>What is this assignment?</h3>
+    <p>
+      You will find two existing p5.js sketches on the web, spend time hacking on each one separately,
+      and then combine them into something new. The result should be more than the sum of its parts —
+      the two sketches should interact or influence each other in some way, not just sit side by side.
+    </p>
+    <p>This is how a lot of real creative coding works: you start with something that already exists, you learn by breaking it, and you end up somewhere unexpected.</p>
+  </div>
+
+  <!-- SETUP -->
+  <div class="url-box">
+    <h3>Setup</h3>
+    <ol>
+      <li>Go to the starter repo linked below and click <strong>Fork</strong> (top-right corner of the page). This creates your own personal copy of the repo.<br><a href="https://github.com/michaelpalumbo/a4-generative">A4 Generative Assignment Repo</a></li>
+      <li>Clone your fork to your computer. (Reminder: green <strong>Code</strong> button -&gt; copy URL -&gt; VS Code -&gt; File > New Window -&gt; Clone Git Repository)</li>
+      <li>Open the cloned folder in VS Code.</li>
+      <li>Enable GitHub Pages for your new repo: <strong>Settings -&gt; Pages -&gt; Branch: main -&gt; Save</strong>.</li>
+      <li>Add a link to your live a4-generative page on your <code>username.github.io</code> index.</li>
+    </ol>
+    <p class="note" style="color: #d9534f; font-weight: bold;">
+      NOTE: You are forking a starter repo this time, not creating a new one from scratch. Do not create a new repo manually.
+    </p>
+  </div>
+
+  <!-- FOLDER STRUCTURE -->
+  <div class="url-box">
+    <h3>Your Project Structure</h3>
+    <p>The starter repo already has this structure set up for you. Here is what each part is for:</p>
+    <pre>a4-generative/
+  /dev
+    sketch1.html    &lt;- DO NOT EDIT — open this in Live Server to work on sketch 1
+    sketch2.html    &lt;- DO NOT EDIT — open this in Live Server to work on sketch 2
+  /sketches
+    sketch1.js      &lt;- your work on source sketch 1
+    sketch2.js      &lt;- your work on source sketch 2
+    remix.js        &lt;- your combined sketch
+  credits.json      &lt;- fill in attribution for your two source sketches
+  index.html        &lt;- the main page — fill in the remix credits section
+  style.css         &lt;- edit however you like</pre>
+    <p class="note">
+      <strong>The short version:</strong> You will spend almost all your time inside the <code>/sketches</code> folder.
+      Open the matching <code>/dev</code> HTML file in Live Server to see your sketch running.
+    </p>
+  </div>
+
+  <!-- FINDING SKETCHES -->
+  <div class="url-box">
+    <h3>Step 1: Find Your Two Source Sketches</h3>
+    <p>Find two p5.js sketches on the web that interest you. Your two sketches must satisfy these constraints:</p>
+    <ul>
+      <li>At least one must <strong>respond to mouse input</strong></li>
+      <li>At least one must <strong>draw many instances of something</strong> — particles, shapes, lines, words, etc.</li>
+    </ul>
+    <p>Good places to look:</p>
+    <ul>
+      <li><a href="https://openprocessing.org" target="_blank">openprocessing.org</a></li>
+      <li><a href="https://p5js.org/examples/" target="_blank">p5js Examples</a></li>
+      <li><a href="https://junongx.github.io/p5js-gallery/" target="_blank">Juno Nguyen's Gallery</a></li>
+    </ul>
+    <p class="note" style="border: 1px solid #ffcc00; padding: 10px; background: #fffdf0;">
+      <strong>Important:</strong> If your source sketch depends on any external files (images, fonts, other JS files),
+      you must save those files into your <code>/sketches</code> folder and update the file paths in the code.
+      Do not leave links pointing to files hosted on someone else's server.
+    </p>
+
+    <p>Further reference: These don't count as source sketches, but you can borrow from the techniques</p>
+    <ol>
+      <li><a href="https://codeguppy.com/sketches/mini/" target="_blank">Code Guppy's "Mini JavaScript programs in under 100 lines of code"</a></li>
+      <li><a href="https://happycoding.io/tutorials/p5js/" target="_blank">Happy Coding Tutorials</a></li>
+     
+    </ol>
+
+
+    
+  </div>
+
+  <!-- CREDITS.JSON -->
+  <div class="url-box">
+    <h3>Step 2: Fill In Your Credits</h3>
+    <p>
+      Open <code>credits.json</code>. This is a simple data file. Think of it like a form with labelled fields.
+      You just fill in the values between the quotes.
+    </p>
+    <p>For example, <code>"title": "Particle Storm"</code> means: the field named <strong>title</strong> contains the value <strong>Particle Storm</strong>.</p>
+    <p class="note" style="color: #d9534f; font-weight: bold;">
+      Only edit the values on the right side of each colon.
+      Do not change the labels on the left, and do not remove any quotes or commas.
+    </p>
+    <p>Here is what a filled-in <code>credits.json</code> looks like:</p>
+    <pre><code>{
+  "sketch1": {
+    "title": "Particle Storm",
+    "author": "Daniel Shiffman",
+    "date": "2018",
+    "source": "https://openprocessing.org/sketch/12345"
+  },
+  "sketch2": {
+    "title": "Ripple Grid",
+    "author": "Jane Smith",
+    "date": "2021",
+    "source": "https://codepen.io/janesmith/pen/abcdef"
+  }
+}</code></pre>
+    <p>Once filled in, save your file, commit it, and remember to merge it into main. This information will appear automatically on the sketch pages when you open them in Live Server.</p>
+  </div>
+
+  <!-- HACKING -->
+  <div class="url-box">
+    <h3>Step 3: Hack on Each Sketch Separately</h3>
+    <p>
+      Before you try to combine anything, spend real time with each sketch on its own.
+      Paste the source code into <code>sketch1.js</code>, open <code>dev/sketch1.html</code> in Live Server, and start experimenting.
+      Then do the same for <code>sketch2.js</code>.
+    </p>
+    <p>Things to try:</p>
+    <ul>
+      <li>Change numbers and see what breaks</li>
+      <li>Change colours, sizes, speeds</li>
+      <li>Add mouse interaction if there isn't any</li>
+      <li>Remove something and see what's left</li>
+      <li>Add something that doesn't belong and see what happens</li>
+    </ul>
+    <p class="note" style="border: 1px solid #4a90e2; padding: 10px; background: #ebf3fc;">
+      <strong>Commit as you go.</strong> Every time something changes — even if it breaks — commit it.
+      Your commit history on these branches is part of what gets graded.
+      "tried doubling the particle count — browser crashed lol" is a perfect commit message.
+    </p>
+  </div>
+
+  <!-- COMBINING -->
+  <div class="url-box">
+    <h3>Step 4: Build Your Remix</h3>
+    <p>
+      Once you have spent time with both sketches, start combining them in <code>remix.js</code>.
+      Open <code>index.html</code> in Live Server to see it running.
+    </p>
+    <p>
+      The goal is not just to put both sketches on the same canvas — it's to make them
+      <strong>interact or influence each other</strong> in some way. Ask yourself:
+    </p>
+    <ul>
+      <li>Can the mouse interaction from one sketch affect the other?</li>
+      <li>Can the particles from one sketch respond to elements of the other?</li>
+      <li>What happens if you use a value from one system to control something in the other?</li>
+    </ul>
+    <p class="note" style="border: 1px solid #ffcc00; padding: 10px; background: #fffdf0;">
+      <strong>Garbage Collection:</strong> Your sketch must clean up after itself.
+      Any element that moves off the canvas should be <strong>removed from memory</strong>. Crucially, it may not be visible within the canvas boundaries, but that doesn't mean its not still in the sketch.
+      In practice: if you have an array of particles, remove them from the array when they go off screen.
+      If you don't do this, your sketch will slowly use more and more memory until it crashes or slows to a crawl.
+    </p>
+  </div>
+
+  <!-- BONUS -->
+  <div class="url-box" style="border-left-color: #28a745; background: #f4fff4;">
+    <h3>Bonus (+5%): Keypress Reset</h3>
+    <p>
+      Add code that resets your remix sketch when a particular keyboard key is pressed. In p5.js, you can detect keypresses using the built-in <code>keyPressed()</code>
+    <p>
+      To get the bonus marks, you must also <strong>display which key triggers the reset somewhere on the page</strong>.
+      You can add this as a line of text directly in the <code>index.html</code> body.
+    <p class="note">Both parts are required for the bonus: the working keypress AND the label on the page.</p>
+  </div>
+
+  <!-- GIT -->
+  <div class="url-box">
+    <h3>Making Commits &amp; Branches</h3>
+    <p>This assignment has a specific branch structure. Set it up early — don't leave it until the end.</p>
+
+    <h4>Branch structure:</h4>
+    <pre>
+sketch-1     &lt;- most of your experimentation on source sketch 1
+sketch-2     &lt;- most of your experimentation on source sketch 2
+combine      &lt;- where you build the remix
+main         &lt;- only clean, working versions</pre>
+      <p class="note">You're encouraged to use more than the minimum number of branches, and not all of them need to be pushed to github. But all 4 of the above branches must be pushed.</p>
+   
+    <h4>Commit minimums:</h4>
+    <ul>
+      <li>At least <strong>10 commits</strong> on <code>sketch-1</code></li>
+      <li>At least <strong>10 commits</strong> on <code>sketch-2</code></li>
+      <li>At least <strong>15 commits</strong> on <code>combine</code></li>
+      <li>At least <strong>5 merge commits</strong> as you bring work together</li>
+    </ul>
+
+    <p class="note" style="border: 1px solid #ffcc00; padding: 10px; background: #fffdf0;">
+      <strong>Commit message quality matters.</strong>
+      Describe what you tried and what happened, not just what file you changed.<br>
+      <em>"tried making particles follow mouseX — too jittery, going to add lerp"</em><br>
+      <em>"update"</em>
+    </p>
+  </div>
+
+  <!-- INDEX PAGE -->
+  <div class="url-box" id="a4-add-links">
+    <h3>Add Links To Your username.github.io Site</h3>
+    <p>Same process as previous assignments. Just follow the instructions on the assignment 2 or 1 guides below for this step (so that I don't need to repeat myself here!) 
+
+      <p></p>
+        <strong>Submit your username.github.io link to the Assignment 4 submission page on Brightspace before Saturday May 30 at 11:59pm.</strong>
+      </li>
+    </ol>
+  </div>
+
+  <!-- CHECKLIST -->
+  
+
+</section>
+  </section>
+  <section id="a3-overview">
+  <h1>Assignment 3: Misbehaving Interface Step-by-Step</h1>
+  <div class="url-box">
 <!-- 
-              <a href="media/A2_Rubric_VISA_2P61_2026_Dr_Michael_Palumbo.pdf" download>
-              ⬇ Download Rubric (PDF)
-            </a> -->
-            <p></p>
-            </div>
+    <a href="media/A2_Rubric_VISA_2P61_2026_Dr_Michael_Palumbo.pdf" download>
+    ⬇ Download Rubric (PDF)
+  </a> -->
+  <p></p>
+  </div>
     
     <!-- SETUP -->
     <div class="url-box">
